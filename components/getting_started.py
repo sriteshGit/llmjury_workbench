@@ -1,24 +1,12 @@
-#   ADOBE CONFIDENTIAL
-#   ___________________
-#
-#   Copyright 2025 Adobe
-#   All Rights Reserved.
-#
-#   NOTICE:  All information contained herein is, and remains
-#   the property of Adobe and its suppliers, if any.
-#   intellectual and technical concepts contained herein are
-#   proprietary to Adobe and its suppliers and are protected
-#   by all applicable intellectual property laws, including
-#   trade secret and copyright laws.  Dissemination of this
-#   information or reproduction of this material is strictly
-#   forbidden unless prior written permission is obtained
-#   from Adobe.
+# LLMJury Workbench
 
 """Getting Started tab - Quick guide and about information."""
 
 import json
 
 import streamlit as st
+
+from __version__ import __version__
 
 
 def render_getting_started_tab():
@@ -104,24 +92,10 @@ def render_getting_started_tab():
 
     st.markdown('---')
 
-    st.markdown('## 🎬 Video Walkthrough')
+    st.markdown('## 🎬 Walkthrough')
 
-    st.markdown(
-        """
-        <div style="display: flex; justify-content: center; margin: 2rem 0;">
-            <iframe
-                src="https://adobe-my.sharepoint.com/personal/riteshs_adobe_com/_layouts/15/embed.aspx?UniqueId=c27c1904-d164-43a8-88fb-52175cd70957&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
-                width="640"
-                height="360"
-                frameborder="0"
-                scrolling="no"
-                allowfullscreen
-                title="llmjury_workbench_live.mp4"
-                style="border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-            </iframe>
-        </div>
-        """,
-        unsafe_allow_html=True,
+    st.info(
+        'Embed a walkthrough video by editing the Getting Started tab, or follow **README.md** in the repository root.'
     )
 
     st.markdown('---')
@@ -178,12 +152,10 @@ def render_getting_started_tab():
     res_col1, res_col2 = st.columns(2)
 
     with res_col1:
-        st.markdown(
-            '📖 [Full Documentation](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=DEX&title=LLMJury+Auto+Evaluation+System)'
-        )
+        st.markdown('📖 **Documentation** — see `README.md` and `CODEBASE_REFERENCE.md` in the repository.')
 
     with res_col2:
-        st.markdown('💬 [Support: riteshs@adobe.com](mailto:riteshs@adobe.com)')
+        st.markdown('💬 **Support** — use your team’s issue tracker or internal docs for this deployment.')
 
     st.markdown('---')
-    st.markdown('**Version:** 1.2.0 | **Stack:** Streamlit + LLMJury | **License:** Adobe Confidential')
+    st.markdown(f'**Version:** {__version__} | **Stack:** Streamlit + LLMJury')

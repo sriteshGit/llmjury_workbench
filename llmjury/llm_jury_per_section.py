@@ -1,18 +1,5 @@
-#   ADOBE CONFIDENTIAL
-#   ___________________
-#
-#   Copyright 2024 Adobe
-#   All Rights Reserved.
-#
-#   NOTICE:  All information contained herein is, and remains
-#   the property of Adobe and its suppliers, if any.  The
-#   intellectual and technical concepts contained herein are
-#   proprietary to Adobe and its suppliers and are protected
-#   by all applicable intellectual property laws, including
-#   trade secret and copyright laws.  Dissemination of this
-#   information or reproduction of this material is strictly
-#   forbidden unless prior written permission is obtained
-#   from Adobe.
+# LLMJury Workbench
+
 import json
 import logging
 import re
@@ -281,6 +268,7 @@ class LLMJURYPerSection(Operator):
                and so on for all the models
             }
         """
+        self.setup()
         self.logger.info(f'{self._log_prefix} Starting LLMJURYPerSection evaluation')
         self.logger.debug(f'{self._log_prefix} Number of models: {len(self.model_list)}')
         self.logger.debug(f'{self._log_prefix} Evaluation mode: {self.evaluation_mode}')

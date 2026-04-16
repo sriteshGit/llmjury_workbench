@@ -1,4 +1,4 @@
-"""Public LLM API via LiteLLM (replaces venice_gentech ChatLLMInvoker + LLMWrapper)."""
+"""Public LLM API via LiteLLM."""
 
 from __future__ import annotations
 

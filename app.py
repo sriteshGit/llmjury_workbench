@@ -1,18 +1,4 @@
-#   ADOBE CONFIDENTIAL
-#   ___________________
-#
-#   Copyright 2025 Adobe
-#   All Rights Reserved.
-#
-#   NOTICE:  All information contained herein is, and remains
-#   the property of Adobe and its suppliers, if any.
-#   intellectual and technical concepts contained herein are
-#   proprietary to Adobe and its suppliers and are protected
-#   by all applicable intellectual property laws, including
-#   trade secret and copyright laws.  Dissemination of this
-#   information or reproduction of this material is strictly
-#   forbidden unless prior written permission is obtained
-#   from Adobe.
+# LLMJury Workbench
 
 """LLMJury Workbench - Interactive evaluation and analysis tool."""
 
@@ -51,10 +37,6 @@ st.markdown(
         font-weight: bold;
         color: #1f77b4;
     }
-    .adobe-logo {
-        height: 40px;
-        vertical-align: middle;
-    }
     .metric-card {
         background-color: #f0f2f6;
         border-radius: 10px;
@@ -83,7 +65,7 @@ st.markdown(
     }
     .info-box {
         background-color: #f8f9fa;
-        border-left: 4px solid #eb1000;
+        border-left: 4px solid #1f77b4;
         padding: 1.5rem;
         border-radius: 5px;
         margin: 1rem 0;
@@ -96,11 +78,9 @@ st.markdown(
 
 def main():
     """Main application entry point."""
-    # Header with Adobe logo
     st.markdown(
         '''
         <div class="main-header">
-            <img src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" class="adobe-logo" alt="Adobe"/>
             <span class="header-title">⚖️ LLMJury Workbench</span>
         </div>
         ''',

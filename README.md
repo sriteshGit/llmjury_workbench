@@ -2,7 +2,7 @@
 
 **Interactive platform for LLM-based evaluations with comprehensive dashboards, evaluation runners, and model comparison tools.**
 
-This repository is a **standalone** copy of the LLMJury evaluation stack and Streamlit workbench (previously nested under [venice-eval](https://github.com/Adobe-DCAI/venice-eval)). It bundles the `llmjury` Python package, prompt assets under `llmjury/data/prompts/`, and CLI runners under `runners/`.
+This repository is a **standalone** LLMJury evaluation stack and Streamlit workbench. It bundles the `llmjury` Python package, prompt assets under `llmjury/data/prompts/`, and CLI runners under `runners/`.
 
 ---
 
@@ -25,7 +25,7 @@ cp .env.example .env
 2. Uncomment and set keys for the providers you use, for example:
 
 - **xAI Grok** (including free-tier credits from [console.x.ai](https://console.x.ai)): `XAI_API_KEY` — then choose models such as `grok_mini`, `grok_free`, or `xai/grok-3-mini` in the UI or CLI.
-- **Groq** ([console.groq.com](https://console.groq.com/keys)): `GROQ_API_KEY` — model alias `groq_fast` → `groq/llama-3.1-8b-instant`.
+- **Groq** ([console.groq.com](https://console.groq.com/keys)): `GROQ_API_KEY` — e.g. alias `groq_fast` → `groq/llama-3.1-8b-instant`, or `groq_llama_70b` / `groq/llama-3.3-70b-versatile` for **Llama 3.3 70B** (this is not xAI Grok; Grok needs `XAI_API_KEY`).
 - **OpenAI**: `OPENAI_API_KEY` — models like `gpt_4o_mini`.
 
 3. Optional env vars:
@@ -111,7 +111,7 @@ llmjury_workbench/
 ├── .env.example                    # Template for API keys (copy to .env)
 ├── scripts/verify_setup.py         # Independent sanity check (make verify)
 ├── app.py                          # Main Streamlit application
-├── llmjury/                        # Evaluation library (ex-venice_eval.llm_based_evaluation.llmjury)
+├── llmjury/                        # Evaluation library
 │   ├── data/prompts/llmJURY/       # Prompt templates + configs for metrics / Q&A / comparison / meta
 │   └── ...
 ├── runners/
@@ -163,7 +163,7 @@ make docker-up
 make docker-down
 ```
 
-**Image size:** depends on base image and dependency wheels (no full venice-eval checkout).
+**Image size:** depends on base image and dependency wheels (standalone build context).
 
 ### Environment Variables
 
@@ -416,7 +416,7 @@ Results include:
 
 ## 📝 License
 
-See your organization’s terms for the original Adobe-confidential sources.
+Specify a license for your distribution (this template does not ship a default `LICENSE` file).
 
 ---
 
@@ -469,6 +469,7 @@ For issues related to:
 ## 📚 Documentation
 
 - **README.md** (this file) - Quick start and usage
+- **CODEBASE_REFERENCE.md** - Codebase index, module roles, and execution flow for maintainers
 - **OVERVIEW.md** - Technical architecture and design decisions
 - **DEPLOYMENT_STRATEGY.md** - Detailed deployment guide
 

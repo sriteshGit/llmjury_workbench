@@ -1,7 +1,7 @@
-# LLMJury Workbench — standalone image (no venice-eval checkout)
+# LLMJury Workbench — standalone image
 FROM python:3.11-slim
 
-LABEL maintainer="Adobe"
+LABEL maintainer="LLMJury Workbench"
 LABEL description="LLMJury Workbench"
 LABEL version="2.1.0"
 

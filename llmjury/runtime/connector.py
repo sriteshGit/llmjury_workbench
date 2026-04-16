@@ -6,7 +6,7 @@ from typing import Any, Iterator
 
 @dataclass
 class _Stream:
-    """Single readable payload + coords (venice stream compatibility)."""
+    """Single readable payload + coords."""
 
     data: Any
     coords: dict[str, Any]
@@ -16,7 +16,7 @@ class _Stream:
 
 
 class Connector:
-    """In-memory data pipe compatible with LLMJury's prior venice.core.Connector usage."""
+    """In-memory data pipe for section-scoped JSON payloads."""
 
     def __init__(self, name: str = 'connector', persist_ext: str | None = None) -> None:
         self.name = name

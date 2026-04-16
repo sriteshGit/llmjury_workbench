@@ -106,7 +106,7 @@ app.py
 
 ### 4. Multi-stage Docker Build
 
-**Problem**: Docker images were large due to including entire venice-eval repo.
+**Problem**: Docker images were large when they bundled a large parent monorepo instead of this app only.
 
 **Solution**: Multi-stage build:
 1. Builder stage: Install dependencies
@@ -452,7 +452,7 @@ kubectl apply -f k8s/deployment.yaml
 
 1. **Keep it simple** - Don't over-engineer
 2. **Reuse existing code** - Subprocess to runner
-3. **Single source of truth** - Constants from venice-eval
+3. **Single source of truth** - Shared constants in the `llmjury` package
 4. **Optimize packaging** - Multi-stage builds
 5. **Follow standards** - Make, uv, pyproject.toml
 

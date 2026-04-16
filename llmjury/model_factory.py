@@ -1,4 +1,4 @@
-"""Resolve model aliases to LiteLLM model ids (no venice_gentech)."""
+"""Resolve model aliases to LiteLLM model ids."""
 
 from __future__ import annotations
 
@@ -30,7 +30,7 @@ class ChatModelSpec:
         return LLMWrapper(self.model_id, model_kwargs)
 
 
-# Friendly names (underscore / legacy venice style) -> LiteLLM model strings.
+# Friendly names (underscore style) -> LiteLLM model strings.
 # Users can also pass any LiteLLM-supported id directly, e.g. "gpt-4o", "anthropic/claude-3-5-sonnet-20241022".
 _ALIASES: dict[str, str] = {
     'gpt_4o_mini': 'gpt-4o-mini',
@@ -44,12 +44,17 @@ _ALIASES: dict[str, str] = {
     'grok_fast': 'xai/grok-4-1-fast-non-reasoning',
     # Groq — set GROQ_API_KEY in .env (https://console.groq.com)
     'groq_fast': 'groq/llama-3.1-8b-instant',
+    # Groq Llama 3.3 70B (console id: llama-3.3-70b-versatile → LiteLLM: groq/llama-3.3-70b-versatile)
+    'groq_llama_70b': 'groq/llama-3.3-70b-versatile',
+    'groq_llama_3_3_70b': 'groq/llama-3.3-70b-versatile',
+    # Groq dashboard id without "groq/" prefix (hyphens or dots in version normalize to _)
+    'llama_3_3_70b_versatile': 'groq/llama-3.3-70b-versatile',
 }
 
 
 def _normalize_key(name: str) -> str:
     s = name.strip().lower()
-    s = s.replace('-', '_')
+    s = s.replace('-', '_').replace('.', '_')
     return s
 
 
@@ -61,7 +66,7 @@ def get_model(model_name: str) -> ChatModelSpec:
 
     - ``OPENAI_API_KEY`` — OpenAI
     - ``XAI_API_KEY`` — xAI Grok (``xai/grok-...``)
-    - ``GROQ_API_KEY`` — Groq (``groq/...``)
+    - ``GROQ_API_KEY`` — Groq (``groq/...``, e.g. ``groq/llama-3.3-70b-versatile`` — not xAI Grok)
     - ``ANTHROPIC_API_KEY`` — Claude
     - Azure / Gemini / others per https://docs.litellm.ai/docs/providers
     """
@@ -88,6 +93,7 @@ def get_available_models() -> list[str]:
             'gpt-4-turbo',
             'xai/grok-3-mini',
             'groq/llama-3.1-8b-instant',
+            'groq/llama-3.3-70b-versatile',
         }
     )
 

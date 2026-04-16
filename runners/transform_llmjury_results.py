@@ -1,20 +1,6 @@
 #!/usr/bin/env python3
-#
-#    ADOBE CONFIDENTIAL
-#    ___________________
-#
-#    Copyright 2025 Adobe
-#    All Rights Reserved.
-#
-#    NOTICE:  All information contained herein is, and remains
-#    the property of Adobe and its suppliers, if any. The intellectual
-#    and technical concepts contained herein are proprietary to Adobe
-#    and its suppliers and are protected by all applicable intellectual
-#    property laws, including trade secret and copyright laws.
-#    Dissemination of this information or reproduction of this material
-#    is strictly forbidden unless prior written permission is obtained
-#    from Adobe.
-#
+# LLMJury Workbench
+
 """
 Transform LLM Jury Results from JSON to Excel.
 
@@ -169,7 +155,7 @@ def transform_and_save(
     # Ensure output directory exists
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # Wrap in Venice Session (required for Operators)
+    # Wrap in evaluation Session (required for operators that expect it)
     with Session('LLMJURY_TRANSFORM'):
         # Step 1: Transform results to DataFrame
         logger.info('Transforming results to DataFrame...')

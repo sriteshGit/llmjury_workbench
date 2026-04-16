@@ -1,7 +1,3 @@
-#   ADOBE CONFIDENTIAL
-#   ___________________
-#
-#   Copyright 2025 Adobe
-#   All Rights Reserved.
+# LLMJury Workbench
 
 """Utility modules for LLMJury Workbench."""

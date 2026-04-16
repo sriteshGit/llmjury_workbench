@@ -1,18 +1,5 @@
-#   ADOBE CONFIDENTIAL
-#   ___________________
-#
-#   Copyright 2024 Adobe
-#   All Rights Reserved.
-#
-#   NOTICE:  All information contained herein is, and remains
-#   the property of Adobe and its suppliers, if any.  The
-#   intellectual and technical concepts contained herein are
-#   proprietary to Adobe and its suppliers and are protected
-#   by all applicable intellectual property laws, including
-#   trade secret and copyright laws.  Dissemination of this
-#   information or reproduction of this material is strictly
-#   forbidden unless prior written permission is obtained
-#   from Adobe.
+# LLMJury Workbench
+
 
 import logging
 
@@ -90,6 +77,7 @@ class LLMJURYCriteriaPromptDefinitionLoader(Operator):
         prompts: Connector
             The list of prompts that will be used for making LLM calls.
         """
+        self.setup()
         prompts = self.get_prompts()
         self.prompts.add_data(prompts)
         self.prompts.finished()
@@ -107,5 +95,7 @@ class LLMJURYCriteriaPromptDefinitionLoader(Operator):
         prompt_template = self.prompt_config_manager.get_prompt_template()
         if isinstance(prompt_template, PromptTemplate):
             prompt_template_str = prompt_template.template
+        else:
+            prompt_template_str = getattr(prompt_template, 'template', str(prompt_template))
 
         return prompt_template_str

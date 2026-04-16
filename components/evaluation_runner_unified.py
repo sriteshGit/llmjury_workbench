@@ -1,18 +1,4 @@
-#   ADOBE CONFIDENTIAL
-#   ___________________
-#
-#   Copyright 2025 Adobe
-#   All Rights Reserved.
-#
-#   NOTICE:  All information contained herein is, and remains
-#   the property of Adobe and its suppliers, if any.
-#   intellectual and technical concepts contained herein are
-#   proprietary to Adobe and its suppliers and are protected
-#   by all applicable intellectual property laws, including
-#   trade secret and copyright laws.  Dissemination of this
-#   information or reproduction of this material is strictly
-#   forbidden unless prior written permission is obtained
-#   from Adobe.
+# LLMJury Workbench
 
 """Unified evaluation runner for LLMJury Workbench - handles both fresh and re-analysis."""
 
@@ -503,6 +489,8 @@ def _get_evaluation_config(needs_conversion):
             'grok_free',
             'xai/grok-3-mini',
             'groq_fast',
+            'groq_llama_70b',
+            'groq/llama-3.3-70b-versatile',
             'gemini-2.5-flash',
             'gemini-2.5-pro',
             'gpt_o3_mini',
@@ -519,7 +507,8 @@ def _get_evaluation_config(needs_conversion):
             model_options,
             default=model_defaults,
             help='Select one or more models (set LLMJURY_DEFAULT_MODELS in .env for defaults). '
-            'Grok/xAI: set XAI_API_KEY in .env. Groq: set GROQ_API_KEY.',
+            'xAI Grok: XAI_API_KEY + models like grok_mini. Groq (e.g. Llama 3.3 70B): GROQ_API_KEY + groq_llama_70b '
+            'or groq/llama-3.3-70b-versatile.',
         )
 
     with col3:

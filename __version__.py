@@ -1,8 +1,4 @@
-#   ADOBE CONFIDENTIAL
-#   ___________________
-#
-#   Copyright 2025 Adobe
-#   All Rights Reserved.
+# LLMJury Workbench
 
 """LLMJury Workbench - Interactive evaluation and analysis tool."""
 

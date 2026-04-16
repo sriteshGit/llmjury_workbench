@@ -2,7 +2,7 @@
 
 ## Overview
 
-The LLMJury Workbench requires the venice-eval framework as it executes evaluations via subprocess calls to `run_llmjury_evaluator.py`.
+This workbench is **self-contained**: evaluations run via subprocess or in-process calls to `runners/run_llmjury_evaluator.py` from the repository root (no external monorepo checkout required).
 
 ---
 
@@ -14,9 +14,9 @@ The workbench uses a multi-stage Dockerfile for optimization:
 
 **Build Context:**
 ```bash
-# Must build from parent directory (venice-eval root)
-cd venice-eval
-docker build -f llmjury_workbench/Dockerfile -t llmjury-workbench .
+# Build from this repository root (directory containing Dockerfile and app.py)
+cd llmjury_workbench
+docker build -t llmjury-workbench .
 ```
 
 **Benefits:**
@@ -59,7 +59,7 @@ spec:
             cpu: '1000m'
         env:
         - name: PYTHONPATH
-          value: '/venice-eval'
+          value: '/app'
         - name: OPENAI_API_KEY
           valueFrom:
             secretKeyRef:
@@ -127,7 +127,7 @@ spec:
 ```bash
 OPENAI_API_KEY=sk-...           # Required for OpenAI models
 ANTHROPIC_API_KEY=sk-ant-...    # Required for Anthropic models
-PYTHONPATH=/venice-eval         # Required for imports
+PYTHONPATH=/app         # Required for imports
 ```
 
 ### Optional Variables
@@ -222,7 +222,7 @@ jobs:
     }],
     "environment": [{
       "name": "PYTHONPATH",
-      "value": "/venice-eval"
+      "value": "/app"
     }],
     "secrets": [{
       "name": "OPENAI_API_KEY",
@@ -258,7 +258,7 @@ spec:
         - containerPort: 8501
         env:
         - name: PYTHONPATH
-          value: /venice-eval
+          value: /app
         - name: OPENAI_API_KEY
           valueFrom:
             secretKeyRef:
@@ -289,7 +289,7 @@ properties:
       - port: 8501
       environmentVariables:
       - name: PYTHONPATH
-        value: /venice-eval
+        value: /app
       - name: OPENAI_API_KEY
         secureValue: <from-key-vault>
   osType: Linux
@@ -337,7 +337,7 @@ Returns `200 OK` when healthy.
 ## Troubleshooting
 
 ### Container Startup Issues
-- Check `PYTHONPATH=/venice-eval` is set
+- Check `PYTHONPATH=/app` is set
 - Verify API keys are available
 - Review logs: `docker logs <container-id>`
 
@@ -348,7 +348,7 @@ Returns `200 OK` when healthy.
 
 ### Evaluation Errors
 - Validate API keys are correct and active
-- Confirm venice-eval is properly installed
+- Confirm the image includes `llmjury`, `runners`, and `app.py` from this repository
 - Review logs in `temp_evaluations/`
 
 ### Out of Memory

@@ -1,4 +1,4 @@
-"""Load prompt templates from JSON + text files (replaces venice_gentech PromptConfigurationManager)."""
+"""Load prompt templates from JSON + text files."""
 
 from __future__ import annotations
 

@@ -5,5 +5,5 @@ from typing import Any
 
 @contextmanager
 def Session(name: str = 'LLMJURY') -> Iterator[Any]:
-    """No-op session context (replaces venice.core.Session)."""
+    """No-op session context for evaluation runs."""
     yield None

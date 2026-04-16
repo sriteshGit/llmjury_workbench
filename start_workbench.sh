@@ -1,10 +1,6 @@
 #!/bin/bash
 
-#   ADOBE CONFIDENTIAL
-#   ___________________
-#
-#   Copyright 2025 Adobe
-#   All Rights Reserved.
+# LLMJury Workbench
 
 # LLMJury Workbench Startup Script (Legacy)
 # Recommended: Use 'make run' instead

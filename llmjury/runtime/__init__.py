@@ -1,4 +1,4 @@
-"""Minimal replacements for venice.core (Connector, Operator, Session) using the stdlib."""
+"""Runtime primitives: Connector, Operator, Session."""
 
 from llmjury.runtime.connector import Connector
 from llmjury.runtime.operator import Operator

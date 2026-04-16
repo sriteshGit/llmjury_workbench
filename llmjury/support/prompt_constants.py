@@ -1,8 +1,4 @@
-#   ADOBE CONFIDENTIAL
-#   ___________________
-#
-#   Copyright 2024 Adobe
-#   All Rights Reserved.
+# LLMJury Workbench
 
 # LLM message role / response keys used by LLMJury prompt loaders and meta-analysis.
 SYSTEM = 'system'
