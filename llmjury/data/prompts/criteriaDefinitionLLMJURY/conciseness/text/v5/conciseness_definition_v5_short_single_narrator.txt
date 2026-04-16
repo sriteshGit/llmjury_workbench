@@ -1,0 +1,42 @@
+CONCISENESS = (
+    "This is a podcast/transcript summary of single-hosts. Evaluate the podcast summary's conciseness by assessing how efficiently it conveys the information that IS PRESENT in the summary without significant redundancy or unnecessary elaboration that hinders clarity. Your evaluation should focus on:"
+
+    "1. Information density: The summary should convey meaningful content without filler beyond what is necessary for conversational flow."
+    "2. Redundancy: Identify repeated ideas or unnecessary elaboration of content (but do not count natural dialogue acknowledgments like "Right," "Exactly," "Mhmm" etc as redundancy)"
+    "3. Word economy: The use of precise and succinct language to convey the included meaning effectively.
+     However, do NOT penalize natural conversational transitions, short recaps, or filler phrases such as 'That brings us to the...', 'It really is,' or 'Exactly'—these maintain natural flow and should not reduce the conciseness score."
+    "4. Focus: The conversation should stick to the main themes and critical details without drifting.
+
+     "EXAMPLE OF NORMAL CONVERSATIONAL FLOW:"
+    "Liam: \"It's a name, it doesn't mean anything.\"
+    "Liam: \"Right\"
+    "Liam: \"We could call it the .......\"
+    "Liam: \"Mhmm\"
+    "Liam: \"But what's interesting about this brain area is that...\"
+    "This is normal conversation flow and should NOT be penalized for conciseness."
+
+    "EXAMPLES OF CONCISENESS EVALUATION FOR MEDIUM SUMMARIES:"
+    "1. EARNINGS CALL SUMMARY - GOOD CONCISENESS:"
+    "Liam: \"Rent-A-Center had a strong Q3 with revenue of $664.6 million and EPS of $0.62.\"
+    "Chloe: \"Yeah, they beat expectations and improved margins by 80 basis points.\"
+    "Liam: \"They're expanding into Mexico, planning 25-75 stores next year.\"
+    "Chloe: \"And their rack acceptance kiosks grew to 151 locations.\""
+    "**GOOD: Each sentence conveys distinct information efficiently without redundancy**"
+
+    "2. EARNINGS CALL SUMMARY - POOR CONCISENESS:"
+    "Liam: \"Rent-A-Center had a strong Q3 with revenue of $664.6 million and EPS of $0.62.\"
+    "Chloe: \"Yeah, they had a strong Q3 with revenue of $664.6 million and EPS of $0.62.\"
+    "Liam: \"They're expanding into Mexico, planning 25-75 stores next year.\"
+    "Chloe: \"They're expanding into Mexico and planning to open between 25 and 75 stores next year.\"
+    "Liam: \"Their rack acceptance kiosks grew to 151 locations.\"
+    "Chloe: \"Their rack acceptance kiosks grew to 151 locations, which is an increase in their rack acceptance kiosk locations.\""
+    "**POOR: Nearly identical sentences and unnecessarily verbose language - DEDUCT MARKS**"
+
+    "IMPORTANT: Your evaluation should be strictly based on the Conciseness criterion and should not consider factors like accuracy, comprehensiveness, or fluency."
+    "- Do not penalize conversational fillers or short back-and-forth acknowledgments as verbosity—they are expected in dialogue format. Remember this is a transcript conversation summary—expect natural dialogue flow."
+    "- Do NOT penalize analogies or illustrative examples that are part of the podcast’s conversational style. For instance, if a speaker says, 'Think of Apple as the sleek car body and NeXT as the powerful engine,' this is a natural explanatory analogy and should NOT reduce the conciseness score."
+    "- Similarly, do NOT deduct marks for early explanations, follow-up clarifications, or Q&A-style exchanges that restate or elaborate on points to aid listener understanding, it should NOT be treated as redundancy."
+    "- Deduct marks for verbosity only when *substantive content* is unnecessarily repeated or drawn out without adding value."
+    "Consider the impact of any redundancy or unnecessary elaboration on the overall efficiency and clarity of the summary when scoring."
+    "In your reasoning, provide specific examples of instances where the summary could be more concise and explain how these changes would improve its efficiency or clarity. Focus on identifying areas where trimming or rephrasing would yield a noticeable improvement."
+)

@@ -1,0 +1,35 @@
+LESSON_RELEVANCE = """
+Evaluate the relevance of lesson content by assessing how well it aligns with the stated topic or learning goal.
+
+**IMPORTANT**: You are evaluating LESSON CONTENT from the study package — the main instructional material that teaches specific concepts and ideas within each session.
+
+Evaluate based on these criteria:
+
+1. **Direct Alignment**: Does the lesson directly align with the stated topic or learning goal?
+
+2. **Focus and Coherence**: Does the lesson avoid tangential or unrelated sections?
+
+3. **Objective Connection**: Do all subtopics clearly connect to the main learning objective?
+
+4. **Source Material Alignment**: Is the lesson content directly traceable to and supported by the source documents provided?
+
+**Scoring Guide**:
+- 5 (Excellent): Fully relevant throughout; every section contributes to the learning goal and is well-supported by source material.
+- 4 (Good): Mostly relevant with small off-topic areas; strong alignment with source documents.
+- 3 (Fair): Some loosely related or irrelevant content; partial alignment with sources.
+- 2 (Poor): Several major portions stray from the topic or lack proper grounding in source material.
+- 1 (Very Poor): Content largely unrelated to the given topic or not supported by provided sources.
+
+**NOTE**: Compare lesson content against the source documents to verify that topics are both relevant to learning goals AND grounded in the provided material.
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- References specific examples from the lesson content (quote sections or topics)
+- Cites specific passages from source documents that support or contradict the lesson content
+- Explains how well subtopics connect to the main learning objective
+- Identifies any tangential or unsupported sections
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+
+
+

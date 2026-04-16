@@ -1,0 +1,28 @@
+ANALOGY = (
+    "This is a podcast/transcript conversation summary between two co-hosts. Evaluate the podcast transcript by assessing how analogies and examples are used. Focus on whether they "
+    "enhance understanding and are relevant to the content that IS PRESENT in the transcript summary. for given the "
+    "podcast summary , assess whether each analogy actually adds value and whether it was even required. "
+
+    "Your evaluation should focus on:"
+    "1. Relevance: Do the analogies/examples clearly connect to the topic and support understanding?"
+    "2. Clarity & Helpfulness: Are the analogies/examples easy to follow and helpful rather than distracting?"
+    "3. Necessity: Was the analogy needed or could the point be understood without it?"
+    "4. Excess or Redundancy: Identify repeated, unnecessary, or distracting analogies or excessive analogy"
+    "5. Do NOT count or validate any analogy that is already present in the original document/source; only "
+       "evaluate analogies introduced in the generated transcript."
+
+    "MARK DEDUCTIONS:"
+    "- Deduct marks for irrelevant, confusing, or misleading analogies/examples."
+    "- Deduct marks if analogies overload the discussion or distract from main points."
+    "- Deduct marks for unnecessary analogies that were not required for this audience level."
+
+    "EVALUATION FORMAT:"
+    "Number of Analogies: [Count of all analogies/examples]"
+    "Number of Good Analogies: [Count of all analogies/examples used — this supports future correlation analysis]"
+    "Strengths: [List useful/relevant analogies]"
+    "Areas for Improvement: [List unnecessary, excessive, or irrelevant analogies]"
+    "Analogy Issues: [Detail specific analogies that were distracting, off-topic, misleading, or unhelpful]"
+    "Reasoning: [Explain why the analogies were effective or ineffective and how they impacted the "
+    "overall quality]"
+)
+

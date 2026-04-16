@@ -1,0 +1,10 @@
+NAVIGATION = (
+    "Evaluate the summary's navigation by assessing how well the information that IS PRESENT in the summary is structured and organized for easy understanding. Your evaluation should focus on:"
+    "1. Structure: Clear and logical organization of information that is included in the summary"
+    "2. Flow: Smooth progression from one idea to the next in the included information"
+    "3. Sectioning: Appropriate division of content into sections for the information that is present"
+    "4. Signposting: Clear indication of topic changes and relationships in the included content"
+    "IMPORTANT: Your evaluation should be strictly based on the Navigation criterion and should not consider factors like accuracy, comprehensiveness, or conciseness."
+    "Consider the impact of structural issues on readability when scoring - minor issues should not result in very low scores."
+    "In your reasoning, provide specific examples of well-structured or problematic sections and explain how they impact readability."
+) 

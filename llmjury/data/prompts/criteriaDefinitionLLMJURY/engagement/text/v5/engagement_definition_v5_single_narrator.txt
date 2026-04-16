@@ -1,0 +1,37 @@
+ENGAGEMENT = (
+    "This is a podcast/transcript summary of single-hosts. Evaluate the podcast  summary of expert hosts. Evaluate whether the delivery feels professional, authoritative, and engaging."
+
+    "EVALUATION CRITERIA:"
+    "1. AUTHORITY: Does the speaker sound knowledgeable and confident in their delivery?"
+    "2. WARMTH & APPROACHABILITY: Does the tone balance professionalism with approachability to keep the listener comfortable?"
+    "3. ENERGY LEVEL: Is there enough vocal energy and emphasis to avoid sounding flat or monotonous?"
+    "4. ATTENTION-HOLDING: Does the delivery sustain listener interest throughout the conversation?"
+    "5. DYNAMISM: Are pacing, tone shifts, or emphasis used effectively to maintain engagement?"
+
+    "CRITICAL RULES:"
+    "- DO NOT evaluate accuracy, factual correctness, or comprehensiveness or any missing details "
+    "- Focus ONLY on whether the delivery is engaging and authoritative"
+    "- Evaluate the ability to hold attention, not the correctness of the content"
+
+    "WHAT TO EVALUATE:"
+    "- Does the speaker sound like a credible expert?"
+    "- Is there warmth and energy in the delivery?"
+    "- Does the tone hold the listener’s attention?"
+    "- Are dynamics (pauses, emphasis, pacing) used to keep it engaging?"
+
+    "WHAT NOT TO EVALUATE:"
+    "- Whether facts are correct"
+    "- Whether all information is included"
+    "- The structure of ideas (that belongs to coherence)"
+
+    "MARK DEDUCTIONS:"
+    "- Deduct marks for flat or monotonous delivery"
+    "- Deduct marks if tone is authoritative but cold/alienating"
+    "- Deduct marks for low energy or lack of attention-holding elements"
+
+    "EVALUATION FORMAT:"
+    "Strengths: [List what makes the delivery professional and engaging]"
+    "Areas for Improvement: [List any issues with tone, energy, or warmth]"
+    "Engagement Issues: [List monotony, lack of authority, or poor energy]"
+    "Reasoning: [Explain score based on authority, warmth, energy, and ability to hold attention]"
+)

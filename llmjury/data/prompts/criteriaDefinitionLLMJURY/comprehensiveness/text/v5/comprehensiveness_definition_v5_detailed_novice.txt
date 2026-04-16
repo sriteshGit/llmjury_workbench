@@ -1,0 +1,33 @@
+COMPREHENSIVENESS = (
+    "This is a podcast/transcript conversation summary between two co-hosts. Evaluate the podcast comprehensiveness by comparing it to the source text, considering it is a long-length summary, and assessing how well it captures all essential information and key details from the source text. Your evaluation should focus on:"
+    "1. Core message capture: Inclusion of the document’s primary purpose, central thesis, and major conclusions, ensuring the main intent of the source is clearly represented."
+    "2. Comprehensive theme coverage: Representation of all major topics, sections, and recurring themes, with sufficient supporting detail to reflect the document’s full scope."
+    "3. Depth of critical details and insights: Retention of significant arguments, findings, examples, and crucial numerical or factual data that strengthen understanding of the document’s meaning and implications."
+    "4. Contextual completeness: Preservation of contextual background and interconnections between sections so the summary provides a coherent, accurate, and well-rounded reflection of the source."
+
+    "EXAMPLE OF NORMAL CONVERSATIONAL FLOW:"
+    "Liam: \"It's a name, it doesn't mean anything.\""
+    "Chloe: \"Right\""
+    "Liam: \"We could call it the .......\""
+    "Chloe: \"Mhmm\""
+    "Liam: \"But what's interesting about this brain area is that...\""
+
+    "EXAMPLES OF COMPREHENSIVENESS EVALUATION FOR LONG SUMMARIES: Use these examples as reference points when evaluating comprehensiveness."
+    "1."
+    "Source: Rent-A-Center Q3 2010 earnings call covering financial results, expansion plans, operational metrics, and Q&A with analysts."
+    "Good Long Summary: Covers quarterly performance (revenue $664.6M, EPS $0.62), expansion into Mexico (25-75 stores planned), rack acceptance kiosks (151 locations, targeting 220), financial services strategic review, operational improvements, and provides enough detail on analyst Q&A to reflect concerns and management responses. Omits only minor timeline details."
+    "Poor Long Summary: Mentions earnings call and company name but skips detailed financial results, expansion specifics, operational metrics, and analyst discussions — leaving out core relevant details."
+
+    "2."
+    "Source: Hilton acquires majority controlling interest in Sydell Group to expand NoMad Hotels brand worldwide, including deal terms, strategic rationale, and growth projections."
+    "Good Long Summary: Covers acquisition announcement, strategic rationale, key deal terms, growth vision for NoMad Hotels, and provides context on Hilton’s broader expansion strategy. Omits only secondary details not central to understanding the deal’s significance."
+    "Poor Long Summary: Only notes acquisition and brand names, missing rationale, deal terms, growth vision, and broader strategy — leaving the summary incomplete."
+
+    "IMPORTANT: Your evaluation should be strictly based on the Comprehensiveness criterion and should not consider factors like accuracy, conciseness, fluency, or conversational tone."
+    "Importance of Numerical Data: Pay close attention to numerical or quantitative information (e.g., statistics, figures, measurements, or dates used quantitatively) from the source text. If the numbers appear in the summary as words (e.g., “five million” instead of “5,000,000”) or vice versa, they should still be treated as present and not penalized. Deduct marks only if key numerical information is omitted. However, do not penalize if such data is present in paraphrased, rounded, or equivalent form. Only treat numerical data as missing if it is truly absent or substantially misrepresented."
+    "Consider the relative importance of missing information when scoring — omission of minor or peripheral supporting details should have minimal impact on the score. Deduct marks for the absence of a main topic, key argument, crucial content, or significant numerical data."
+    "- Conversational flow (interjections, pauses, fillers) should NOT count against comprehensiveness since these are stylistic, not content-based."
+    "- Do NOT conflate brevity or conversational phrasing with lack of comprehensiveness."
+    "- The summary should provide a broad yet focused view of the document’s essential ideas and key content."
+    "In your reasoning, clearly identify any significant information or numerical data that was omitted from the summary, and explain its potential impact on understanding the source material. Keep in mind that your evaluation is solely focused on comprehensiveness."
+    )

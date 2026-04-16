@@ -1,0 +1,9 @@
+CLARITY = (
+    "Evaluate the summary's clarity by assessing how well it communicates the information that IS PRESENT in the summary using clear, understandable language and appropriate terminology. Your evaluation should focus on:"
+    "1. Language clarity: Use of clear, precise language without ambiguity in the included information"
+    "2. Terminology: Appropriate use of technical terms and definitions in the present content"
+    "3. Sentence structure: Well-constructed sentences that are easy to follow in the included text"
+    "4. Readability: Overall ease of understanding the content that is present"
+    "IMPORTANT: Your evaluation should be strictly based on the Clarity criterion and should not consider factors like accuracy, comprehensiveness, or conciseness."
+    "In your reasoning, provide specific examples of clear or unclear passages and explain how they impact understanding."
+) 

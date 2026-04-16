@@ -1,0 +1,10 @@
+FLUENCY = (
+    "Evaluate the summary's fluency by assessing how naturally and smoothly the language flows, focusing on the quality of writing and expression. Your evaluation should focus on:"
+    "1. Language flow: Natural progression of ideas and smooth transitions between sentences"
+    "2. Grammar and syntax: Proper use of grammatical structures and sentence formation"
+    "3. Word choice: Appropriate and varied vocabulary usage"
+    "4. Readability: Overall ease of reading and understanding the text"
+    "IMPORTANT: Your evaluation should be strictly based on the Fluency criterion and should not consider factors like accuracy, comprehensiveness, or conciseness."
+    "Consider the impact of any language issues on the overall reading experience when scoring. Minor instances that do not significantly affect readability should have a limited impact on the score."
+    "In your reasoning, provide specific examples of fluent or problematic passages and explain how they impact the reading experience. Focus on identifying areas where language could be improved for better flow and readability."
+) 

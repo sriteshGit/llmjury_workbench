@@ -1,0 +1,18 @@
+Relevance: Evaluate how relevant and on-topic the information in the mindmap is, and whether child nodes conceptually belong to their parent nodes.
+
+What to look for:
+1. Every child node belongs conceptually to its parent
+2. No tangents or unrelated topics
+3. All examples, data, or terms make sense within the parent's context
+4. Map stays focused on its central theme
+
+Score 5 (Excellent): All nodes clearly relate to the central topic or justified subtopics. Focused with no distractions.
+
+Score 4 (Good): Mostly relevant; a small number of nodes drift slightly off-topic but are understandable. Minor irrelevant content but core remains focused.
+
+Score 3 (Acceptable): Some off-topic nodes or tangents that reduce cohesion; pruning suggested. Relevance mixed; reader must filter.
+
+Score 2 (Poor): Many off-topic items or vague connections that confuse scope. Map loses topical focus; needs trimming and refocusing.
+
+Score 1 (Very Poor): Most content is irrelevant to the central idea; map fails to represent the topic. Cannot use without major restructuring.
+

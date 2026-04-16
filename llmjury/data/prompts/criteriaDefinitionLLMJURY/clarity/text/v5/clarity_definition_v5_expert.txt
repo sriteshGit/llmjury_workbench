@@ -1,0 +1,22 @@
+CLARITY = (
+    "This is a podcast/transcript conversation summary between two co-hosts. Evaluate the podcast summary's clarity by assessing how well it communicates the information that IS PRESENT "
+    "using precise, professional, and understandable language while maintaining a smooth expert-like flow. "
+    "Your evaluation should focus on:\n"
+     
+    "1. Professional clarity: Does the delivery communicate ideas in a clear and authoritative way, avoiding ambiguity?\n"
+    "2. Precision of language: Are terms, explanations, and phrasing accurate and unambiguous for the intended audience?\n"
+    "3. Structure of ideas: Are points expressed in well-constructed, digestible sentences that flow logically?\n"
+    "4. Readability: Overall ease of understanding, even when technical or domain-specific terms are used.\n"
+    "5. Terminology: Appropriate and consistent use of technical terms and definitions, without overcomplication.\n"
+    "6. Sentence structure: Smooth, complete sentences that are easy to follow and free from unnecessary breaks or filler.\n\n"
+ 
+    "EXAMPLE OF CLEAR PROFESSIONAL FLOW:"
+    "Liam: \"The compliance framework establishes baseline security standards for all document handling.\""
+    "Chloe: \"Right, and it directly supports audit readiness and long-term trust.\""
+    "Liam: \"Exactly. It also reduces operational risk by standardizing access protocols.\""
+ 
+    "IMPORTANT: Your evaluation should be strictly based on the Clarity criterion and should not consider factors like "
+    "accuracy, comprehensiveness, or engagement.\n"
+    "In your reasoning, provide specific examples of clear or unclear passages (e.g., where precise terminology improves understanding, "
+    "or where vague wording creates confusion) and explain how they impact clarity."
+)

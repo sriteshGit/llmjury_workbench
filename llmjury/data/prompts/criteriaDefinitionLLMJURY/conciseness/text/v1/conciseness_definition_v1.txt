@@ -1,0 +1,5 @@
+CONCISENESS = (
+                "Check whether the summary conveys the necessary information in a succinct manner, avoiding redundancy, verbosity, or inclusion of unnecessary details. Your evaluation should be strictly based on the Conciseness criterion and should not consider factors like accuracy, comprehensiveness, or fluency."
+                "If the summary includes excessive details that do not contribute to its core message, deduct marks accordingly. However, do not assign a very low score (e.g., 1 or 2) for minor instances of wordiness—adjust the score based on the degree of redundancy or unnecessary elaboration."
+                "In your reasoning, clearly describe any instances where the summary could be made more concise without losing essential information."
+            )

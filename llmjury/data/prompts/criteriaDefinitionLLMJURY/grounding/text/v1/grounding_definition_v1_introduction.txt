@@ -1,0 +1,79 @@
+INTRODUCTION_GROUNDING = """
+Evaluate how well the study package introduction is grounded in the provided source documents by assessing whether all information is directly traceable and supported.
+
+**IMPORTANT**: You are evaluating the PACKAGE-LEVEL INTRODUCTION — the overview text that introduces the entire study packet to learners.
+
+**CRITICAL**: This metric focuses on whether content comes from the provided source material (grounding), NOT whether it's factually correct (that's accuracy). Content can be accurate but ungrounded if it uses external knowledge.
+
+**CRITICAL DISTINCTION: Subject Matter vs. Package Structure**
+
+This evaluation focuses on whether the **SUBJECT MATTER CONTENT** is grounded in sources.
+
+**ACCEPTABLE (Not Ungrounded):**
+1. **Package Metadata**: 
+   - Timeframes ("2-week study period," "1-day intensive," "4-week program")
+   - Session counts ("10 sessions," "8 lessons," "divided into 5 parts")
+   - Study structure ("organized into modules," "progressive difficulty")
+   - Pedagogical goals ("designed for beginners," "master advanced topics," "exam preparation")
+   - Target audience specifications ("suitable for undergraduates," "intermediate level")
+   - Study recommendations ("self-paced learning," "daily practice")
+   - These are **packaging decisions** made to structure learning, not content claims
+
+2. **Learning Design Elements**:
+   - How the package is organized or presented
+   - Suggested learning approaches or strategies
+   - Proficiency level descriptions
+   - Package scope statements
+
+**UNGROUNDED (Score Low):**
+1. **Fabricated Subject Matter**:
+   - Topics or concepts not covered in the source documents
+   - Incorrect facts or theories about the subject
+   - Made-up definitions, formulas, or principles
+   - Misrepresented source content about the subject itself
+
+**EVALUATION FOCUS:**
+Ask: "Are the TOPICS, CONCEPTS, THEORIES, and SUBJECT MATTER described in the introduction traceable to the sources?"
+NOT: "Is every organizational detail (timeframe, session count, structure) explicitly stated in the sources?"
+
+**Example - GOOD Grounding:**
+Introduction: "This 2-week package covers arithmetic: number theory, modular arithmetic, RSA encryption, and cryptographic applications."
+Sources: Textbooks covering number theory, modular arithmetic, RSA, cryptography (but no mention of "2-week")
+Assessment: WELL GROUNDED - All subject matter topics are from sources. The "2-week" timeframe is just packaging metadata.
+
+**Example - BAD Grounding:**
+Introduction: "This package covers cold fusion energy production and perpetual motion machines."
+Sources: Basic physics textbooks (no mention of cold fusion or perpetual motion)
+Assessment: UNGROUNDED - Subject matter topics are fabricated, not present in sources.
+
+Evaluate based on these criteria:
+
+1. **Traceability**: Is all information directly traceable to the provided lessons, notes, or source documents? Can each statement be verified against the sources?
+
+2. **No External Knowledge**: Does the introduction avoid using external, assumed, or unstated knowledge? Is everything based solely on the provided materials?
+
+3. **No Fabrication**: Are there any invented facts, fabricated details, or speculative claims not supported by the sources?
+
+4. **No Contradictions**: Does the introduction avoid contradicting the source material? Is it consistent with what the documents say?
+
+5. **Source-Bounded Content**: Do summaries, goals, and explanations stay strictly within what the source content supports?
+
+**Scoring Guide**:
+- 5 (Excellent): Fully grounded. All SUBJECT MATTER (topics, concepts, theories) is traceable to source material. Package metadata (timeframes, sessions, structure) is acceptable organizational information and should NOT be penalized.
+- 4 (Good): Mostly grounded. Subject matter is well-supported by sources, with perhaps minor generalizations that don't change meaning. Package metadata present (acceptable). Nearly all content claims are source-based.
+- 3 (Fair): Partially grounded. Some subject matter statements are weakly supported or go slightly beyond the provided content, but nothing is fully fabricated. Mixed source adherence on actual topic coverage.
+- 2 (Poor): Frequently ungrounded. Multiple claims about the SUBJECT MATTER rely on external knowledge or assumptions not present in sources. Significant departures from source content on topics/concepts.
+- 1 (Very Poor): Ungrounded. Major portions of SUBJECT MATTER rely on external knowledge, invented information, or topics that cannot be traced to provided documents. Fundamentally unsupported content claims.
+
+**NOTE**: To evaluate grounding, actively search for each claim in the source documents. If you cannot find supporting evidence in the sources, the content is ungrounded (even if factually correct).
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- Identifies specific statements and whether they can be traced to source documents (quote examples)
+- Points out any claims that use external knowledge or cannot be verified in sources
+- Notes any invented details or speculative statements
+- Explains which parts are well-grounded vs. ungrounded
+- Addresses all five criteria listed above
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+

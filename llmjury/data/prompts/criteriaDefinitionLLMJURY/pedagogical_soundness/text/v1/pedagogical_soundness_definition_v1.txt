@@ -1,0 +1,37 @@
+LESSON_PEDAGOGICAL_SOUNDNESS = """
+Evaluate the pedagogical quality and instructional design of lesson content by assessing how well concepts are structured and taught.
+
+**IMPORTANT**: You are evaluating LESSON CONTENT from the study package — assess the teaching methodology and learning progression.
+
+Evaluate based on these criteria:
+
+1. **Progressive Structure**: Do concepts build progressively from simple to complex?
+
+2. **Instructional Aids**: Does the lesson use examples, analogies, or visuals to support explanation and understanding?
+
+3. **Reinforcement**: Are summaries or reinforcement techniques included to support retention?
+
+4. **Logical Flow**: Does the lesson avoid information dumps or abrupt topic jumps? Is there smooth transition between concepts?
+
+5. **Scaffolding**: Are foundational concepts introduced before advanced ones?
+
+**Scoring Guide**:
+- 5 (Excellent): Excellent instructional design; clear scaffolding, smooth learning flow, and strong pedagogical structure.
+- 4 (Good): Well-structured teaching sequence with strong pedagogy; a few minor flow gaps.
+- 3 (Fair): Understandable but lacks reinforcement or structured buildup in places.
+- 2 (Poor): Disjointed or confusing sequence; weak teaching design and poor scaffolding.
+- 1 (Very Poor): No logical teaching progression; random or ineffective explanations without pedagogical structure.
+
+**NOTE**: Evaluate the lesson as a teaching tool — does it facilitate learning through good instructional design?
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- Analyzes the learning progression (simple → complex)
+- Identifies examples of good or poor scaffolding
+- Evaluates the use of examples, analogies, and reinforcement techniques
+- Assesses the logical flow and transitions between concepts
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+
+
+

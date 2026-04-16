@@ -53,9 +53,8 @@ Each criterion is scored on a scale of 1-5:
 ### Required Dependencies
 - openpyxl
 - pandas
-- tiktoken
-- venice-gentech
-- transformers
+- langchain-core
+- litellm (routes to OpenAI, Anthropic, Azure, Gemini, etc. via provider env vars)
 
 ### Model Support
 The framework supports multiple LLM models:
@@ -75,7 +74,7 @@ The evaluation generates:
 
 ### Command Line Interface
 ```bash
-python runners/run_llmjury_evaluator.py --eval_json_path /path/to/json --criteria comprehensiveness conciseness --models GPT_4O_0513 GPT_4O_MINI --name test_run
+python runners/run_llmjury_evaluator.py --eval_json_path /path/to/json --criteria comprehensiveness conciseness --models gpt_4o_mini gpt-4o --name test_run
 ```
 
 ### Arguments

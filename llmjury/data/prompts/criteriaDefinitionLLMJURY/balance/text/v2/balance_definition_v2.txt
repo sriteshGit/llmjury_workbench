@@ -1,0 +1,9 @@
+BALANCE = (
+    "Evaluate the summary's balance by assessing how well it distributes attention and detail across different aspects of the information that IS PRESENT in the summary. Your evaluation should focus on:"
+    "1. Coverage distribution: Equal attention to all important aspects that are included"
+    "2. Detail allocation: Appropriate level of detail for each topic that is present"
+    "3. Emphasis: Proper weighting of different points and arguments that are included"
+    "4. Perspective: Fair representation of different viewpoints when they are present"
+    "IMPORTANT: Your evaluation should be strictly based on the Balance criterion and should not consider factors like accuracy, comprehensiveness, or conciseness."
+    "In your reasoning, provide specific examples of balanced or imbalanced coverage and explain how they impact the overall representation of the included information."
+) 

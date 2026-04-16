@@ -18,11 +18,10 @@ import logging
 import os
 from typing import Any
 
-from venice.core.Connector import Connector
-from venice.core.Operator import Operator
-from venice_gentech.common.llm.llm_wrapper import ModelFactory
-
 from llmjury.constants import EvaluationMode
+from llmjury.model_factory import ChatModelSpec
+from llmjury.runtime.connector import Connector
+from llmjury.runtime.operator import Operator
 from llmjury.llm_jury_per_section import LLMJURYPerSection
 from llmjury.prompt_version_config import PromptVersionConfig
 
@@ -38,9 +37,9 @@ class LLMJuryEvaluator(Operator):
     ----------
     eval_data : Connector
        Connector that contains all the eval format json files. coords: section_id
-    criteria_to_be_evaluated : List[str]
+    criteria_to_be_evaluated : list[str]
        List of criteria to evaluate (for metrics mode)
-    model_list : List[ModelFactory]
+    model_list : list[ChatModelSpec]
        List of LLM models to use for evaluation
     name : str | None
        Optional name for the operator
@@ -68,7 +67,7 @@ class LLMJuryEvaluator(Operator):
         self,
         eval_data: Connector,
         criteria_to_be_evaluated: list[str],
-        model_list: list[ModelFactory],
+        model_list: list[ChatModelSpec],
         name: str | None = None,
         calc_avg_and_std: bool = True,
         logger: logging.Logger | None = None,
@@ -126,76 +125,77 @@ class LLMJuryEvaluator(Operator):
         -------
         Connector with evaluation results for all sections
         """
-        self.logger.info(f'Starting LLM evaluation with {len(self.model_list)} models')
-        self.logger.debug(
-            f'Models: {[m.model_name if hasattr(m, "model_name") else m.model_class.value for m in self.model_list]}'
-        )
-        self.logger.debug(f'Evaluation mode: {self.evaluation_mode}')
-        if self.evaluation_mode == EvaluationMode.METRICS:
-            self.logger.debug(f'Criteria: {self.criteria_to_be_evaluated}')
+        try:
+            self.logger.info(f'Starting LLM evaluation with {len(self.model_list)} models')
+            self.logger.debug(f'Models: {[m.model_id for m in self.model_list]}')
+            self.logger.debug(f'Evaluation mode: {self.evaluation_mode}')
+            if self.evaluation_mode == EvaluationMode.METRICS:
+                self.logger.debug(f'Criteria: {self.criteria_to_be_evaluated}')
 
-        model_list = self.model_list
-        processed_sections = 0
-        sections_to_process = []
-        submitted_futures = []
+            model_list = self.model_list
+            processed_sections = 0
+            sections_to_process = []
+            submitted_futures = []
 
-        # First collect all sections to process
-        for stream in self.eval_data.reader():
-            sections_to_process.append(stream)
+            # First collect all sections to process
+            for stream in self.eval_data.reader():
+                sections_to_process.append(stream)
 
-        total_sections = len(sections_to_process)
-        self.logger.info(f'Found {total_sections} sections to process')
+            total_sections = len(sections_to_process)
+            self.logger.info(f'Found {total_sections} sections to process')
 
-        # Process each section
-        for stream in sections_to_process:
-            summary_data = stream.read_json()
-            section_id = stream.coords['section_id']
-            filename = stream.coords['filename']
-            processed_sections += 1
+            # Process each section
+            for stream in sections_to_process:
+                summary_data = stream.read_json()
+                section_id = stream.coords['section_id']
+                filename = stream.coords['filename']
+                processed_sections += 1
 
-            self.logger.info(f'[{filename}:{section_id}] Processing section {processed_sections}/{total_sections}')
-            future = self.submit_task(
-                self.__run_evaluation_per_section,
-                section_id,
-                summary_data,
-                filename,
-                model_list,
-                self.logger,
-                self.result_type,
-                self.custom_prompt_template,
-                self.evaluation_mode,
-                abort_on_error=False,
-            )
-            if future is not None:
-                submitted_futures.append(future)
+                self.logger.info(f'[{filename}:{section_id}] Processing section {processed_sections}/{total_sections}')
+                future = self.submit_task(
+                    self.__run_evaluation_per_section,
+                    section_id,
+                    summary_data,
+                    filename,
+                    model_list,
+                    self.logger,
+                    self.result_type,
+                    self.custom_prompt_template,
+                    self.evaluation_mode,
+                    abort_on_error=False,
+                )
+                if future is not None:
+                    submitted_futures.append(future)
 
-        self.logger.info(f'Waiting for all {len(submitted_futures)} submitted evaluations to complete...')
+            self.logger.info(f'Waiting for all {len(submitted_futures)} submitted evaluations to complete...')
 
-        # Wait for all tasks to complete
-        failed_count = 0
-        completed_count = 0
-        for idx, future in enumerate(submitted_futures, 1):
-            try:
-                self.logger.debug(f'Waiting for future {idx}/{len(submitted_futures)}...')
-                future.result(timeout=None)  # Block indefinitely until complete
-                completed_count += 1
-                if idx % 10 == 0 or idx == len(submitted_futures):
-                    self.logger.info(f'Progress: {completed_count}/{len(submitted_futures)} sections completed')
-            except Exception as e:
-                failed_count += 1
-                self.logger.error(f'Section evaluation failed (future {idx}): {e}', exc_info=True)
+            # Wait for all tasks to complete
+            failed_count = 0
+            completed_count = 0
+            for idx, future in enumerate(submitted_futures, 1):
+                try:
+                    self.logger.debug(f'Waiting for future {idx}/{len(submitted_futures)}...')
+                    future.result(timeout=None)  # Block indefinitely until complete
+                    completed_count += 1
+                    if idx % 10 == 0 or idx == len(submitted_futures):
+                        self.logger.info(f'Progress: {completed_count}/{len(submitted_futures)} sections completed')
+                except Exception as e:
+                    failed_count += 1
+                    self.logger.error(f'Section evaluation failed (future {idx}): {e}', exc_info=True)
 
-        if failed_count > 0:
-            self.logger.warning(f'⚠️ {failed_count} out of {total_sections} sections failed during evaluation')
-        self.logger.info(f'✅ All evaluations completed: {completed_count} successful, {failed_count} failed')
-        return self.output_conn
+            if failed_count > 0:
+                self.logger.warning(f'⚠️ {failed_count} out of {total_sections} sections failed during evaluation')
+            self.logger.info(f'✅ All evaluations completed: {completed_count} successful, {failed_count} failed')
+            return self.output_conn
+        finally:
+            self._shutdown_executor()
 
     def __run_evaluation_per_section(
         self,
         section_id: str,
         evaluation_data: dict[str, Any],
         filename: str,
-        model_list: list[ModelFactory],
+        model_list: list[ChatModelSpec],
         logger: logging.Logger,
         result_type: str | None,
         custom_prompt_template: str | None,
@@ -211,7 +211,7 @@ class LLMJuryEvaluator(Operator):
             Data to evaluate (can be summary, Q&A, comparison data, etc.)
         filename : str
             Name of the file
-        model_list : list[ModelFactory]
+        model_list : list[ChatModelSpec]
             List of models to use for evaluation
         result_type : str | None
             Optional result type for the evaluation

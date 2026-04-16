@@ -1,0 +1,5 @@
+NAVIGATION = (
+            "Assess how well the summary is structured into clear and logical sections, making it easy to follow. Your evaluation should be strictly based on the Navigation criterion and should not consider factors like accuracy, comprehensiveness, or conciseness."
+            "The information is organized in a logical and structured manner. Rate from 1 to 5:, if the summary lacks logical flow or has disorganized sections, deduct marks accordingly. However, do not assign a very low score (e.g., 1 or 2) for minor structuring issues—adjust the score based on the extent of disorganization."
+            "In your reasoning, provide examples of well-structured or problematic sections, explaining how they impact readability and ease of navigation."
+            )

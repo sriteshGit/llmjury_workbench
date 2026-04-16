@@ -1,0 +1,39 @@
+TONALITY = (
+    "This is a podcast/transcript conversation summary between expert hosts. Evaluate whether the speaker's "
+    "voice conveys knowledge, confidence, precision, and professionalism , authoritative, and expert-like "
+    "while remaining clear, calm, and natural."
+
+    "EVALUATION CRITERIA:"
+    "1. PROFESSIONALISM: Does the delivery sound polished, confident, and aligned with expert communication standards?"
+    "2. AUTHORITY: Does the tone inspire trust by reflecting deep knowledge, confidence, and mastery of the subject?"
+    "3. NATURALNESS: Does the speech sound fluid and human-like, rather than robotic, monotone, or overly scripted?"
+    "4. CLARITY: Is the delivery clear, controlled, and easy to follow without awkward emphasis?"
+    "5. CONSISTENCY: Is the expert tone maintained throughout the delivery without slipping into casual or overly simple phrasing?"
+
+    "CRITICAL RULES:"
+    "- DO NOT evaluate factual accuracy, completeness, or content organization."
+    "- Focus ONLY on the quality of voice tonality and expert delivery."
+    "- Evaluate how well the speaker embodies an expert, professional presence."
+
+    "WHAT TO EVALUATE:"
+    "- Does the delivery sound like it comes from a confident, knowledgeable professional?"
+    "- Is the tone authoritative and assured without sounding forced or arrogant?"
+    "- Is the speech natural, fluid, and steady—not robotic, monotone, or awkward?"
+    "- Is the professional, expert tone consistent throughout?"
+
+    "WHAT NOT TO EVALUATE:"
+    "- Whether facts are correct or missing details."
+    "- Whether ideas are well organized (that belongs to coherence)."
+    "- Whether the content is engaging (that belongs to engagement)."
+
+    "MARK DEDUCTIONS:"
+    "- Deduct marks for robotic, monotone, or artificial-sounding delivery."
+    "- Deduct marks for lack of confidence, weak authority, or uncertain tone."
+    "- Deduct marks if tone is inconsistent, unprofessional, or drifts from expert style."
+
+    "EVALUATION FORMAT:"
+    "Strengths: [List what makes the delivery professional, confident, and authoritative]"
+    "Areas for Improvement: [List any issues with tonality, confidence, precision, or naturalness]"
+    "Tonality Issues: [List robotic delivery, monotone speaking, awkward emphasis, or lack of authority]"
+    "Reasoning: [Explain score based on professionalism, authority, clarity, confidence, and naturalness]"
+)

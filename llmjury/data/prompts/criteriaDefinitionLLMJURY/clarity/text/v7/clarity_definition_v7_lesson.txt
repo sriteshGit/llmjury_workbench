@@ -1,0 +1,35 @@
+LESSON_CLARITY = """
+Evaluate the clarity of lesson content by assessing how well ideas are organized and presented for comprehension.
+
+**IMPORTANT**: You are evaluating LESSON CONTENT from the study package — assess how clearly the teaching material presents and organizes information.
+
+Evaluate based on these criteria:
+
+1. **Idea Organization**: Are ideas well-organized within and across paragraphs? Is there a clear structure?
+
+2. **Conceptual Clarity**: Are concepts explained clearly without ambiguity? Can learners easily understand what is being taught?
+
+3. **Logical Progression**: Do ideas build logically from one to the next? Are connections between concepts clear?
+
+4. **Unambiguous Communication**: Is the message clear without room for misinterpretation? Are instructions and explanations precise?
+
+**Scoring Guide**:
+- 5 (Excellent): Exceptionally clear and well-organized; ideas are presented with perfect clarity and logical structure.
+- 4 (Good): Generally clear with minor organizational issues that don't significantly impact understanding.
+- 3 (Fair): Moderately clear; some organizational issues or ambiguities reduce clarity.
+- 2 (Poor): Often unclear; confusing structure or ambiguous explanations impede understanding.
+- 1 (Very Poor): Confusing and incoherent; poor organization significantly impedes learning.
+
+**NOTE**: Clarity focuses on how well ideas are presented and organized, not just readability of the text.
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- References specific examples of clear OR unclear explanations (quote passages)
+- Evaluates organization and structure of ideas
+- Assesses conceptual clarity and precision
+- Analyzes logical progression and connections
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+
+
+

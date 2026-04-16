@@ -1,0 +1,34 @@
+FLASHCARD_RELEVANCE = """
+Evaluate how well flashcards align with and reinforce the key concepts taught in the lesson.
+
+**IMPORTANT**: You are evaluating FLASHCARDS from the study package against the LESSON CONTENT. Both the lesson content and flashcards will be provided.
+
+Evaluate based on these criteria:
+
+1. **Direct Reinforcement**: Do flashcards directly reinforce key lesson concepts or terms?
+
+2. **Memory Retention Support**: Does each card help with memory retention of ideas taught in the lesson?
+
+3. **No Unrelated Content**: Are there any flashcards introducing unrelated or confusing terms not covered in the lesson?
+
+4. **Concept Coverage**: Do the flashcards cover the important concepts from the lesson?
+
+**Scoring Guide**:
+- 5 (Excellent): Perfectly aligned with lesson content; all cards reinforce learning effectively.
+- 4 (Good): Mostly relevant; a few cards may lack clear connection to lesson content.
+- 3 (Fair): Some flashcards are loosely connected or incomplete in meaning relative to the lesson.
+- 2 (Poor): Many cards stray from core lesson content.
+- 1 (Very Poor): Majority unrelated or confusing in context; do not align with lesson.
+
+**NOTE**: Compare each flashcard against the lesson content to verify it reinforces concepts actually taught in the lesson.
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- Identifies which flashcards align well with specific lesson concepts (cite examples)
+- Points out any flashcards that are unrelated or poorly connected to the lesson
+- Explains how well the flashcards support memory retention of lesson material
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+
+
+

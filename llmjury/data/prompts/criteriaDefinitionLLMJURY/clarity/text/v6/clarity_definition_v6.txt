@@ -1,0 +1,18 @@
+Clarity / Readability: Evaluate whether node labels are short, specific, and clear, with consistent grammar and terminology that is easy to scan.
+
+What to look for:
+1. Node labels are short, specific, and clear
+2. Consistent grammar and terminology
+3. Avoids jargon unless explained
+4. Easy to scan — no dense or very long sentences
+
+Score 5 (Excellent): Node text is concise, unambiguous, and consistently labeled; easy to scan. Reader immediately understands each node without guessing.
+
+Score 4 (Good): Mostly clear; a few nodes could be phrased better or shortened. Readable overall; polish would help.
+
+Score 3 (Acceptable): Several vague or long labels; some inconsistent terminology. Understandable with effort.
+
+Score 2 (Poor): Many confusing or verbose labels; mixed terms and abbreviations without explanation. Reader will often be unsure of meaning.
+
+Score 1 (Very Poor): Labels are unclear, cryptic, or contradictory. Map is not understandable.
+

@@ -1,0 +1,16 @@
+Visual / Spatial Balance: Evaluate whether related ideas are visually grouped and the layout supports easy scanning from the central node outward.
+
+What to look for:
+1. Visually grouped related ideas
+2. Layout supports easy scanning from central node outward
+
+Score 5 (Excellent): Related ideas are clearly grouped, and the overall structure is easy to scan from the center outward. Visual organization strongly supports understanding, navigation, and recall.
+
+Score 4 (Good): Related nodes are grouped sensibly, and the map remains visually clear overall. Readable and effective; small visual refinements could improve flow.
+
+Score 3 (Acceptable): Some clusters appear slightly crowded or sparse, though relationships remain interpretable. Visual balance requires moderate effort to follow but does not hinder comprehension.
+
+Score 2 (Poor): Layout feels visually inconsistent or crowded in places. Grouping and alignment are uneven, making some areas harder to scan. Visual imbalance reduces readability and makes it difficult to track relationships clearly.
+
+Score 1 (Very Poor): Layout is cluttered or disorganized with poor white space usage. Related ideas are not visibly grouped, and scanning from the center outward is confusing. Layout prevents clear comprehension and renders the mindmap visually ineffective.
+

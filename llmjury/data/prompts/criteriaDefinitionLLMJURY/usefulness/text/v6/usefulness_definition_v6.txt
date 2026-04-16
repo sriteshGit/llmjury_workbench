@@ -1,0 +1,18 @@
+Usefulness: Evaluate whether the mindmap is practical for its intended use (study, teaching, planning, presentation) and can be used directly by others with minimal edits.
+
+What to look for:
+1. Practical for its intended use (study, teaching, planning, presentation)
+2. Readable and logically structured enough for others to use directly
+3. Combines clarity, completeness, and accuracy into actionable insight
+4. Could realistically be shared or presented without major edits
+
+Score 5 (Excellent): Immediately actionable or highly instructive; suitable for sharing or execution. High ROI — others can use it without major edits.
+
+Score 4 (Good): Useful with minor refinement; actionable in most respects. Good for team use after small edits.
+
+Score 3 (Acceptable): Moderately useful; requires additional detail or corrections before being operational. Starting point for work, not final deliverable.
+
+Score 2 (Poor): Limited usefulness due to major gaps, inaccuracies, or clarity/visual problems. Not reliable for decisions.
+
+Score 1 (Very Poor): Not useful in current form; cannot be used without substantial rework. Fails to support intended tasks.
+

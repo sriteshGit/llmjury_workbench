@@ -1,0 +1,10 @@
+CONCISENESS = (
+    "EEvaluate the summary's conciseness by recognizing that this is under 1500-word short summary and by assessing how efficiently it conveys the information that IS PRESENT in the summary without significant redundancy or unnecessary elaboration that hinders clarity. Your evaluation should focus on:"
+    "1. Information density: The extent to which each word contributes meaningfully to the included information."
+    "2. Redundancy: The presence of unnecessary repetition of information or ideas that are present."
+    "3. Word economy: The use of precise and succinct language to convey the included meaning effectively."
+    "4. Focus: The degree to which the summary stays focused on essential information that is present without unnecessary digressions."
+    "IMPORTANT: Your evaluation should be strictly based on the Conciseness criterion and should not consider factors like accuracy, comprehensiveness, or fluency."
+    "Consider the impact of any redundancy or unnecessary elaboration on the overall efficiency and clarity of the summary when scoring. Minor instances that do not significantly detract from these aspects should have a limited impact on the score."
+    "In your reasoning, provide specific examples of instances where the summary could be more concise and explain how these changes would improve its efficiency or clarity. Focus on identifying areas where trimming or rephrasing would yield a noticeable improvement."
+)

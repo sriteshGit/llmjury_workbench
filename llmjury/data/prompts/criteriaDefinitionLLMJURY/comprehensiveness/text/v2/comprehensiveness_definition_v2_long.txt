@@ -1,0 +1,13 @@
+COMPREHENSIVENESS = (
+		"Evaluate the summary's comprehensiveness by comparing it to the source text, recognizing that this is under 1500-word short summary .
+		"1. Evaluate how well the summary captures all essential information and key details from the source text. Focus on:"
+        "2. Coverage breadth: Includes all main topics and themes."
+        "3. Detail depth: Provides sufficient and relevant details for each topic, reflecting the source’s emphasis."
+        "4. Key information: Contains critical points, arguments, and significant supporting evidence/examples."
+        "Context preservation: Maintains important contextual information for accurate understanding."
+        "Important: Evaluate only comprehensiveness—do not consider accuracy, conciseness, or fluency."
+        "Numerical Data: Pay close attention to the inclusion of statistics, figures, measurements, and dates. Missing critical numerical data is a major oversight."
+        "Scoring: Minor omissions of supporting details may have minimal impact. Omission of a main topic, key argument, or critical numerical data should significantly affect the score."
+        "In your reasoning, clearly note: Significant omissions."
+        "Any missing numerical data and its impact on understanding."
+)

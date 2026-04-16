@@ -1,0 +1,37 @@
+ENGAGEMENT = (
+    "This is a podcast/transcript conversation summary between two co-hosts. Evaluate the podcast  summary conversation summary between two hosts. "
+    "Evaluate whether the interaction feels natural, friendly, and keeps the audience engaged."
+ 
+    "EVALUATION CRITERIA:"
+    "1. WARMTH: Does the delivery feel personable, approachable, and inviting?"
+    "2. ENERGY LEVEL: Is the tone lively enough to avoid sounding flat or boring?"
+    "3. CONNECTION: Do the speakers interact in a way that feels friendly and responsive?"
+    "4. ATTENTION-HOLDING: Does the conversation maintain listener interest throughout?"
+    "5. DYNAMISM: Are there natural shifts in tone, pacing, or emphasis that keep it engaging?"
+ 
+    "CRITICAL RULES:"
+    "- DO NOT evaluate factual accuracy, completeness, or logical organization"
+    "- Focus ONLY on warmth, energy, and ability to hold attention"
+ 
+    "WHAT TO EVALUATE:"
+    "- Does the conversation feel warm and personable?"
+    "- Do the speakers interact naturally with each other?"
+    "- Does the energy level sustain listener interest?"
+    "- Are tonal shifts used to keep the dialogue lively?"
+ 
+    "WHAT NOT TO EVALUATE:"
+    "- Whether facts are correct "
+    "- Whether there is any missing detials "
+    "- Whether ideas are logically organized"
+ 
+    "MARK DEDUCTIONS:"
+    "- Deduct marks for monotone or boring delivery or sounded professional and expert"
+    "- Deduct marks for stiff or unnatural interaction"
+    "- Deduct marks for lack of energy or warmth"
+ 
+    "EVALUATION FORMAT:"
+    "Strengths: [List what makes the conversation friendly and engaging]"
+    "Areas for Improvement: [List any issues with warmth, energy, or responsiveness]"
+    "Engagement Issues: [List monotony, stiffness, or lack of interaction]"
+    "Reasoning: [Explain score based on warmth, energy, connection, and dynamism]"
+)

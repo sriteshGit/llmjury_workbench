@@ -1,0 +1,37 @@
+COMPREHENSIVENESS = (
+    "This is a podcast/transcript summary of single-hosts. Evaluate the podcast summary comprehensiveness by comparing it to the source text  considering it is a medium summary and assessing how well it captures all essential information and key details from the source text in 250-350 words . Your evaluation should focus on:"
+
+    "1. Core message capture: Inclusion of the document's primary purpose, main conclusion, or central thesis"
+    "2. Essential content coverage: Capture of the most important ideas, findings, and key information from the source"
+    "3. Critical insights: Retention of the most significant findings, implications, or actionable elements when present"
+    "4. Context preservation: Maintenance of important contextual information"
+
+    "EXAMPLE OF NORMAL CONVERSATIONAL FLOW:"
+    "Liam: \"It's a name, it doesn't mean anything.\"
+    "Liam: \"Right\"
+    "Liam: \"We could call it the .......\"
+    "Liam: \"Mhmm\"
+    "Liam: \"But what's interesting about this brain area is that...\"
+
+    "EXAMPLES  OF COMPREHENSIVENESS EVALUATION FOR Short SUMMARIES:Use these examples as reference points when evaluating comprehensiveness"
+    "1."
+    "Source: Rent-A-Center Q3 2010 earnings call covering financial results, expansion plans, operational metrics, and Q&A with analysts."
+    "Good Short Summary: Summarizes the company's quarterly financial performance (revenue and EPS), mentions strategic expansion plans into Mexico, and highlights key operational improvements. Omits detailed analyst Q&A and some specific timeline projections, which are appropriate omissions given the short format."
+    "Poor Short Summary: Only states the company held an earnings call, omitting financial performance, strategic expansion, and operational highlights, thereby missing the core message of the company's quarterly performance."
+
+    "2."
+    "Source: Hilton acquires majority controlling interest in Sydell Group to expand NoMad Hotels brand worldwide, including deal terms, strategic rationale, and growth projections."
+    "Good Short Summary: Conveys the acquisition's purpose, strategic rationale for brand expansion, and key growth vision, providing enough context for the reader to understand the significance of the deal."
+    "Poor Short Summary: Merely states that Hilton acquired a controlling interest in Sydell Group, without mentioning strategic rationale, growth vision, or any deal terms, failing to capture the core message."
+
+    "IMPORTANT: Your evaluation should be strictly based on the Comprehensiveness criterion and should not consider factors like accuracy, conciseness or convsrsational tone"
+    "Length-Aware Assessment: Given the 250-word constraint, focus on what information is most critical rather than what is missing. A 250-word summary cannot include all topics, detailed arguments, supporting evidence, or comprehensive data. Evaluate based on whether the most essential elements are present."
+    "Content Prioritization: Prioritize evaluation of critical facts, main conclusions, and key insights over minor details. The summary should capture the document's essence and most significant information rather than exhaustive coverage."
+    "- Conversational flow (interjections, pauses, fillers) should not count against comprehensiveness since they are style, not content."
+    "- Do not conflate brevity of conversational phrasing with lack of comprehensiveness."
+    "- Should provide a comprehensive view while maintaining focus on key and crucial content"
+    "Numerical Data Consideration: While numerical data can be important, its omission in a 250-word summary should not be heavily penalized unless it is central to the document's core message. Focus on whether the summary captures the significance of such data rather than specific figures."
+    "Scoring Guidance: Consider the relative importance of what is included versus what is omitted. A summary that captures the document's essence and most critical points should score well, even if many details are necessarily excluded. Minor topics, supporting examples, and procedural details can be omitted without significant penalty."
+    "In your reasoning, clearly identify any significant information that was omitted from the summary, and specifically note any missing numerical data, explaining its potential impact on understanding the source material. Keep in mind that your evaluation is solely focused on comprehensiveness."
+
+)

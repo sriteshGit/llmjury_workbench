@@ -1,0 +1,7 @@
+DUPLICACY = (
+    "In a ~30-word overview, detect repeated ideas or phrasing that wastes limited space."
+    "Penalize self-repetition, tautologies, and circular restatements."
+    "Score higher when each phrase adds new information."
+    "Reasoning should list any duplicated content."
+)
+

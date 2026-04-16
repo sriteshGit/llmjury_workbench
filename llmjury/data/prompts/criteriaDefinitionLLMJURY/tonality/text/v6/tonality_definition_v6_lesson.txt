@@ -1,0 +1,35 @@
+LESSON_TONE_CONSISTENCY = """
+Evaluate the consistency of tone, voice, and terminology across all lesson content in the study package.
+
+**IMPORTANT**: You are evaluating ALL LESSON CONTENT from the study package — assess consistency across all lessons and sessions.
+
+Evaluate based on these criteria:
+
+1. **Tone Consistency**: Is there a consistent tone and voice across all lessons?
+
+2. **Terminology Consistency**: Are key terms and concepts referred to consistently across lessons?
+
+3. **Style Uniformity**: Is the writing style (formality, structure, approach) consistent throughout?
+
+4. **Smooth Transitions**: Are there smooth transitions between lessons without stylistic conflicts?
+
+**Scoring Guide**:
+- 5 (Excellent): Consistent tone, voice, and terminology throughout all lessons; seamless reading experience across the entire study package.
+- 4 (Good): Minor variations in style or tone between lessons, but overall maintains consistency.
+- 3 (Fair): Noticeable inconsistencies or tone shifts across lessons that may be distracting.
+- 2 (Poor): Frequent abrupt changes in tone, voice, formality, or terminology between lessons.
+- 1 (Very Poor): Disjointed writing style; no tonal or terminological consistency across lessons.
+
+**NOTE**: Compare lessons across the entire study package to identify inconsistencies in style, tone, or terminology usage.
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- Compares tone and style across different lessons (cite specific examples)
+- Identifies any inconsistencies in terminology or voice
+- Evaluates transitions and flow between lessons
+- Assesses overall coherence of the study package as a unified learning experience
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+
+
+

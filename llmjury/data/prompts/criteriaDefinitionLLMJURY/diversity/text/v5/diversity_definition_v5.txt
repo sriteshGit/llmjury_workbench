@@ -1,0 +1,31 @@
+DIVERSITY = (
+    "This is a podcast/transcript conversation summary between two co-hosts. Evaluate the podcast summary's culturalization by assessing how well it preserves culturally sensitive and globally standardized language conventions. Your evaluation should focus on:"
+
+    "1. Brand names: Global brand names (e.g., 'Gucci', 'Macdonalds') MUST be retained exactly as in the source and kept in the input language. Do NOT translate, localize, or substitute them. Brands are treated as culturally neutral proper nouns."
+
+    "2. Units, metrics, and scientific measures: Units and measurements (e.g., 'gigawatts') MUST be kept exactly as in the source and in the input language. These are global standards and must not be converted or localized."
+
+    "3. Technical and niche terms: Globally standardized technical, scientific, or industry terms (e.g., 'neural network', 'artificial intelligence', 'machine learning', financial terms) should be retained in the input language as used in the source, especially in executive or international contexts."
+
+    "4. Acronyms and short forms: Industry-accepted acronyms and short forms (e.g., 'KPI', 'CRM', 'CEO', 'IA') MUST be kept as in the source. Do NOT expand, translate, or alter them. Pronunciation variation or pauses are acceptable."
+
+    "5. Pronunciation flexibility: Variations in pronunciation implied by conversational or cultural context (e.g., French pronunciation, liaison) are acceptable as long as the written form remains unchanged."
+
+    "6. Form of address: When languages distinguish between formal and informal address, informal forms are preferred for peer-level podcast conversations. Use formal address only when explicitly required by context; otherwise default to the informal form (e.g., in French, prefer 'Tu' over 'Vous' for two familiar co-hosts)."
+
+    "WHEN TO DEDUCT MARKS:"
+    "- Brand names, units, acronyms, or technical terms are translated, localized, substituted, expanded, or altered in spelling while compared to source."
+    "- Units or metrics are converted, re-expressed, or normalized instead of being kept as in the source."
+    "- Acronyms are expanded or rewritten instead of preserved while compared to source."
+    "- Incorrect use of formal vs informal address forms where informal peer-level conversation clearly applies (e.g., using 'Vous' instead of 'Tu' between familiar podcast co-hosts)."
+
+    "WHAT NOT TO PENALIZE:"
+    "- Pronunciation differences, liaison, contractions, or implied spoken-language variation."
+    "- Conversational pauses, fillers, or relaxed phrasing."
+    "- Missing mentions of brands, units, or technical terms."
+    "- Absence of discourse markers or informal spoken elements."
+    "- Stylistic choices that do not change the written form of standardized terms."
+
+    "IMPORTANT: Your evaluation should be strictly based on the Culturalization criterion and should not consider factual accuracy, completeness, conciseness, fluency, tone, or missing information."
+    "Focus ONLY on whether culturally and globally standardized conventions are preserved appropriately for a spoken podcast context."
+    )

@@ -1,0 +1,34 @@
+QUIZ_RELEVANCE = """
+Evaluate how well quiz questions align with and test the lesson's learning objectives.
+
+**IMPORTANT**: You are evaluating QUIZ QUESTIONS from the study package against the LESSON CONTENT. Both the lesson content and quiz questions will be provided.
+
+Evaluate based on these criteria:
+
+1. **Direct Alignment**: Do quiz questions directly reflect the lesson's learning objectives?
+
+2. **Concept Testing**: Does each question check understanding of key concepts from that specific lesson?
+
+3. **No Off-Topic Questions**: Are there any off-topic or misleading questions not related to lesson content?
+
+4. **Reinforcement**: Does the quiz reinforce rather than distract from the main lesson goals?
+
+**Scoring Guide**:
+- 5 (Excellent): Every quiz question aligns perfectly with lesson objectives; all reinforce learning effectively.
+- 4 (Good): Mostly aligned; one or two questions may slightly deviate from lesson content.
+- 3 (Fair): Some questions are loosely related or test peripheral ideas not central to the lesson.
+- 2 (Poor): Several questions don't align with the lesson or confuse learners.
+- 1 (Very Poor): Most questions are irrelevant or disconnected from lesson goals.
+
+**NOTE**: Compare each quiz question against the lesson content to verify it tests concepts actually taught in the lesson.
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- Identifies which quiz questions align well with specific lesson objectives (cite examples)
+- Points out any questions that are off-topic or poorly connected to the lesson
+- Explains how well the quiz reinforces lesson learning goals
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+
+
+

@@ -1,0 +1,20 @@
+USEFULNESS = (
+    "This is a podcast/transcript conversation summary between two co-hosts. Evaluate the podcast summary's usefulness by assessing how well it helps a user quickly understand the content of the original document "
+    "compared to reading the full text. Your evaluation should focus on:\n"
+    "1. Efficiency: Does the conversational summary allow the user to grasp the key ideas faster than if they read the full document?\n"
+    "2. Relevance: Are the included points in the summary directly helpful for understanding the document's main themes or arguments?\n"
+    "3. Practical value: Would a reader feel that listening to or reading this podcast-style summary saves effort while still providing "
+    "meaningful understanding?\n"
+    "4. Retention: Does the conversational flow (with interjections, pauses, or natural dialogue) make the ideas easier to follow and remember, "
+    "or does it reduce usefulness by adding distraction?\n\n"
+
+    "EXAMPLE OF NORMAL CONVERSATIONAL FLOW:"
+    "Liam: \"It's a name, it doesn't mean anything.\"
+    "Chloe: \"Right\"
+    "Liam: \"We could call it the .......\"
+    "Chloe: \"Mhmm\"
+    "Liam: \"But what's interesting about this brain area is that...\"
+
+    "IMPORTANT: Your evaluation should be strictly based on the Usefulness criterion and should not consider factors like accuracy, comprehensiveness, or conciseness.\n"
+    "In your reasoning, provide specific examples of parts of the summary that increase or decrease its usefulness compared to reading the full document."
+)

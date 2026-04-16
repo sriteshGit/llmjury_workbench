@@ -1,0 +1,76 @@
+INTRODUCTION_FORMATTING_COMPLETENESS = """
+Evaluate the formatting completeness and visual structure of the study package introduction by assessing how well it uses formatting elements to create a clear, scannable, and well-organized presentation.
+
+**IMPORTANT**: You are evaluating the PACKAGE-LEVEL INTRODUCTION — the overview text that introduces the entire study packet to learners.
+
+**CRITICAL: Multiple Valid Formatting Styles**
+
+There is NO single "correct" formatting style. Different introductions can be equally well-formatted using different approaches.
+
+**ACCEPTABLE FORMATTING STYLES:**
+
+1. **List-Based Format:**
+   - Bullet points or numbered lists
+   - Clear headings and subheadings
+   - Structured itemization
+   - Good for: Detailed overviews, multi-topic packages
+
+2. **Paragraph Format:**
+   - Well-structured prose paragraphs
+   - Clear topic sentences and transitions
+   - Logical flow without lists
+   - Good for: Narrative introductions, conceptual overviews
+
+3. **Hybrid Format:**
+   - Mix of paragraphs and lists
+   - Headings with prose explanations
+   - Balanced structure
+   - Good for: Comprehensive introductions
+
+**DO NOT Penalize For:**
+- Using paragraphs instead of bullet points (both are valid)
+- Concise introductions that don't need elaborate structure
+- Different formatting choices that still achieve clarity
+- Minimalist formatting that is clean and readable
+
+**DO Penalize For:**
+- Actual formatting ERRORS (broken markdown, malformed elements)
+- Missing or incorrect rendering of formulas/symbols
+- Inconsistent formatting that creates confusion
+- Poor structure that genuinely hinders comprehension
+- Text that is genuinely cluttered or hard to parse
+
+**EVALUATION FOCUS:**
+Ask: "Is the content CLEAR, READABLE, and WELL-ORGANIZED, regardless of formatting style?"
+NOT: "Does this use my preferred formatting style (lists vs paragraphs)?"
+
+What to look for:
+
+1. **Appropriate structural organization**: Are structural elements (whether headings, paragraphs, lists, or other) used appropriately to organize content? Does the chosen format serve the content well?
+
+2. **Clear presentation and consistency**: Is the formatting consistent with its chosen style? Does the structure support comprehension regardless of whether it uses lists, paragraphs, or hybrid approach?
+
+3. **Readability and navigation**: Can readers easily follow the content? Is the flow logical and clear within its formatting style?
+
+4. **Technical correctness**: Are formatting elements properly rendered? No broken markdown, malformed structures, or display errors?
+
+5. **Formulas and symbols**: Are mathematical formulas, symbols, and special characters displayed correctly and clearly (if applicable)?
+
+**Scoring Guide**:
+- 5 (Excellent): Content is clear, well-organized, and easy to read in its chosen format (whether lists, paragraphs, or hybrid). Formatting is technically correct with no errors. Structure effectively supports comprehension.
+- 4 (Good): Well-organized and readable in its chosen format. Perhaps minor technical issues (small spacing, alignment) but doesn't impact comprehension. Formatting style is appropriate for content.
+- 3 (Fair): Formatting is acceptable but has noticeable technical issues OR structure could better support readability. Some formatting inconsistencies that slightly affect navigation.
+- 2 (Poor): Formatting has significant technical errors (broken elements, malformed structures) OR organization genuinely hinders comprehension. Multiple issues that impact readability.
+- 1 (Very Poor): Severe formatting errors that make content difficult to read OR truly chaotic structure with no clear organization. Major technical problems or genuinely cluttered presentation.
+
+**NOTE**: Focus on whether the formatting WORKS for its purpose, not whether it matches a specific style preference. A paragraph-based introduction can be just as well-formatted as a list-based one. Evaluate technical correctness and effectiveness, not stylistic choices.
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- References specific formatting elements (headings, lists, spacing, etc.)
+- Explains how the structure supports or hinders navigation and comprehension
+- Addresses all five criteria listed above
+- Identifies specific formatting strengths or issues
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+

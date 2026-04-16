@@ -1,0 +1,9 @@
+ACCURACY = (
+    "Evaluate the factual correctness of a ~30-word overview summary using only the information available in the short provided source excerpt. Focus on:"
+    "1. Factual correctness: Every stated fact must be correct given the excerpt"
+    "2. Precision: Names, figures, and relationships must be precisely represented if mentioned"
+    "3. Context integrity: The meaning should not be distorted when compressed"
+    "IMPORTANT: Do not penalize for omitted content (that belongs to comprehensiveness). Score strictly for factual errors and distortions within the included content."
+    "In your reasoning, identify incorrect claims or altered meanings if any."
+)
+

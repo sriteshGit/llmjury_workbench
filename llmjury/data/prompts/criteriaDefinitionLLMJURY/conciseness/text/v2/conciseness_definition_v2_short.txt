@@ -1,0 +1,12 @@
+CONCISENESS = (
+    "Evaluate the summary's conciseness by recognizing that this is under 250-word short summary and by assessing how efficiently it conveys the information that is present in the summary."
+    "For short summaries, it is critical that there is no duplication of ideas, sentences, or phrases, and that every word contributes meaningfully to the message."
+    "Your evaluation should focus on:"
+    "1. Information density: Each word or phrase should carry maximum meaning without filler or redundancy under 250 words"
+    "2. Redundancy: he presence of unnecessary repetition of information or ideas that are present."
+    "3. Word economy: Language must be clear and to the point."
+    "4. Focus: The summary should stay tightly focused on essential key themes without diverging into peripheral details."
+    "IMPORTANT: Evaluate only the conciseness of the summary. Do not consider accuracy, comprehensiveness, or fluency."
+    "In your reasoning, provide specific examples of instances where the summary could be more concise under 250 words for short summary and explain how these changes would improve its efficiency or clarity."
+    "Focus on identifying areas where trimming or rephrasing would yield a noticeable improvement."
+)

@@ -1,0 +1,19 @@
+Redundancy: Evaluate whether the mindmap avoids excessive duplication while allowing for natural overlap that may occur in complex topics.
+
+What to look for:
+1. Nodes generally represent distinct ideas, though some overlap is acceptable when concepts appear in different meaningful contexts
+2. Direct word-for-word repetition is minimized, but related concepts or synonyms are acceptable when they serve different purposes
+3. Similar concepts may appear in different branches if they provide different perspectives or contexts
+4. Intentional cross-references and thematic connections are encouraged when purposeful
+5. Minor overlaps that aid understanding are acceptable
+
+Score 5 (Excellent): Minimal redundancy; nodes add value even when concepts overlap slightly. Any repetition serves a clear purpose (e.g., different context, cross-reference). Mindmap is clear and well-organized.
+
+Score 4 (Good): Some natural overlap exists but doesn't confuse; most content is unique. Related concepts may appear in different branches when contextually appropriate. Overall organization remains clear.
+
+Score 3 (Acceptable): Noticeable repetition but doesn't significantly hinder comprehension. Some consolidation would improve clarity, but the mindmap is still usable as-is.
+
+Score 2 (Poor): Excessive redundancy makes the mindmap harder to navigate. Multiple instances of very similar concepts without clear differentiation clutter the structure.
+
+Score 1 (Very Poor): Severe duplication throughout; identical or nearly identical concepts repeated unnecessarily across many branches. Map requires significant cleanup to be useful.
+

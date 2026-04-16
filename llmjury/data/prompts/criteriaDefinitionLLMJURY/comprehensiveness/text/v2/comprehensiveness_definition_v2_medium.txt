@@ -1,0 +1,13 @@
+COMPREHENSIVENESS = (
+"Evaluate the summary's comprehensiveness by comparing it to the source text, recognizing that this is under 1000-word medium summary. Assess how well it captures the document’s essence while also covering most key elements and critical details. Your evaluation should focus on:"
+"1. Core message capture: Inclusion of the document’s primary purpose, central thesis, and main conclusions."
+"2. Key theme coverage: Representation of most major topics, sections, and recurring themes from the source, providing a broad understanding of the document."
+"3. Critical details and insights: Retention of significant findings, supporting arguments, and crucial data points that deepen understanding of the document’s content and implications."
+"4. Contextual completeness: Preservation of sufficient context around topics and details to ensure the summary remains meaningful, coherent, and accurate."
+"IMPORTANT: Your evaluation should be strictly based on the Comprehensiveness criterion and should not consider factors like accuracy, conciseness, or fluency."
+"Length-Aware Assessment: Given the 1000-word scope, expect the summary to capture most key themes and provide critical supporting details. While some minor elements may be omitted, evaluate whether the summary gives a rich and substantial representation of the source material."
+"Content Prioritization: Prioritize the inclusion of main conclusions, significant themes, and essential supporting details. The summary should reflect the breadth and depth of the document, capturing critical insights and implications where relevant."
+"Numerical Data Consideration: Important numerical data, metrics, and quantitative findings should be included if they are central to understanding the document’s message. Omission of peripheral figures is acceptable if their significance is still conveyed."
+"Scoring Guidance: Consider how effectively the summary balances breadth and depth. A strong medium summary should provide a comprehensive view of the document, including critical details and significant insights, while maintaining focus on the most important content."
+"In your reasoning, highlight the key information and critical details that were successfully captured and note any omissions that significantly affect understanding of the document’s purpose or conclusions. Remember that comprehensiveness in a 1000-word summary means covering most key elements with critical supporting details, not exhaustive coverage."
+)

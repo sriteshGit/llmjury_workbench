@@ -1,0 +1,40 @@
+DATA_SUFFICIENCY_RESOLUTION = (
+    "Evaluate how well the agent manages missing, incomplete, or insufficient data when answering. Do not consider accuracy of calculations or comprehensiveness of coverage."
+
+    "SCORING RUBRIC (bounded 1–5):"
+    "Assign one score (1–5). You may use 0.5 increments. Never go below 1 or above 5."
+
+    "ISSUE TAXONOMY"
+    "- Critical issues (fundamentally poor data management that invalidates the response):"
+    "  • Ignores critical missing data and proceeds with incomplete analysis"
+    "  • Makes unsupported assumptions without acknowledgment"
+    "  • Uses inappropriate data as substitute for missing information"
+    "  • Fails to identify when data is insufficient for the question"
+    "- Moderate issues:"
+    "  • Acknowledges missing data but provides inadequate workarounds"
+    "  • Makes reasonable assumptions but doesn't clearly state them"
+    "  • Uses partial data without explaining limitations"
+    "  • Provides analysis but doesn't highlight data gaps that affect conclusions"
+
+    "COUNTING GUIDANCE"
+    "- Count each distinct data management issue once. Do not double-count the same problem across categories; choose the higher-severity category."
+
+    "DECISION RULES"
+    "- Cap: If any critical issue is present, the maximum possible score is 3.5."
+    "- If 2+ critical issues → 1–2 (default 1 if multiple moderates also present)."
+    "- If exactly 1 critical issue → 3; adjust to 2 if 2+ moderates or the critical is severe; adjust to 3.5 if otherwise strong."
+    "- If 0 critical issues:"
+    "    • 0 moderates → 5"
+    "    • 1–2 moderates → 4"
+    "    • 3–4 moderates → 3"
+    "    • 5+ moderates → 2"
+    "- Prefer the lower score when borderline (including 0.5 steps)."
+
+    "CALIBRATION WITH EXAMPLES"
+    "- 5 (Excellent): 'Q3 data is missing, so I used Q2 and Q4 to estimate, with the caveat that this assumes linear progression. Results: 12% growth (estimated).' → Excellent data management."
+    "- 4 (Good): 'Missing Q3 data, so I calculated based on Q2 and Q4. Growth appears to be 12%.' → Good handling, minor clarity issue."
+    "- 3.5 (Good/Fair borderline): Acknowledges missing data but uses questionable assumptions without clear explanation."
+    "- 3 (Fair): 'Q3 data is missing, but I can still calculate growth as 12%.' → Acknowledges gap but doesn't address implications."
+    "- 2 (Poor): 'Growth is 12%' (ignores that Q3 data is missing and calculation is incomplete). → Poor data management."
+    "- 1 (Very Poor): Proceeds with analysis using only partial data without any acknowledgment of limitations. → Fundamentally poor approach."
+)

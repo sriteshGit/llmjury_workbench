@@ -1,0 +1,36 @@
+INTRODUCTION_READABILITY = """
+Evaluate the readability of the study package introduction by assessing how well the language, structure, and vocabulary match the target learner's comprehension level.
+
+**IMPORTANT**: You are evaluating the PACKAGE-LEVEL INTRODUCTION — the overview text that introduces the entire study packet to learners, explaining what topics will be covered and how the content is organized.
+
+Evaluate based on these criteria:
+
+1. **Language Level Appropriateness**: Does the language level match the target learner grade (1-12+)? Is the content accessible to the intended audience?
+
+2. **Sentence Clarity and Structure**: Are sentences short, clear, and logically structured? Do they flow naturally and support comprehension?
+
+3. **Vocabulary Appropriateness**: Is vocabulary age-appropriate and supportive of comprehension? Are terms defined when needed?
+
+4. **Jargon Management**: Does the content avoid unnecessary jargon? When technical terms are used, are they clearly explained?
+
+5. **Paragraph Cohesion**: Are paragraphs cohesive and centered on one main idea? Is there logical progression between ideas?
+
+**Scoring Guide**:
+- 5 (Excellent): Clear, simple, and perfectly matched to the learner's grade. Vocabulary and structure support effortless comprehension. The introduction effectively orients the learner to the study packet.
+- 4 (Good): Mostly clear, with occasional complexity or phrasing issues that don't significantly affect understanding. Generally well-matched to target audience.
+- 3 (Fair): Understandable but inconsistent — some parts too advanced or too simplistic. Mixed readability quality.
+- 2 (Poor): Often unclear or uneven in difficulty, causing potential confusion. Frequently mismatched to target audience.
+- 1 (Very Poor): Hard to read; language far above or below intended learner level. Fails to effectively introduce the study packet.
+
+**NOTE**: Consider how well the introduction orients a learner to the study packet content. Does it clearly explain what will be covered and help the learner understand the packet's organization?
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- References specific examples from the introduction (quote phrases or patterns)
+- Explains how vocabulary, sentence structure, and language level impact comprehension
+- Addresses all five criteria listed above
+- Evaluates how effectively the introduction orients learners to the study packet
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+
+

@@ -1,0 +1,8 @@
+CONCISENESS = (
+    "For a ~30-word overview, evaluate information density and economy of language."
+    "The summary should communicate the core idea with minimal filler, no redundancy, and purposeful wording."
+    "Penalize repeated concepts, verbose phrasing, and unnecessary qualifiers."
+    "Do not penalize for brevity when the core idea remains clear and faithful."
+    "Reasoning should highlight any phrases that can be trimmed without losing meaning."
+)
+

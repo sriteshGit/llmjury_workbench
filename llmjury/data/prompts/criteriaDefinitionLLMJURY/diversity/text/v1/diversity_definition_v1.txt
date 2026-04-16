@@ -1,0 +1,70 @@
+QUIZ_DIVERSITY = """
+Evaluate the diversity of question types and appropriateness of difficulty level in the quiz.
+
+**IMPORTANT**: You are evaluating QUIZ QUESTIONS from the study package against the LESSON CONTENT for variety and difficulty matching.
+
+**CRITICAL: Appropriate Diversity for Content Level**
+
+Different learning levels require different question mixes. Foundational content SHOULD focus on recall and understanding—that's pedagogically appropriate!
+
+**ACCEPTABLE - Foundational/Beginner Content:**
+- Primarily recall and understanding questions (knowledge building)
+- Limited application questions (appropriate for basics)
+- Few or no reasoning/analysis questions (learners aren't ready yet)
+- Consistent difficulty focused on foundational concepts
+- Question variety comes from covering different topics, not complexity levels
+
+**ACCEPTABLE - Intermediate Content:**
+- Mix of understanding and application questions
+- Some reasoning questions where appropriate
+- Moderate difficulty range
+- Variety in both topic and cognitive level
+
+**EXPECTED - Advanced Content:**
+- Strong emphasis on application, analysis, and reasoning
+- Less focus on simple recall (assumed knowledge)
+- Higher difficulty with complex scenarios
+- Diverse cognitive demands
+
+**DO NOT penalize:**
+- Beginner quizzes for focusing on recall/understanding (appropriate!)
+- Consistent difficulty when content is foundational (proper scaffolding!)
+- Limited question variety if lesson depth doesn't support higher-order thinking yet
+- Topic-focused questions that build core knowledge
+
+Evaluate based on these criteria:
+
+1. **Question Variety Appropriate to Level**: Is there appropriate variety given the lesson's complexity? (Beginner = recall/understanding focus is GOOD!)
+
+2. **Difficulty Matches Content**: Is difficulty appropriate for lesson depth and learner readiness? (Foundational content should have foundational questions!)
+
+3. **No Unnecessary Repetition**: Are questions varied enough to assess different aspects of the content?
+
+4. **Cognitive Demand Aligned**: For advanced lessons, are higher-order questions included? For beginner lessons, are foundational questions prioritized?
+
+**Scoring Guide**:
+- 5 (Excellent): Variety and difficulty are APPROPRIATE for content level. Foundational content with recall/understanding focus = EXCELLENT. Advanced content with diverse cognitive levels = EXCELLENT. Questions match lesson depth perfectly.
+- 4 (Good): Appropriate variety for level with minor areas for enhancement. Difficulty matches content with small misalignments that don't impact learning.
+- 3 (Fair): Some questions feel repetitive or misaligned with content level, but quiz is functional. May ask too much (complex questions for basic content) or too little (only recall for advanced content).
+- 2 (Poor): Questions are actually inappropriate for content level (demanding analysis for foundational content OR only recall for advanced topics). Repetitive without good reason.
+- 1 (Very Poor): Completely mismatched difficulty (far too easy or impossibly hard for lesson). Questions don't assess what was taught. No meaningful variety even within appropriate level.
+
+**CRITICAL REMINDER**: 
+- **Beginner/Foundational quizzes**: Recall and understanding questions are APPROPRIATE (score 4-5!)
+- **Intermediate quizzes**: Mix of understanding and application is APPROPRIATE (score 4-5!)
+- **Advanced quizzes**: Higher-order thinking is APPROPRIATE (score 4-5!)
+
+Do NOT penalize quizzes for matching their content level. A foundational quiz with all recall questions can be EXCELLENT if that's what the lesson teaches!
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- Identifies the types of questions present (recall, understanding, application, reasoning)
+- Analyzes whether difficulty level matches the lesson's learner profile
+- Points out any repetitive question patterns or styles
+- Evaluates whether higher-order thinking is included when appropriate
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+
+
+
+

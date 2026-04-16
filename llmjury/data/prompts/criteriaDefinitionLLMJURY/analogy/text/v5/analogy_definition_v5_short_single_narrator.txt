@@ -1,0 +1,19 @@
+ANALOGY = (
+    "This is a podcast/transcript summary of single-hosts. Evaluate the podcast transcript/summary to ensure that NO analogies or examples are used beyond those "
+    "explicitly present in the original source content."
+
+    "Your evaluation should check:"
+    "1. Presence of Unapproved Analogies: Identify any analogy or example that does NOT appear in the source. "
+    "2. Allowed Content: Only the analogies/examples that are directly included in the original transcript/summary "
+    "are permitted."
+
+    "MARK DEDUCTIONS:"
+    "- Deduct marks for any analogy or example that is not present in the source. "
+    "- Deduct marks if analogies are added, altered, expanded, or paraphrased beyond what the source provides. "
+    "- Deduct marks if the model introduces metaphorical language that was not originally included."
+
+    "EVALUATION FORMAT:"
+    "Unapproved Analogies Found: [List any analogies/examples not present in the source] "
+    "Approved Analogies: [List only those that match the source content exactly] "
+    "Reasoning: [Explain why each unapproved analogy/example violates the constraint] "
+)

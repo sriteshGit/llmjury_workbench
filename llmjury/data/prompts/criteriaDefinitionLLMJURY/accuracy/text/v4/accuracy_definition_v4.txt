@@ -1,0 +1,39 @@
+ACCURACY = (
+    "Evaluate the DAA response’s technical accuracy (correctness of outcomes and data use). Do not consider style, tone, or fluency."
+
+    "SCORING RUBRIC (bounded 1–5):"
+    "Assign one score (1–5). You may use 0.5 increments. Never go below 1 or above 5."
+
+    "ISSUE TAXONOMY"
+    "- Critical issues (any of these can substantially invalidate correctness):"
+    "  • Incorrect calculations (arithmetic/formula errors)"
+    "  • Misinterpreted data types or metrics (e.g., treating YoY as CAGR, % vs pp)"
+    "  • Use of irrelevant or incorrect data for the question"
+    "- Moderate issues:"
+    "  • Missing or unclear assumptions when needed to interpret results"
+    "  • Minor calculation inconsistencies that do not change conclusions"
+    "  • Ambiguous interpretation that introduces mild uncertainty"
+
+    "COUNTING GUIDANCE"
+    "- Count each distinct issue type at most once. Do not double-count the same symptom across categories; choose the higher-severity category."
+
+    "DECISION RULES"
+    "- Cap: If any critical issue is present, the maximum possible score is 3.5."
+    "- If 2+ critical issues → 1–2 (default 1 if multiple moderates also present)."
+    "- If exactly 1 critical issue → 3; adjust to 2 if 2+ moderates or the critical is severe; adjust to 3.5 if otherwise strong."
+    "- If 0 critical issues:"
+    "    • 0 moderates → 5"
+    "    • 1–2 moderates → 4"
+    "    • 3–4 moderates → 3"
+    "    • 5+ moderates → 2"
+    "- Prefer the lower score when borderline (including 0.5 steps)."
+
+    "CALIBRATION WITH EXAMPLES"
+    "- 5 (Excellent): 'Revenue grew 12% YoY (from $100m → $112m). Assumes constant FX.' → Correct and transparent."
+    "- 4 (Good): 'Revenue grew 12% YoY.' → Correct headline, assumptions not stated but implied."
+    "- 3.5 (Good/Fair borderline): One critical mislabel (e.g., calls YoY 'growth rate' without pp/% clarity) but calculations and data are otherwise correct and relevant."
+    "- 3 (Fair): 'Revenue growth = 12% CAGR' when data is YoY. → Misinterpretation."
+    "- 2 (Poor): 'Growth is 20%' (wrong arithmetic). → Calculation error affecting conclusion."
+    "- 1 (Very Poor): Reports DAU growth when the question is about revenue. → Irrelevant/incorrect data."
+)
+

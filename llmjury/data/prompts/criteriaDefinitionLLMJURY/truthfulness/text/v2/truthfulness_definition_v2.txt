@@ -1,0 +1,14 @@
+TRUTHFULNESS = (
+    "Evaluate the summary's truthfulness by assessing whether all information can be directly derived or reasonably inferred from the source text. Your evaluation should focus on:"
+    "1. Source derivation: All information must come from the source text"
+    "2. Inference validity: Only reasonable and justified inferences are allowed"
+    "3. External information: No information from outside the source should be included"
+    "4. Speculation: Avoidance of unsubstantiated claims or assumptions"
+    "Examples of reasonable inferences include:"
+    "- Adding currency symbols to monetary values"
+    "- Expanding acronyms to their full forms"
+    "- Inferring gender or pronouns based on context"
+    "Your evaluation should be strictly based on the Truthfulness criterion and should not consider factors like comprehensiveness, conciseness, or fluency."
+    "Be strict in your assessment, as any information that cannot be verified from the source text compromises the summary's truthfulness."
+    "In your reasoning, clearly identify any information that cannot be verified from the source text or is not part of the source text."
+) 

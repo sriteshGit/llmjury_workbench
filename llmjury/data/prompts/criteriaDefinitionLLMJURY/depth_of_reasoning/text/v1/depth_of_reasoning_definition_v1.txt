@@ -1,0 +1,18 @@
+Depth of Reasoning: Evaluate whether the mindmap goes beyond simple lists to include causes, effects, explanations, and analytical connections.
+
+What to look for:
+1. Includes causes, effects, explanations, not just lists
+2. Shows connections or logic (why/how relationships)
+3. Uses examples or contrasts to show understanding
+4. Some branches go beyond definitions into reasoning or implications
+
+Score 5 (Excellent): Map shows clear lines of reasoning: causes, implications, prioritized relationships, trade-offs or examples. Demonstrates deep understanding beyond surface facts.
+
+Score 4 (Good): Good reasoning present in many branches; a few areas are shallow. Analytical but could expand in places.
+
+Score 3 (Acceptable): Some reasoning exists but much is descriptive rather than analytical. Basic thinking present; more depth desirable.
+
+Score 2 (Poor): Mostly lists of items with little or no explanation or logical linkage. Superficial; lacks analytical value.
+
+Score 1 (Very Poor): No evident reasoning; nodes are disconnected labels or bullet lists. Does not support understanding or decision-making.
+

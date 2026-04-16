@@ -46,9 +46,9 @@ from pathlib import Path
 from typing import Any
 
 import pandas as pd
-from venice.core.Session import Session
 
 from llmjury.constants import EvaluationMode
+from llmjury.runtime.session import Session
 from llmjury.excel_persister import LLMJuryExcelPersister
 from llmjury.llm_jury_results_transformer import LLMJuryResultsTransformer
 from llmjury.report_generator import LLMJuryReportGenerator

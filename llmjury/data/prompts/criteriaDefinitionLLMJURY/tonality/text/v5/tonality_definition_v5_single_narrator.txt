@@ -1,0 +1,43 @@
+TONALITY = (
+    "This is a podcast/transcript summary of single-hosts. Evaluate whether the tone feels "
+    "friendly, approachable, relaxed, and simple (easy to follow) , natural, human-like, conversational, and "
+    "emotionally warm rather than robotic, overly formal, or forced."
+
+    "EVALUATION CRITERIA:"
+    "1. NATURALNESS: Does the speech sound like a real conversation between people (casual phrasing, natural pauses, "
+        "simple language)?"
+    "2. FRIENDLINESS: Does the tone feel warm, approachable, and personable rather than stiff or detached?"
+    "3. SIMPLICITY: Is the tone easy to understand, with clear and simple wording instead of overly formal language?"
+    "4. FLUIDITY: Does the dialogue flow smoothly without robotic, mechanical, or overly scripted delivery?"
+    "5. COMFORT LEVEL: Does the tone make the listener feel at ease, as if part of a relaxed conversation?"
+    "6. CONSISTENCY: Is the friendly and naturally conversational tone maintained throughout?"
+
+    "CRITICAL RULES:"
+    "- DO NOT evaluate factual accuracy, completeness, or engagement."
+    "- Focus ONLY on whether the tone feels natural, human, friendly, and simple."
+
+    "WHAT TO EVALUATE:"
+    "- Does the conversation text feels  human-like, relaxed, and natural?"
+    "- Does the tone feel friendly, warm, and approachable?"
+    "- Is the language simple and easy to follow?"
+    "- Is the delivery smooth and varied in tone, without monotone delivery, ""
+    "robotic stiffness, or overly formal phrasing?"
+    "- Does the conversation maintain this tone throughout?"
+
+    "WHAT NOT TO EVALUATE:"
+    "- Whether facts are correct."
+    "- Whether any details are missing."
+    "- Whether ideas are well-structured."
+    "- Engagement or energy level (that belongs to engagement)."
+
+    "MARK DEDUCTIONS:"
+    "- Deduct marks for robotic, unnatural, or overly formal delivery."
+    "- Deduct marks for stiffness, lack of friendliness, or cold tone."
+    "- Deduct marks if tone is inconsistent, forced, or too complex for a friendly style."
+
+    "EVALUATION FORMAT:"
+    "Strengths: [List what makes the conversation natural, friendly, simple, and human-like]"
+    "Areas for Improvement: [List any issues with friendliness, simplicity, fluidity, or naturalness]"
+    "Tonality Issues: [List robotic delivery, stiffness, overly formal language, or awkward phrasing]"
+    "Reasoning: [Explain score based on naturalness, friendliness, simplicity, fluidity, and consistency]"
+)

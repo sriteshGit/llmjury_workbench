@@ -1,0 +1,11 @@
+COMPREHENSIVENESS = (
+    "Evaluate the summary's comprehensiveness by comparing it to the source text and assessing how well it captures all essential information and key details from the source text. Your evaluation should focus on:"
+    "1. Coverage breadth: Inclusion of all main topics and themes"
+    "2. Detail depth: Inclusion of a sufficient and relevant level of detail for each topic, considering the source text's emphasis."
+    "3. Key information: Capture of all critical points, arguments, and significant supporting evidence or examples."
+    "4. Context preservation: Maintenance of important contextual information"
+    "IMPORTANT: Your evaluation should be strictly based on the Comprehensiveness criterion and should not consider factors like accuracy, conciseness, or fluency."
+    "Importance of Numerical Data: Pay close attention to the inclusion of numerical data (statistics, figures, measurements, dates used quantitatively, etc.) from the source text. While all essential information is important, the omission of key numerical data should be considered a significant oversight that impacts the summary's comprehensiveness."
+    "Consider the relative importance of missing information when scoring - the omission of minor supporting details should generally have less impact on the score than the absence of a main topic, key argument, or significant numerical data."
+    "In your reasoning, clearly identify any significant information that was omitted from the summary, and specifically note any missing numerical data, explaining its potential impact on understanding the source material. Keep in mind that your evaluation is solely focused on comprehensiveness."
+)

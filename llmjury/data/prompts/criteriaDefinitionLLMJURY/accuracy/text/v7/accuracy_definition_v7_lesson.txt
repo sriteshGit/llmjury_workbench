@@ -1,0 +1,34 @@
+LESSON_ACCURACY = """
+Evaluate the factual accuracy of lesson content by assessing correctness, currency, and alignment with source material.
+
+**IMPORTANT**: You are evaluating LESSON CONTENT from the study package — verify that information is accurate and properly aligned with source documents.
+
+Evaluate based on these criteria:
+
+1. **Content Agreement**: If content is grounded in source documents, does it accurately represent the information from those sources without errors or misinterpretations?
+
+2. **Factual Correctness**: If content comes from external knowledge, is it factually accurate and up-to-date?
+
+3. **No Errors**: Are there any incorrect explanations or misinterpretations of concepts?
+
+4. **Source Alignment**: Does lesson content align with and correctly represent the source material provided?
+
+**Scoring Guide**:
+- 5 (Excellent): Entirely accurate, correct, and up-to-date; no factual errors. Perfect alignment with source material.
+- 4 (Good): Mostly accurate; only minor factual slips or unclear details. Strong source alignment.
+- 3 (Fair): Some imprecise or weakly supported information, but main ideas are valid. Moderate source alignment.
+- 2 (Poor): Frequent factual or conceptual errors; reliability reduced. Poor source alignment.
+- 1 (Very Poor): Many incorrect or misleading statements; content cannot be trusted. Little to no source alignment.
+
+**NOTE**: The overall accuracy score aggregates content agreement with source documents and factual accuracy of any external information.
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- Compares lesson content directly against source documents for accuracy
+- Identifies any factual errors, misrepresentations, or outdated information
+- Cites specific examples of accurate OR inaccurate content
+- Explains how well the lesson represents the source material
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+
+

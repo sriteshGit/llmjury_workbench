@@ -1,0 +1,35 @@
+FLASHCARD_COUNT_APPROPRIATENESS = """
+Evaluate whether the number of flashcards is appropriate for the lesson's length and complexity.
+
+**IMPORTANT**: You are evaluating the QUANTITY of flashcards relative to the lesson content provided.
+
+Evaluate based on these criteria:
+
+1. **Appropriate Quantity**: Is the number of flashcards appropriate for the length and complexity of the lesson?
+
+2. **Not Too Few**: Are there enough flashcards to cover important concepts (not missing key ideas)?
+
+3. **Not Too Many**: Are there too many flashcards that become overwhelming or redundant?
+
+4. **Concept Representation**: Are all essential lesson concepts represented through the cards?
+
+**Scoring Guide**:
+- 5 (Excellent): Ideal number of flashcards for the lesson. Covers all key concepts without unnecessary extras. Balanced and easy for learners to review.
+- 4 (Good): Slightly more or fewer flashcards than ideal. Covers most important concepts but may miss one minor idea OR include one non-essential card.
+- 3 (Fair): Noticeable imbalance - too few (missing several key concepts) or too many (includes redundant or trivial cards). Provides only partial lesson representation.
+- 2 (Poor): Clearly too few cards to be useful OR too many to be practical. Many important concepts not captured.
+- 1 (Very Poor): Card count is highly inappropriate (very minimal or excessively large). Does not meaningfully represent the lesson content.
+
+**NOTE**: Consider the lesson length, number of key concepts, and complexity when evaluating flashcard quantity. A longer, more complex lesson should have more flashcards.
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- States the actual number of flashcards and lesson complexity/length
+- Explains whether the quantity is too few, appropriate, or too many
+- Identifies which key concepts are covered or missing
+- Assesses whether any flashcards are redundant or trivial
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+
+
+

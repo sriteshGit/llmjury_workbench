@@ -1,0 +1,38 @@
+COMPREHENSIVENESS = (
+    "Evaluate the DAA response’s coverage of the user query: did it answer all parts of the request with necessary context? Do not consider accuracy, redundancy, or fluency."
+
+    "SCORING RUBRIC (bounded 1–5):"
+    "Assign one score (1–5). You may use 0.5 increments. Never go below 1 or above 5."
+
+    "ISSUE TAXONOMY"
+    "- Critical issues (significantly reduce ability to answer the user):"
+    "  • Major part of the query not addressed (e.g., asks for growth and drivers; drivers missing)"
+    "  • Key supporting detail required for understanding omitted (e.g., timeframe or unit when essential)"
+    "- Moderate issues:"
+    "  • Minor omission of a sub-element or example"
+    "  • Incomplete context that slightly affects completeness"
+    "  • Imbalance (too much detail in one area, too little in another)"
+
+    "COUNTING GUIDANCE"
+    "- Count each distinct omission once. Do not split one omission across multiple categories; choose the higher-severity category."
+
+    "DECISION RULES"
+    "- Cap: If any critical omission is present, the maximum possible score is 3.5."
+    "- If 2+ critical omissions → 1–2 (default 1 if multiple moderates also present)."
+    "- If exactly 1 critical omission → 3; adjust to 2 if 2+ moderates or omission is severe; adjust to 3.5 if otherwise strong."
+    "- If 0 critical omissions:"
+    "    • 0 moderates → 5"
+    "    • 1–2 moderates → 4"
+    "    • 3–4 moderates → 3"
+    "    • 5+ moderates → 2"
+    "- Prefer the lower score when borderline (including 0.5 steps)."
+
+    "CALIBRATION WITH EXAMPLES"
+    "- 5 (Excellent): Query: 'Revenue growth & drivers?' → 'Revenue grew 12% YoY, mainly driven by retention (+5pp) and pricing (+3pp).' → Fully covered."
+    "- 4 (Good): Reports growth correctly but omits brief drivers discussion. → Minor omission."
+    "- 3.5 (Good/Fair borderline): Mentions one main driver but misses the secondary; otherwise thorough."
+    "- 3 (Fair): Covers growth but misses drivers entirely."
+    "- 2 (Poor): Mentions growth vaguely without timeframe or numbers."
+    "- 1 (Very Poor): Answers with unrelated metric (e.g., DAU instead of revenue)."
+)
+

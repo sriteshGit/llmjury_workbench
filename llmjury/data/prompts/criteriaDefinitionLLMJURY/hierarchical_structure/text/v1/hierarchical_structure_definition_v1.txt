@@ -1,0 +1,20 @@
+Hierarchical Structure: Evaluate how well the mindmap maintains a clear and logical hierarchy from the main topic to subtopics and details. A strong hierarchy makes navigation and comprehension immediate.
+
+What to look for:
+1. There is one clear central/root idea
+2. Every child node logically connects to exactly one parent
+3. Levels maintain specificity (broad → detailed → examples)
+4. Similar topics appear at the same depth level
+5. No "floating" or disconnected nodes
+6. The map reads like a tree: root → branches → leaves
+
+Score 5 (Excellent): Root (central idea) is obvious. Each branch has a single depth and breadth that are consistent and meaningful. Levels reflect increasing specificity. Easy to follow path from root to leaf at any point. Strong hierarchy makes navigation and comprehension immediate.
+
+Score 4 (Good): Root present and most branches organized logically. A few places may have minor level-mixing (some children appear at wrong levels) but overall readable. Minor structure issues but doesn't impact understanding significantly.
+
+Score 3 (Acceptable): Root present but several branches mix levels or have ambiguous parents. Some nodes could be better organized or re-leveled. Structure is passable but requires effort to follow.
+
+Score 2 (Poor): Root unclear or missing. Many nodes are at wrong levels or appear disconnected. Hard to see topical progression. Reader struggles to see hierarchy; rework needed.
+
+Score 1 (Very Poor): No recognizable hierarchy; nodes appear random or duplicated as separate roots. Structure is incomprehensible without significant reorganization.
+

@@ -1,0 +1,48 @@
+TRUTHFULNESS = (
+    "This is a podcast/transcript conversation summary between two co-hosts. Evaluate the podcast Truthfulness which refers to how accurately the response is supported by the information in the provided source text. "
+    "It should be evaluated by assessing whether all information can be directly derived, reasonably inferred, or supported by the source text. Your evaluation should focus on:"
+
+    "1. Supported claims: The response should make claims directly supported by the source text and accurately reflect its information."
+    "2. Contextual alignment: The response should align with the core ideas or themes of the source, even if it does not mention every detail explicitly."
+    "3. Relevance: The response may include questions or clarifications as long as they are contextually relevant and grounded in the source material."
+    "4. Accuracy in partial information: The response may present partial information, provided it remains accurate and contextually appropriate."
+    "5. Inference validity: Only reasonable and justified inferences based on the source are allowed."
+    "6. External content: No factual information or assumptions from outside the provided source should be introduced."
+    "7. Speculation: Avoid unsubstantiated claims, misrepresentations, or assumptions beyond what is supported by the source."
+
+    "EXAMPLE OF NORMAL CONVERSATIONAL FLOW:"
+    "Liam: 'It's a name, it doesn't mean anything.'"
+    "Chloe: 'Right.'"
+    "Liam: 'We could call it the .......'"
+    "Chloe: 'Mhmm.'"
+    "Liam: 'But what's interesting about this brain area is that...'"
+    "This is normal conversation flow and should NOT be penalized for truthfulness."
+
+    "Examples of reasonable inferences include:"
+    "- Adding currency symbols to monetary values."
+    "- Expanding acronyms to their full forms."
+    "- Inferring gender or pronouns based on context."
+
+    "A response should NOT be penalized for:"
+    "- Omitting specific details that are not essential to the main point."
+    "- Focusing on one aspect of the context while ignoring others, as long as the chosen aspect is supported."
+    "- Using natural conversational flow, human-like phrasing, or stylistic iteration that does not introduce factual errors."
+    "- Conversational tone, stylistic phrases, speculative framing, or general sentiments "
+    "  (e.g., 'Hey everyone, welcome!', 'it's kind of wild', 'the hope is...', 'this is about understanding, not judging')."
+    "- Analogies, adjectives, opinions, interpretive language, or metaphors, as these are part of conversational style or framing choices, not factual claims."
+    "- Conversational fillers, interjections, tone, or stylistic framing, since they do not introduce factual claims."
+    "- Omissions of details that are not central to the factual content (i.e., missing non-critical details should not be penalized)."
+
+    "Your evaluation should be strictly based on the Truthfulness criterion and should not consider factors like comprehensiveness, conciseness, fluency, or conversational tone."
+    "Any substantive information that cannot be verified from the source text, contradicts or misrepresents the context, or makes unsupported assumptions compromises the summary's truthfulness
+     except for conversational tone, stylistic phrasing, analogies, human-like dialogue iterations, or other stylistic choices, which should not be penalized."
+    "- DO NOT deduct marks for any analogy or example found in summary "
+    "- DO NOT deduct marks if the summary explains the line with example and it is suitable for that statement "
+    "- DO NOT deduct marks for any missing information - NOT AN ACCURACY ISSUE (this is comprehensiveness issue)."
+    "- DO not deduct marks if any numerical data is incorrect thats an accuracy issue not truthfullness issue "
+    "- DO NOT deduct marks for information not present in source material  - NOT AN ACCURACY ISSUE (this is comprehensiveness issue )."
+    "If only minor truthfulness issues are found, do not treat them as major issues and avoid harsh penalization. Only when multiple or substantive factual inconsistencies exist should the summary be rated as significantly untruthful."
+    "Be Strict If the summary explains terminology, definitions, or abbreviations that are NOT present in the source document, deduct marks , This counts as adding external factual content and directly compromises truthfulness."
+    "In your reasoning, clearly identify any factual information that cannot be verified from the source text or is not part of the source text, "
+    "excluding elements of conversational tone, style, or framing."
+)

@@ -1,0 +1,20 @@
+Conciseness: Evaluate how effectively the mindmap balances completeness with brevity, avoiding unnecessary verbosity while maintaining clarity.
+
+A concise mindmap should:
+- Use brief, succinct node labels that convey key information
+- Avoid unnecessary words or redundant phrasing
+- Not over-explain concepts that could be stated more simply
+- Include appropriate level of detail without being overly verbose
+- Eliminate repetitive information across nodes
+- Strike a balance between being informative and being brief
+
+Score 5 (Excellent): The mindmap is perfectly concise with succinct, informative nodes that convey all necessary information without any unnecessary verbosity.
+
+Score 4 (Good): The mindmap is generally concise with most nodes being brief and to-the-point, though a few could be more succinct.
+
+Score 3 (Satisfactory): The mindmap has acceptable conciseness, but several nodes are unnecessarily verbose or contain redundant information.
+
+Score 2 (Needs Improvement): The mindmap is overly verbose with many nodes containing unnecessary words, redundancy, or over-explanation.
+
+Score 1 (Poor): The mindmap is extremely verbose, making it difficult to extract key information due to excessive wordiness and repetition.
+

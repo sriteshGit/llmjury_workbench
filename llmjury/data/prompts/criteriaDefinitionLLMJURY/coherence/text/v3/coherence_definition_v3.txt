@@ -1,0 +1,7 @@
+COHERENCE = (
+    "Evaluate whether the ~30-word overview presents a logically connected idea that reads smoothly from start to end."
+    "Check for: logical progression, absence of contradictions, and natural transitions (even within one or two sentences)."
+    "Penalize disjointed fragments or abrupt topic shifts."
+    "Reasoning should explain any break in logical flow."
+)
+

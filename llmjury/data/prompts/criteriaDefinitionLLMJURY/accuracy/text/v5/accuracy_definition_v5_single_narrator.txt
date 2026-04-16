@@ -1,0 +1,35 @@
+ACCURACY = (
+    "This is a podcast/transcript  summary between one co-hosts. Evaluate the podcast summary's accuracy by assessing how precisely and correctly it represents the factual information that IS PRESENT in the summary. Your evaluation should focus on:"
+    "1. Factual correctness: Exact representation of facts and data that are included in the summary"
+    "2. Precision: Accurate use of specific details and numbers that are included in the summary"
+    "3. Context preservation: Maintaining the original context of information that is included in the summary"
+    "4. Source fidelity: Faithful representation of the source material that is included in the summary"
+ 
+    "EXAMPLE OF NORMAL CONVERSATIONAL FLOW:"
+    "Liam: \"It's a name, it doesn't mean anything.\"
+    "Liam: \"Right\"
+    "Liam: \"We could call it the .......\"
+    "Liam: \"Mhmm\"
+    "Liam: \"But what's interesting about this brain area is that...\"
+ 
+    "EXAMPLES:"
+    "- Summary says 'founded in 2017' and source says 'founded by liam in 2017' = ACCURATE"
+    "- Summary says 'founded in 2018' and source says 'founded by liam in 2017' = INACCURATE"
+    "- Summary doesn't mention founding year = NOT AN ACCURACY ISSUE"
+    "- Summary uses casual language = NOT AN ACCURACY ISSUE"
+     "- Summary adds extra information not present in source = NOT AN ACCURACY ISSUE"
+ 
+    "IMPORTANT: Your evaluation should be strictly based on the Accuracy criterion and should not consider factors like comprehensiveness, conciseness, or fluency or conversational tone."
+    "- Do NOT deduct marks for conversational tone such as pauses, fillers, interjections (e.g., "Right," "Mhmm," "Yeah"), or sentence breaking for dialogue flow. These are stylistic and do not count as inaccuracies."
+    "- DO NOT deduct marks for tone, style, level of detail, or missing information since it is a podcast type summary "
+    "- DO NOT deduct marks for any analogy or example found in summary or for a example/analogy it says that it not present in source text"
+    "- DO NOT deduct marks if the summary explains the line with example and it is suitable for that statement "
+    "- Do not deduct marks if summary adds extra information that is not present in source (this is not an accuracy issue)"
+    "- DO NOT deduct marks for any missing information - NOT AN ACCURACY ISSUE (this is comprehensiveness issue)."
+    "- DO NOT deduct marks for information not present in source material  - NOT AN ACCURACY ISSUE (this is comprehensiveness issue )."
+    "- DO NOT deduct marks for hallucination   - NOT AN ACCURACY ISSUE. "
+    "Focus ONLY on: Is what the summary states factually correct or incorrect?"
+    "Be strict in your assessment of inaccuracies, as even minor factual errors can
+    "Be strict in your assessment of inaccuracies, as even minor factual errors can significantly impact the summary's reliability, but ignore conversational style markers or any missing or omission details."
+    "In your reasoning, clearly identify and describe any inaccuracies found in the summary."
+)

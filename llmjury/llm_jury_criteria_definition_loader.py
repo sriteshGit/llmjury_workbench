@@ -17,11 +17,10 @@
 import logging
 
 from langchain_core.prompts import PromptTemplate
-from venice.core.Connector import Connector
-from venice.core.Operator import Operator
-from venice_gentech.utils.prompt_configuration_manager import PromptConfigurationManager
-
+from llmjury.runtime.connector import Connector
+from llmjury.runtime.operator import Operator
 from llmjury.support.paths import PROMPT_CONFIG_SEARCH_PATH
+from llmjury.support.prompt_configuration_manager import PromptConfigurationManager
 
 
 class LLMJURYCriteriaPromptDefinitionLoader(Operator):

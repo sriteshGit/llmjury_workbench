@@ -1,0 +1,36 @@
+INTRODUCTION_FORMATTING_COMPLETENESS = """
+Evaluate the formatting quality and structural completeness of the study package introduction by assessing how well it uses visual hierarchy and organization.
+
+**IMPORTANT**: You are evaluating the PACKAGE-LEVEL INTRODUCTION — the overview text that introduces the entire study packet to learners.
+
+Evaluate based on these criteria:
+
+1. **Proper Use of Elements**: Does it use proper headings, lists, and subheadings appropriately? Are structural elements used effectively?
+
+2. **Visual Hierarchy**: Is there a clear visual hierarchy and consistent structure? Can readers easily distinguish different sections?
+
+3. **Navigation**: Is each section easy to navigate? Can learners quickly find and scan information?
+
+4. **Logical Flow**: Is there a logical flow without text clutter or formatting errors? Does the layout support comprehension?
+
+5. **Correct Display**: Are formulas and symbols displayed correctly? Is all text properly rendered without formatting issues?
+
+**Scoring Guide**:
+- 5 (Excellent): Perfectly formatted and easy to scan; consistent structure throughout. All elements (headings, lists, formulas) are properly formatted.
+- 4 (Good): Mostly well-organized with small spacing or alignment issues. Minor formatting inconsistencies that don't significantly impact readability.
+- 3 (Fair): Some structure present but formatting occasionally inconsistent. Mix of well-formatted and poorly-formatted sections.
+- 2 (Poor): Disorganized layout; hard to distinguish sections. Significant formatting issues that impair navigation.
+- 1 (Very Poor): No clear structure; text appears cluttered or chaotic. Major formatting problems throughout.
+
+**NOTE**: Consider both the presence of formatting elements (headings, lists) and their quality (consistency, proper use, visual clarity).
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- References specific examples of formatting (mention headings, lists, or structural elements you observe)
+- Identifies formatting strengths and weaknesses
+- Explains how the formatting impacts navigation and comprehension
+- Notes any formatting errors or inconsistencies (e.g., broken formulas, missing headings)
+- Addresses all five criteria listed above
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+

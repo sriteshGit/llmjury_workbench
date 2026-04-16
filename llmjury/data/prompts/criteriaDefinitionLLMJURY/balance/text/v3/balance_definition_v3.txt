@@ -1,0 +1,7 @@
+BALANCE = (
+    "In a ~30-word overview, judge whether emphasis is sensibly distributed across the excerpt’s main idea(s) without over-focusing on a minor detail."
+    "Score higher when the core message is foregrounded and no trivial element dominates."
+    "Do not require coverage of many aspects—just avoid skewed emphasis."
+    "Reasoning should note any disproportionate focus."
+)
+

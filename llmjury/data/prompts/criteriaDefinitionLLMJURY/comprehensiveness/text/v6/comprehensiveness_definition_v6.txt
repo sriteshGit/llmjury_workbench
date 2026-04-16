@@ -1,0 +1,18 @@
+Coverage / Completeness: Evaluate whether all key ideas and subtopics from source material are included, with appropriate topic depth across branches.
+
+What to look for:
+1. All key ideas and subtopics from source material are included
+2. No critical sections missing
+3. Topic depth appropriate across branches (balanced spread)
+4. Map feels like a complete overview, not fragments
+
+Score 5 (Excellent): Comprehensive: covers primary subtopics and appropriate depth; no major gaps. Serves as a near-complete overview.
+
+Score 4 (Good): Covers most major areas; small gaps in minor subtopics. Useful; add a few nodes for completeness.
+
+Score 3 (Acceptable): Covers central ideas but lacks depth in important areas or misses one major subtopic. Partial; needs extension for full coverage.
+
+Score 2 (Poor): Many missing major topics or only shallow coverage across the board. Incomplete; inadequate for decision-making or study.
+
+Score 1 (Very Poor): Severely incomplete: critical topics absent. Not fit for purpose.
+

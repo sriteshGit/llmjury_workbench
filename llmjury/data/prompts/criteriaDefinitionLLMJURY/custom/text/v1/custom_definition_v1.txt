@@ -1,0 +1,6 @@
+CUSTOM = (
+    "Evaluate the response based on the custom evaluation criteria provided in the prompt. "
+    "This is a generic evaluation placeholder that allows for flexible, user-defined assessment criteria. "
+    "When using custom prompts, the specific evaluation guidelines should be defined in the custom_prompt_template parameter."
+)
+

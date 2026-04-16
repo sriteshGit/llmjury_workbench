@@ -1,0 +1,40 @@
+QUERY_AMBIGUITY_RESOLUTION = (
+    "Evaluate how well the agent manages vague or underspecified user queries. Do not consider accuracy of calculations or comprehensiveness of coverage."
+
+    "SCORING RUBRIC (bounded 1–5):"
+    "Assign one score (1–5). You may use 0.5 increments. Never go below 1 or above 5."
+
+    "ISSUE TAXONOMY"
+    "- Critical issues (fundamentally poor ambiguity handling that invalidates the response):"
+    "  • Ignores ambiguous elements and makes unsupported assumptions"
+    "  • Provides answer without acknowledging or addressing ambiguity"
+    "  • Chooses inappropriate interpretation without justification"
+    "  • Fails to identify when query is too vague to answer meaningfully"
+    "- Moderate issues:"
+    "  • Acknowledges ambiguity but provides inadequate resolution"
+    "  • Makes reasonable interpretation but doesn't clearly explain assumptions"
+    "  • Addresses some ambiguous elements while ignoring others"
+    "  • Provides answer but doesn't highlight how ambiguity affects conclusions"
+
+    "COUNTING GUIDANCE"
+    "- Count each distinct ambiguity handling issue once. Do not double-count the same problem across categories; choose the higher-severity category."
+
+    "DECISION RULES"
+    "- Cap: If any critical issue is present, the maximum possible score is 3.5."
+    "- If 2+ critical issues → 1–2 (default 1 if multiple moderates also present)."
+    "- If exactly 1 critical issue → 3; adjust to 2 if 2+ moderates or the critical is severe; adjust to 3.5 if otherwise strong."
+    "- If 0 critical issues:"
+    "    • 0 moderates → 5"
+    "    • 1–2 moderates → 4"
+    "    • 3–4 moderates → 3"
+    "    • 5+ moderates → 2"
+    "- Prefer the lower score when borderline (including 0.5 steps)."
+
+    "CALIBRATION WITH EXAMPLES"
+    "- 5 (Excellent): 'The query asks for "growth" but doesn't specify timeframe. I'll provide both QoQ (5%) and YoY (18%) growth, as both are commonly requested.' → Excellent ambiguity resolution."
+    "- 4 (Good): 'Since timeframe isn't specified, I calculated YoY growth: 18%.' → Good handling, minor clarity issue."
+    "- 3.5 (Good/Fair borderline): Acknowledges ambiguity but makes questionable interpretation without clear justification."
+    "- 3 (Fair): 'Growth is 18%' (doesn't address that 'growth' could mean QoQ, YoY, or other periods). → Acknowledges gap but doesn't address implications."
+    "- 2 (Poor): Assumes YoY when query could mean QoQ, without any acknowledgment of the ambiguity. → Poor ambiguity handling."
+    "- 1 (Very Poor): Proceeds with analysis without recognizing that the query is too vague to answer meaningfully. → Fundamentally poor approach."
+)

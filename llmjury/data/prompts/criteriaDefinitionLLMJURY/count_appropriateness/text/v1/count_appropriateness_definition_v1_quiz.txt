@@ -1,0 +1,35 @@
+QUIZ_COUNT_APPROPRIATENESS = """
+Evaluate whether the number of quiz questions is appropriate for the lesson's length and complexity.
+
+**IMPORTANT**: You are evaluating the QUANTITY of quiz questions relative to the lesson content provided.
+
+Evaluate based on these criteria:
+
+1. **Appropriate Quantity**: Is the number of questions appropriate for the lesson length and complexity?
+
+2. **Not Too Short**: Are there enough questions to test understanding of key concepts (not missing important ideas)?
+
+3. **Not Too Long**: Are there too many questions that become overwhelming for learners?
+
+4. **Concept Coverage**: Are all major lesson concepts tested at least once?
+
+**Scoring Guide**:
+- 5 (Excellent): Ideal number of questions for the lesson length. Fully covers all major concepts without unnecessary extras. Balanced, efficient assessment.
+- 4 (Good): Slightly more or fewer questions than ideal. Covers most key concepts but may miss one minor concept OR include an extra non-essential question.
+- 3 (Fair): Noticeable imbalance - too short (missing multiple concepts) or too long (testing concepts multiple times). Only partially represents lesson content.
+- 2 (Poor): Clearly too few questions to test understanding OR excessively long for no reason. Many key ideas untested.
+- 1 (Very Poor): Quiz length is completely inappropriate (e.g., 1-2 questions for a long lesson, or 20+ questions for a simple lesson). Does not meaningfully assess the lesson at all.
+
+**NOTE**: Consider the lesson length, number of key concepts taught, and complexity when evaluating quiz question quantity.
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- States the actual number of quiz questions and lesson complexity/length
+- Explains whether the quantity is too few, appropriate, or too many
+- Identifies which key lesson concepts are tested or missing from the quiz
+- Assesses whether any questions are redundant or test the same concept multiple times
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+
+
+

@@ -29,7 +29,7 @@ import openpyxl  # type: ignore[import-untyped]
 import pandas as pd
 from openpyxl.styles import Alignment, Font  # type: ignore[import-untyped]
 from openpyxl.utils import get_column_letter  # type: ignore[import-untyped]
-from venice.core.Operator import Operator
+from llmjury.runtime.operator import Operator
 
 from llmjury.constants import (
     COMPRESSION_RATIO_COL,

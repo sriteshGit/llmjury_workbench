@@ -1,0 +1,8 @@
+COMPREHENSIVENESS = (
+    "For a ~30-word overview drawn from a short source excerpt, assess whether the summary captures the central purpose and the most critical 1–2 ideas present in the excerpt."
+    "Do not expect exhaustive coverage; prioritize the core message and top-level themes signaled by the excerpt."
+    "Score higher when: (a) the main point is present, and (b) one or two truly key elements are included."
+    "Do not penalize missing secondary details given the strict length limit."
+    "In reasoning, state which essential idea(s) from the excerpt were captured or missed."
+)
+

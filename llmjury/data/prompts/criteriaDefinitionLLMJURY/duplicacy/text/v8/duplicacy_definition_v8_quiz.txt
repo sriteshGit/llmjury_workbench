@@ -1,0 +1,81 @@
+QUIZ_DUPLICATION = """
+Evaluate whether quiz questions are unique and avoid repetition across all lessons.
+
+**IMPORTANT**: You are evaluating ALL QUIZ QUESTIONS from the study package - check for duplication across different lessons.
+
+**CRITICAL DISTINCTION: Educational Scaffolding vs. Problematic Duplication**
+
+Quiz questions are designed to TEST and REINFORCE lesson content. Some repetition is EXPECTED and PEDAGOGICALLY SOUND.
+
+**ACCEPTABLE (Not Duplication):**
+1. **Concept Reinforcement Across Lessons:**
+   - Different questions testing the same core concept from different angles
+   - Progressive difficulty on the same topic (basic → intermediate → advanced)
+   - Questions that build upon each other across lessons
+   
+2. **Pedagogical Repetition:**
+   - Questions covering fundamental concepts that appear in multiple lessons
+   - Assessment of prerequisite knowledge needed for later lessons
+   - Review questions that reinforce earlier material
+   
+3. **Different Question Types on Same Topic:**
+   - Multiple choice, true/false, short answer on the same concept
+   - Different phrasing testing same knowledge (acceptable variation)
+
+**PROBLEMATIC DUPLICATION (Score Low):**
+1. **Exact Copy-Paste:**
+   - Identical questions with identical wording
+   - Same question appearing multiple times with no variation
+   
+2. **Trivial Rewording:**
+   - Only changing 1-2 words but asking the exact same thing
+   - Swapping synonyms without changing the question's intent
+   
+3. **Redundant Assessment:**
+   - Multiple identical questions in the SAME quiz
+   - Questions that test nothing new after concept already assessed
+
+**EVALUATION FOCUS:**
+Ask: "Do questions test concepts in DIVERSE, MEANINGFUL ways, even if topics overlap?"
+NOT: "Does any question mention a topic that appeared before?"
+
+**Example - ACCEPTABLE (Not Duplication):**
+Lesson 1 Quiz: "What is RSA encryption?"
+Lesson 3 Quiz: "How does RSA encryption differ from symmetric encryption?"
+Assessment: NOT duplication - Both mention RSA but test different knowledge levels
+
+**Example - PROBLEMATIC DUPLICATION:**
+Lesson 1 Quiz: "What is RSA encryption?"
+Lesson 2 Quiz: "What is RSA encryption?"
+Assessment: Clear duplication - Exact same question, tests same knowledge
+
+Evaluate based on these criteria:
+
+1. **Uniqueness Across Lessons**: Are quiz questions unique across all lessons?
+
+2. **No Rewording**: Does the quiz avoid repeating the same question in different wording?
+
+3. **New Learning Validation**: Does each quiz add new learning validation without redundancy?
+
+4. **Variety**: Is there sufficient variety in the types of questions asked?
+
+**Scoring Guide**:
+- 5 (Excellent): Questions test concepts in diverse, meaningful ways. Any topic overlap serves pedagogical purposes (e.g., progressive difficulty, building knowledge). No exact duplicates or trivial rewording.
+- 4 (Good): Mostly diverse questions with intentional concept reinforcement. Perhaps 1-2 questions could be more distinct, but educational scaffolding is appropriate.
+- 3 (Fair): Some questions are too similar without adding pedagogical value. Mix of meaningful assessment and redundant questions.
+- 2 (Poor): Frequent problematic duplication (exact copies, trivial rewording). Many questions assess the same knowledge without progression or variation.
+- 1 (Very Poor): Heavy exact duplication; many questions are copy-pasted or minimally reworded. Lacks assessment diversity.
+
+**NOTE**: Check for exact duplicates, near-duplicates with similar wording, and questions testing the same concept across different lessons.
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- Identifies any duplicate or near-duplicate quiz questions (cite specific examples)
+- Compares questions across all lessons for repetition
+- Evaluates the variety and uniqueness of assessment questions
+- Assesses whether the same concepts are tested multiple times
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+
+
+

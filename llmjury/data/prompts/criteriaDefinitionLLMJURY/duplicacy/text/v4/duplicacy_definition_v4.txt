@@ -1,0 +1,38 @@
+DUPLICACY = (
+    "Evaluate the DAA response’s efficiency of information delivery: redundancy, repetition, and cognitive load. Do not consider accuracy or comprehensiveness."
+
+    "SCORING RUBRIC (bounded 1–5):"
+    "Assign one score (1–5). You may use 0.5 increments. Never go below 1 or above 5."
+
+    "ISSUE TAXONOMY"
+    "- Critical issues (heavily increase cognitive load):"
+    "  • Heavy duplication across multiple formats (narrative + table + calculation all repeat the same numbers)"
+    "  • Extensive repetition of caveats or disclaimers"
+    "- Moderate issues:"
+    "  • Minor redundancy in phrasing or restating the same figure once"
+    "  • Unnecessary technical sections when not needed for the user’s task"
+    "  • Inefficient presentation that slightly increases cognitive load"
+
+    "COUNTING GUIDANCE"
+    "- Count each distinct redundancy pattern at most once (e.g., narrative+table duplication = one pattern). Do not double-count the same pattern across categories; choose the higher-severity category."
+
+    "DECISION RULES"
+    "- Cap: If any critical redundancy pattern is present, the maximum possible score is 3.5."
+    "- If 2+ critical patterns → 1–2 (default 1 if multiple moderates also present)."
+    "- If exactly 1 critical pattern → 3; adjust to 2 if 2+ moderates or the pattern is severe; adjust to 3.5 if otherwise strong."
+    "- If 0 critical patterns:"
+    "    • 0 moderates → 5"
+    "    • 1–2 moderates → 4"
+    "    • 3–4 moderates → 3"
+    "    • 5+ moderates → 2"
+    "- Prefer the lower score when borderline (including 0.5 steps)."
+
+    "CALIBRATION WITH EXAMPLES"
+    "- 5 (Excellent): Clear, single-format delivery: 'Revenue grew 12% YoY. See table below.' → No repetition."
+    "- 4 (Good): Mostly clean; repeats the % once in narrative and table."
+    "- 3.5 (Good/Fair borderline): One critical duplication pattern present but otherwise concise and well-structured."
+    "- 3 (Fair): Repeats caveats twice and restates figures with minor redundancy."
+    "- 2 (Poor): Numbers repeated in narrative + table + calculations + caveats."
+    "- 1 (Very Poor): Same figures and caveats repeated many times; bloated response."
+)
+

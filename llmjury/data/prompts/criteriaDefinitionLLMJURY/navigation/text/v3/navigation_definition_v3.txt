@@ -1,0 +1,7 @@
+NAVIGATION = (
+    "Evaluate micro-structure and signposting in the ~30-word overview."
+    "Even in one sentence, the topic should be introduced clearly and proceed in a readable order."
+    "Penalize confusing ordering, dangling references, or missing subject that harms readability."
+    "Reasoning should indicate where structure hinders quick understanding."
+)
+

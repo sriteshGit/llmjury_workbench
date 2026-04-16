@@ -19,11 +19,8 @@ import re
 from typing import Any
 
 import numpy as np
-from venice.core.Connector import Connector
-from venice.core.Operator import Operator
-from venice_gentech.common.llm.chat_llm_invoker import ChatLLMInvoker
-from venice_gentech.common.llm.llm_wrapper import LLMWrapper, ModelFactory
 
+from llmjury.chat_invoker import ChatLLMInvoker, LLMWrapper
 from llmjury.constants import (
     CALCULATED_SUFFIX,
     CRITERIA_DEFINITION_BASE_DIR,
@@ -55,7 +52,10 @@ from llmjury.llm_jury_criteria_definition_loader import (
 )
 from llmjury.llm_jury_prompt_loader import LLMJURYPromptLoader
 from llmjury.prompt_selector import PromptSelector
+from llmjury.model_factory import ChatModelSpec
 from llmjury.prompt_version_config import PromptVersionConfig
+from llmjury.runtime.connector import Connector
+from llmjury.runtime.operator import Operator
 from llmjury.support.prompt_constants import CONTENT, SYSTEM
 
 
@@ -184,7 +184,7 @@ class LLMJURYPerSection(Operator):
         self,
         section_id: str,
         filename: str,
-        model_list: list[ModelFactory],
+        model_list: list[ChatModelSpec],
         evaluation_data: dict[str, Any],
         prompt_id: str = 'llm_jury_v2',
         prompt_base_path: str = 'llmJURY',
@@ -564,7 +564,7 @@ class LLMJURYPerSection(Operator):
 
         return results
 
-    def _process_model_response(self, response: Any, model: ModelFactory) -> dict[str, Any]:
+    def _process_model_response(self, response: Any, model: ChatModelSpec) -> dict[str, Any]:
         """Process and validate model response, handling various response formats.
 
         This method handles several response formats:
@@ -578,7 +578,7 @@ class LLMJURYPerSection(Operator):
         ----------
         response : Any
             The model response to process
-        model : ModelFactory
+        model : ChatModelSpec
             The model factory instance used to generate the response
 
         Returns
@@ -818,7 +818,7 @@ class LLMJURYPerSection(Operator):
                 return reasoning_match.group(1).strip()
         return ''
 
-    def _validate_response(self, response: dict[str, Any], model: ModelFactory) -> dict[str, Any]:
+    def _validate_response(self, response: dict[str, Any], model: ChatModelSpec) -> dict[str, Any]:
         """Validate and normalize the response structure."""
         if not isinstance(response, dict):
             self.logger.warning(f'Unexpected response type from {model.model_class.value}: {type(response)}')
@@ -835,12 +835,12 @@ class LLMJURYPerSection(Operator):
 
         return response
 
-    def _get_model_wrapper(self, model: ModelFactory) -> LLMWrapper:
+    def _get_model_wrapper(self, model: ChatModelSpec) -> LLMWrapper:
         """Get configured model wrapper based on model type.
 
         Args
         ----
-        model : ModelFactory
+        model : ChatModelSpec
             The model factory instance
 
         Returns
@@ -892,7 +892,7 @@ class LLMJURYPerSection(Operator):
             return ''
 
     def determine_summary_scores_per_criteria(
-        self, summary: str, section_text: str, model: ModelFactory, question: str | None
+        self, summary: str, section_text: str, model: ChatModelSpec, question: str | None
     ) -> dict[Any, Any]:
         """Load the prompts for each criteria and make LLM Calls."""
         model_identifier = model.model_name if hasattr(model, 'model_name') else model.model_class.value

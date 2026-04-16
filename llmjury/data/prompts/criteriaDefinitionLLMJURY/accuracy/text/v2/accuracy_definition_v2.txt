@@ -1,0 +1,11 @@
+ACCURACY = (
+    "Evaluate the summary's accuracy by assessing how precisely and correctly it represents the factual information that IS PRESENT in the summary. Your evaluation should focus on:"
+    "1. Factual correctness: Exact representation of facts and data that are included in the summary"
+    "2. Precision: Accurate use of specific details and numbers that are included in the summary"
+    "3. Context preservation: Maintaining the original context of information that is included in the summary"
+    "4. Source fidelity: Faithful representation of the source material that is included in the summary"
+    "IMPORTANT: Your evaluation should be strictly based on the Accuracy criterion and should not consider factors like comprehensiveness, conciseness, or fluency."
+    "DO NOT deduct marks for missing information - this is a comprehensiveness issue, not an accuracy issue."
+    "Be strict in your assessment of inaccuracies, as even minor factual errors can significantly impact the summary's reliability."
+    "In your reasoning, clearly identify and describe any inaccuracies found in the summary."
+) 

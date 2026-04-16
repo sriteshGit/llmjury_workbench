@@ -1,0 +1,5 @@
+COMPREHENSIVENESS = (
+                "Check whether the summary fully addresses all aspects of the given prompt, ensuring that no key details or requirements are missing. Your evaluation should be strictly based on the Comprehensiveness criterion and should not consider factors like accuracy, conciseness, or fluency."
+                "If any part of the summary fails to capture essential elements requested in the prompt, deduct marks accordingly. However, unlike accuracy, do not assign a very low score (e.g., 1 or 2) for just one or a few missing aspects. Instead, adjust the score based on the extent of missing information."
+                "In your reasoning, clearly describe which parts of the prompt were not adequately covered or omitted in the summary."
+            )

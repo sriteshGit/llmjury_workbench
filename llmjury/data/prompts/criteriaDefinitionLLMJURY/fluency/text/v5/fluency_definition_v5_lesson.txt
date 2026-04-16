@@ -1,0 +1,35 @@
+LESSON_READABILITY = """
+Evaluate the readability and fluency of lesson content by assessing how smoothly the text flows and how accessible the language is.
+
+**IMPORTANT**: You are evaluating LESSON CONTENT from the study package — assess how easy it is to read and follow the teaching material.
+
+Evaluate based on these criteria:
+
+1. **Sentence Structure**: Are sentences concise, clear, and logically ordered? Do they flow naturally?
+
+2. **Language Match**: Does the language match the learner's grade level or proficiency level?
+
+3. **Information Flow**: Does information flow smoothly from one idea to the next without abrupt jumps?
+
+4. **Reading Ease**: Is the content easy to read without requiring multiple re-readings to understand?
+
+**Scoring Guide**:
+- 5 (Excellent): Highly readable and flows effortlessly; perfectly matched to target audience reading level.
+- 4 (Good): Generally smooth with minor readability or phrasing issues that don't impede understanding.
+- 3 (Fair): Moderately readable; occasional complex sentences or flow issues reduce ease of reading.
+- 2 (Poor): Hard to follow; uneven readability, awkward phrasing, or inappropriate language level.
+- 1 (Very Poor): Confusing or poorly written text that significantly impedes reading and learning.
+
+**NOTE**: Consider the target audience and whether the readability level is appropriate for effective learning.
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- References specific examples of smooth OR choppy writing (quote sentences)
+- Evaluates sentence structure and flow
+- Assesses language level appropriateness
+- Analyzes how easily the text can be read
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+
+
+

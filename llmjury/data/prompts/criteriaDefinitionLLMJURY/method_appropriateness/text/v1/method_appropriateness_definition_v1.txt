@@ -1,0 +1,40 @@
+METHOD_APPROPRIATENESS = (
+    "Evaluate whether the DAA response chose the right reasoning path (arithmetic operation, granularity, conversions, sequence) to arrive at the answer. Do not consider accuracy of calculations or comprehensiveness of coverage."
+
+    "SCORING RUBRIC (bounded 1–5):"
+    "Assign one score (1–5). You may use 0.5 increments. Never go below 1 or above 5."
+
+    "ISSUE TAXONOMY"
+    "- Critical issues (fundamentally wrong approach that invalidates the reasoning):"
+    "  • Wrong arithmetic operation for the question type (e.g., using addition when multiplication is needed)"
+    "  • Inappropriate granularity level (e.g., daily analysis when quarterly is required)"
+    "  • Wrong conversion approach (e.g., using simple percentage when CAGR is needed)"
+    "  • Incorrect sequence of operations that leads to wrong methodology"
+    "- Moderate issues:"
+    "  • Suboptimal but reasonable approach (e.g., using manual calculation when formula would be clearer)"
+    "  • Minor granularity mismatch (e.g., monthly when weekly would be more appropriate)"
+    "  • Inefficient but correct sequence of operations"
+    "  • Missing intermediate steps that would improve clarity"
+
+    "COUNTING GUIDANCE"
+    "- Count each distinct methodological issue once. Do not double-count the same problem across categories; choose the higher-severity category."
+
+    "DECISION RULES"
+    "- Cap: If any critical issue is present, the maximum possible score is 3.5."
+    "- If 2+ critical issues → 1–2 (default 1 if multiple moderates also present)."
+    "- If exactly 1 critical issue → 3; adjust to 2 if 2+ moderates or the critical is severe; adjust to 3.5 if otherwise strong."
+    "- If 0 critical issues:"
+    "    • 0 moderates → 5"
+    "    • 1–2 moderates → 4"
+    "    • 3–4 moderates → 3"
+    "    • 5+ moderates → 2"
+    "- Prefer the lower score when borderline (including 0.5 steps)."
+
+    "CALIBRATION WITH EXAMPLES"
+    "- 5 (Excellent): 'To calculate YoY growth, I used (current - previous) / previous * 100, then converted to percentage points for comparison.' → Perfect methodology."
+    "- 4 (Good): 'I calculated growth as (new - old) / old, which is correct for YoY.' → Right approach, minor presentation issue."
+    "- 3.5 (Good/Fair borderline): Uses correct formula but applies it to wrong data granularity (daily instead of quarterly)."
+    "- 3 (Fair): 'I added all the monthly numbers to get annual growth' → Wrong approach (should use proper YoY calculation)."
+    "- 2 (Poor): 'I divided revenue by users to get growth rate' → Fundamentally wrong operation for growth calculation."
+    "- 1 (Very Poor): 'I used multiplication to calculate percentage change' → Completely inappropriate method."
+)

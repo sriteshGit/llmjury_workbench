@@ -1,0 +1,21 @@
+COHERENCE = (
+    "Evaluate the summary's coherence by assessing how well the ideas that ARE PRESENT in the summary are connected and "
+    "flow logically, while still maintaining a conversational style. Your evaluation should focus on:\n"
+    "1. Conversational flow: Even with interruptions, pauses, or speaker changes, do the ideas progress smoothly?\n"
+    "2. Connection between turns: Are the speaker exchanges (e.g., short interjections, acknowledgments, or restarts) "
+    "integrated in a way that preserves logical relationships between points?\n"
+    "3. Transitions: Do shifts between speakers or topics still create a logical flow, even with formal transition words?\n"
+    "4. Unity: Do all included exchanges contribute to a consistent, unified discussion rather than feeling scattered or disconnected?\n\n"
+
+    "EXAMPLE OF NORMAL CONVERSATIONAL FLOW:"
+    "Liam: \"It's a name, it doesn't mean anything.\"
+    "Chloe: \"Right\"
+    "Liam: \"We could call it the .......\"
+    "Chloe: \"Mhmm\"
+    "Liam: \"But what's interesting about this brain area is that...\"
+
+    "IMPORTANT: Your evaluation should be strictly based on the Coherence criterion and should not consider factors like "
+    "accuracy, comprehensiveness, or conciseness.\n"
+    "In your reasoning, provide specific examples of strong or weak coherence (e.g., where interjections enhance flow or "
+    "where abrupt breaks disrupt understanding) and explain how they impact the overall understanding of the summary."
+)

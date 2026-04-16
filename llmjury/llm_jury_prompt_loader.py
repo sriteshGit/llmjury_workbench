@@ -19,11 +19,10 @@ from collections.abc import Callable
 from typing import Any
 
 from langchain_core.prompts import FewShotPromptTemplate, PromptTemplate
-from venice.core.Connector import Connector
-from venice.core.Operator import Operator
-from venice_gentech.utils.prompt_configuration_manager import PromptConfigurationManager
-
 from llmjury.constants import PromptFamily
+from llmjury.runtime.connector import Connector
+from llmjury.runtime.operator import Operator
+from llmjury.support.prompt_configuration_manager import PromptConfigurationManager
 from llmjury.support.prompt_constants import CONTENT, HUMAN, SYSTEM, TYPE
 from llmjury.support.paths import PROMPT_CONFIG_SEARCH_PATH
 

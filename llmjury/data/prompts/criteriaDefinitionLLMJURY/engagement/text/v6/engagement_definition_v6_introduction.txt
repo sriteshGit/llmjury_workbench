@@ -1,0 +1,52 @@
+INTRODUCTION_TONE_ENGAGEMENT = """
+Evaluate the tone and engagement level of the study package introduction by assessing how well it motivates learners and creates a welcoming learning atmosphere.
+
+**IMPORTANT**: You are evaluating the PACKAGE-LEVEL INTRODUCTION — the overview text that introduces the entire study packet to learners.
+
+**CRITICAL DISTINCTION: Professional Engagement vs. Entertainment**
+
+Educational content can be engaging through clarity, structure, and relevance—not just informal or "exciting" language.
+
+**ACCEPTABLE - Professional Engagement:**
+- Clear, well-organized presentation of learning objectives
+- Structured overview that helps learners understand what to expect
+- Direct, purposeful language that respects learners' time
+- Logical flow that builds understanding
+- Relevant examples that connect to real learning needs
+
+**ALSO ACCEPTABLE - Enthusiastic Engagement:**
+- Warm, conversational tone that builds excitement
+- Questions that spark curiosity
+- Storytelling that draws learners in
+- Vivid language that creates interest
+
+**BOTH STYLES ARE ENGAGING!** Do not penalize professional/academic tone as "not engaging." Well-structured, clear educational content IS engaging for serious learners.
+
+Evaluate based on these criteria:
+
+1. **Tone Quality**: Is the tone appropriate for educational content? Does it create a positive learning environment through clarity, encouragement, or enthusiasm?
+
+2. **Motivation Building**: Does the introduction motivate learning through clear objectives, relevance, curiosity, or connection to learner needs?
+
+3. **Language Effectiveness**: Is the writing clear and purposeful? Professional clarity is engaging; only penalize if truly robotic or confusing.
+
+4. **Learner Value**: Does it help learners understand what they'll gain? Does it respect their time with efficient, valuable information?
+
+**Scoring Guide**:
+- 5 (Excellent): Highly engaging through clarity, structure, enthusiasm, or relevance. Creates clear motivation through well-organized objectives OR warm encouraging tone OR both. Professional clarity and structure count as engaging!
+- 4 (Good): Effective engagement through either professional clarity or warm tone. Well-organized with clear value, though could be enhanced with more personality OR clear objectives with minor organizational gaps.
+- 3 (Fair): Neutral presentation; provides information but lacks either clear structure or motivational elements. Neither confusing nor inspiring.
+- 2 (Poor): Genuinely problematic—confusing structure, unclear objectives, or language that creates barriers. Actually makes content harder to approach (not just "professional").
+- 1 (Very Poor): Discouraging, negative, alienating, or so poorly structured it demotivates learners. Makes content unappealing or inaccessible.
+
+**NOTE**: Do NOT penalize clear, well-structured, professional educational writing as "not engaging." Many learners find professional clarity MORE engaging than forced enthusiasm. Only score low if the introduction is genuinely problematic (confusing, demotivating, or poorly organized).
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- References specific examples from the introduction (quote phrases that exemplify tone)
+- Explains how the language creates (or fails to create) engagement
+- Addresses all four criteria listed above
+- Describes the emotional impact on learners
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+

@@ -25,7 +25,7 @@ import logging
 from typing import Any
 
 import pandas as pd
-from venice.core.Operator import Operator
+from llmjury.runtime.operator import Operator
 
 from llmjury.constants import (
     COMPRESSION_RATIO_COL,

@@ -12,7 +12,7 @@ This repository is a **standalone** copy of the LLMJury evaluation stack and Str
 
 - Python 3.10+
 - [uv](https://github.com/astral-sh/uv) (recommended) or pip
-- API credentials expected by `venice-gentech` / `pulse-engine` (Azure LLM deployments, etc.)
+- API keys for your chosen providers (see [LiteLLM providers](https://docs.litellm.ai/docs/providers)), e.g. `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, or Azure OpenAI variables as documented by LiteLLM.
 
 ### Installation & Running
 

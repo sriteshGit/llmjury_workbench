@@ -1,0 +1,82 @@
+INTRODUCTION_ACCURACY = """
+Evaluate the factual accuracy of the study package introduction by assessing whether all statements are correct and aligned with the source material and subject matter.
+
+**IMPORTANT**: You are evaluating the PACKAGE-LEVEL INTRODUCTION — the overview text that introduces the entire study packet to learners.
+
+**TWO-PART ACCURACY EVALUATION**:
+1. **Content Agreement** (if content is grounded in provided documents): Verify statements match the source documents
+2. **Factual Accuracy** (if content comes from external knowledge): Verify statements are factually correct based on established knowledge
+
+**NOTE**: The overall accuracy score is an aggregate of both dimensions where applicable.
+
+**CRITICAL: Distinguish Content Accuracy from Package Metadata**
+
+Study packages ADD VALUE by organizing source content into structured learning experiences. The packaging itself (timeframes, sessions, structure) is NOT subject to accuracy evaluation—only the actual subject matter content is.
+
+**Evaluate accuracy of SUBJECT MATTER ONLY:**
+- Are the topics, concepts, facts, and theories about the subject correct?
+- Does the content match what the source documents teach?
+- Are learning goals accurately describing what will be covered?
+- Are definitions, examples, and explanations factually correct?
+
+**DO NOT PENALIZE - These are Package Design Elements (NOT subject matter):**
+- ❌ Timeframes/duration: "1-week study plan," "4-week program," "2-hour sessions"
+- ❌ Session counts/structure: "10 sessions," "divided into 5 parts," "3 lessons per day"
+- ❌ Target audience: "designed for beginners," "intermediate level," "advanced learners"
+- ❌ Study approach: "self-paced," "exam preparation focused," "hands-on learning"
+- ❌ Learning design: "includes quizzes," "interactive exercises," "video lessons"
+- ❌ Package organization: "progressive difficulty," "modular structure," "daily practice"
+
+**These are PEDAGOGICAL DECISIONS about how to package content, not FACTUAL CLAIMS about the subject.**
+
+**Example 1 - ACCURATE (Package metadata present, subject matter correct):**
+Introduction: "This 1-week package covers Python basics: variables, data types, loops, functions, and object-oriented programming."
+Sources: Python tutorial covering variables, data types, loops, functions, OOP
+Assessment: ACCURATE - Subject matter (Python topics) is correct. The "1-week" timeframe is package planning, not a claim about Python itself.
+
+**Example 2 - ACCURATE (Multiple package elements, subject matter correct):**
+Introduction: "This self-paced, beginner-friendly package with 10 sessions covers linear algebra fundamentals: vectors, matrices, and transformations."
+Sources: Linear algebra textbook covering vectors, matrices, transformations
+Assessment: ACCURATE - Subject matter (linear algebra topics) is correct. "Self-paced," "beginner-friendly," "10 sessions" are package design choices, not math claims.
+
+**Example 3 - INACCURATE (Subject matter error—THIS is what to penalize):**
+Introduction: "This package covers Python basics: variables, loops, and the deprecated 'goto' statement."
+Sources: Modern Python tutorial (Python has no 'goto' statement)
+Assessment: INACCURATE - Subject matter contains factual error about Python. The 'goto' statement does not exist in Python.
+
+**Example 4 - INACCURATE (Wrong learning goals—THIS is what to penalize):**
+Introduction: "Learn advanced calculus concepts including derivatives, integrals, and quantum mechanics."
+Sources: Calculus textbook (no quantum mechanics content)
+Assessment: INACCURATE - Learning goals misrepresent content. Quantum mechanics is not a calculus topic and not in sources.
+
+Evaluate based on these criteria:
+
+1. **Factual Correctness**: Are all statements in the introduction factually correct? Are there any errors or misrepresentations?
+
+2. **Source Alignment**: If content is grounded in documents, does the information align with the source material without introducing distortions?
+
+3. **Subject Matter Alignment**: Does the information accurately represent the subject matter being taught?
+
+4. **Goal and Summary Accuracy**: Do learning goals and summaries accurately reflect the actual lesson content?
+
+**Scoring Guide**:
+- 5 (Excellent): Completely accurate regarding SUBJECT MATTER (topics, concepts, facts). All content claims are verifiable and correct. Package design elements (timeframes, sessions, structure, difficulty level) should be IGNORED—they are not subject to accuracy evaluation.
+- 4 (Good): Subject matter content is accurate with only minor unclear claims that don't significantly impact understanding. Package metadata does NOT affect scoring.
+- 3 (Fair): Some inaccuracies or oversimplifications about the SUBJECT MATTER, but overall meaning remains understandable. Requires minor corrections. Do NOT downgrade for package planning information.
+- 2 (Poor): Frequent factual errors about concepts, topics, or content claims. Contains misinformation about the SUBJECT that could mislead learners. (Note: Timeframes and sessions are NOT misinformation!)
+- 1 (Very Poor): Major factual inaccuracies about the SUBJECT MATTER; unreliable information throughout. Fundamentally misrepresents the topics being taught.
+
+**REMINDER**: Evaluate ONLY the subject matter content (facts, concepts, theories, definitions, examples about the topic). Do NOT evaluate or penalize package design decisions (duration, session count, difficulty level, learning approach). These are pedagogical choices, not accuracy issues.
+
+**NOTE**: When evaluating accuracy, consider both explicit errors (wrong facts) and implicit errors (misleading implications, oversimplifications that distort meaning).
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- Identifies specific statements that are accurate or inaccurate (quote examples)
+- Explains what is correct or incorrect about each identified statement
+- Cross-references with source documents (if applicable) or established knowledge
+- Assesses whether learning goals match the actual content
+- Addresses all four criteria listed above
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+

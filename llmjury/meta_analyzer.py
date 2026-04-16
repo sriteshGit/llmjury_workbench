@@ -29,23 +29,23 @@ from typing import Any
 import openpyxl  # type: ignore[import-untyped]
 import pandas as pd
 from langchain_core.prompts import PromptTemplate
-from venice.core.Connector import Connector
-from venice.core.Operator import Operator
-from venice.core.Session import Session
-from venice_gentech.common.llm.chat_llm_invoker import ChatLLMInvoker
-from venice_gentech.common.llm.llm_wrapper import ModelFactory
 
+from llmjury.chat_invoker import ChatLLMInvoker
 from llmjury.constants import SheetName
+from llmjury.model_factory import ChatModelSpec
+from llmjury.runtime.connector import Connector
+from llmjury.runtime.operator import Operator
+from llmjury.runtime.session import Session
 from llmjury.support.prompt_constants import CONTENT, HUMAN, SYSTEM, TYPE
 
 # Default prompt paths
-PROMPTS_BASE_PATH = Path(__file__).parent.parent.parent / 'data' / 'prompts' / 'llmJURY' / 'analysis'
+PROMPTS_BASE_PATH = Path(__file__).resolve().parent / 'data' / 'prompts' / 'llmJURY' / 'analysis'
 DEFAULT_PROMPT_CONFIG = 'meta_analysis_v1'
 
 
 def run_standalone_meta_analysis(
     df: pd.DataFrame,
-    model: ModelFactory,
+    model: ChatModelSpec,
     logger: logging.Logger | None = None,
     score_threshold: float = 3.0,
     prompt_config: str | None = None,
@@ -58,7 +58,7 @@ def run_standalone_meta_analysis(
     ----------
     df : pd.DataFrame
         Transformed jury results DataFrame
-    model : ModelFactory
+    model : ChatModelSpec
         Model to use for meta-analysis
     logger : logging.Logger, optional
         Logger instance
@@ -144,7 +144,7 @@ class LLMJuryMetaAnalyzer(Operator):
     def __init__(
         self,
         df: pd.DataFrame,
-        model: ModelFactory,
+        model: ChatModelSpec,
         logger: logging.Logger | None = None,
         score_threshold: float = 3.0,
         prompt_config: str | None = None,
@@ -435,7 +435,7 @@ def _prepare_prompt_data(meta_data: list[dict[str, Any]], score_threshold: float
     return file_analysis, aggregated_stats
 
 
-def _invoke_llm(prompt_text: str, model: ModelFactory, logger: logging.Logger) -> str:
+def _invoke_llm(prompt_text: str, model: ChatModelSpec, logger: logging.Logger) -> str:
     """Invoke LLM with minimal Session overhead."""
     try:
         prompt_messages = [

@@ -1,0 +1,7 @@
+ACCURACY = (
+            "See if all parts of the summary are factually correct and contain the information only from the source text. "
+            "Make sure that your judgement is only on Accuracy criteria and not assessing the summary holistically on "
+            "completeness, conciseness etc.. Be strict if you find inaccuracies in any part of the summary.Do not deduct marks for missing information, as it is not an inaccuracy but an issue with completeness and marks should not be deducted for completeness issue in accuracy. It gets tracked under comprehensiveness axis"
+            "Even if there is only one/minor inaccuracy, please give a low score of 1/2"
+            "In the reasoning, please describe any inaccurate information you found in the summary."
+            )

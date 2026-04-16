@@ -1,7 +1,7 @@
 [project]
 name = "llmjury-workbench"
 version = "0.1.0"
-description = "LLMJury evaluation engine and Streamlit workbench (standalone)"
+description = "LLMJury evaluation engine and Streamlit workbench (standalone, public LLM APIs only)"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -13,8 +13,7 @@ dependencies = [
     "numpy>=1.26,<3",
     "langchain-core>=0.3",
     "pydantic>=2.7,<3",
-    "pulse-engine>=4.0.1,<5",
-    "venice-gentech>=32",
+    "litellm>=1.59.0",
 ]
 
 [project.optional-dependencies]

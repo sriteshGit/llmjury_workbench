@@ -1,0 +1,35 @@
+LESSON_COVERAGE = """
+Evaluate the coverage and comprehensiveness of lesson content by assessing whether all key ideas and subtopics are adequately addressed.
+
+**IMPORTANT**: You are evaluating LESSON CONTENT from the study package — verify that the lesson comprehensively covers topics from the source material.
+
+Evaluate based on these criteria:
+
+1. **Topic Completeness**: Are all key ideas and subtopics from the source material addressed in the lesson?
+
+2. **Depth and Balance**: Are explanations balanced in depth and completeness? Are important concepts given appropriate coverage?
+
+3. **Supporting Elements**: Are supporting examples or visuals included to strengthen understanding?
+
+4. **No Gaps**: Does the lesson avoid shallow or skipped concepts from the source material?
+
+**Scoring Guide**:
+- 5 (Excellent): Comprehensive and balanced coverage of all key subtopics from source material; no significant omissions.
+- 4 (Good): Covers most subtopics well from source material, with minor omissions.
+- 3 (Fair): Some areas underdeveloped or missing from source coverage.
+- 2 (Poor): Many important topics from source material missing or briefly mentioned.
+- 1 (Very Poor): Very limited or incomplete; fails to teach core ideas present in source material.
+
+**NOTE**: Compare lesson content against source documents to identify any key concepts that should have been covered but were omitted or insufficiently explained.
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- References specific topics in source documents and whether they're covered in lessons
+- Identifies any significant gaps or omissions
+- Evaluates the balance and depth of explanations
+- Assesses the quality and appropriateness of examples provided
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+
+
+

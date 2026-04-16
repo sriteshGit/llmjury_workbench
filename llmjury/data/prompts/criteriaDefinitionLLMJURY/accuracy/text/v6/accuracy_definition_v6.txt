@@ -1,0 +1,18 @@
+Accuracy: Evaluate whether facts and relationships in the mindmap reflect the original source documents correctly.
+
+What to look for:
+1. Facts and relationships reflect the original source documents
+2. Parent-child links mirror real relationships (cause→effect, category→example, etc.)
+3. Terminology and sequence are correct
+4. No invented or distorted information
+
+Score 5 (Excellent): Content is factually correct and relationships between items are accurate and from the document. Reliable map; can be used as an authoritative summary.
+
+Score 4 (Good): Mostly accurate; one or two minor factual errors or imprecise phrasings that don't mislead. Trustworthy with small caveats.
+
+Score 3 (Acceptable): Some inaccuracies or ambiguous claims that require verification and not from the document content. Use with caution; correct before sharing widely.
+
+Score 2 (Poor): Multiple factual errors or incorrect parent-child relations that distort meaning. Risky to rely on without correction.
+
+Score 1 (Very Poor): Major factual mistakes or false relationships that invalidate key parts of the map. Unsafe to use until corrected.
+

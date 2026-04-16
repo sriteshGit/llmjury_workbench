@@ -1,0 +1,25 @@
+CLARITY = (
+    "This is a podcast/transcript conversation summary between two co-hosts. Evaluate the podcast summary's clarity by assessing how well it communicates the information that IS PRESENT in the summary "
+    "using clear, understandable language while maintaining a natural conversational flow. Your evaluation should focus on:\n"
+    "1. Conversational clarity: Even though the text mimics spoken dialogue (with interruptions, pauses, or restarts), "
+    "is the meaning still easy to follow?\n"
+    "2. Interjections and pauses: Do short acknowledgments (e.g., 'Right', 'Mhmm') or hesitations add to the natural flow "
+    "without making the summary confusing?\n"
+    "3. Sentence breaks and turn-taking: Are ideas split into clear, digestible parts when speakers interject, rather than "
+    "becoming fragmented or incoherent?\n"
+    "4. Readability: Overall ease of understanding the content in its conversational form, even with informal phrasing.\n\n"
+    "5. Terminology: Appropriate use of technical terms and definitions in the present content"
+    "6. Sentence structure: Well-constructed sentences that are easy to follow in the included te
+
+    "EXAMPLE OF NORMAL CONVERSATIONAL FLOW:"
+    "Liam: \"It's a name, it doesn't mean anything.\"
+    "Chloe: \"Right\"
+    "Liam: \"We could call it the .......\"
+    "Chloe: \"Mhmm\"
+    "Liam: \"But what's interesting about this brain area is that...\"
+
+    "IMPORTANT: Your evaluation should be strictly based on the Clarity criterion and should not consider factors like "
+    "accuracy, comprehensiveness, or conciseness.\n"
+    "In your reasoning, provide specific examples of clear or unclear passages (e.g., where interjections improve flow, or "
+    "where broken sentences cause confusion) and explain how they impact understanding."
+)

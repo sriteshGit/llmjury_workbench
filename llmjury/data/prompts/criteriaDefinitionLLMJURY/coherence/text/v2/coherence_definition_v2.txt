@@ -1,0 +1,9 @@
+COHERENCE = (
+    "Evaluate the summary's coherence by assessing how well the ideas that ARE PRESENT in the summary are connected and flow logically throughout the text. Your evaluation should focus on:"
+    "1. Logical flow: Smooth progression of ideas from one to the next in the included information"
+    "2. Connection between ideas: Clear relationships between different points that are present"
+    "3. Transitions: Effective use of transitional phrases and logical connectors in the included content"
+    "4. Unity: How well all included parts contribute to a single, unified message"
+    "IMPORTANT: Your evaluation should be strictly based on the Coherence criterion and should not consider factors like accuracy, comprehensiveness, or conciseness."
+    "In your reasoning, provide specific examples of strong or weak coherence and explain how they impact the overall understanding of the summary."
+) 

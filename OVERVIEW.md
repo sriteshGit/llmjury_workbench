@@ -11,7 +11,7 @@ The LLMJury Workbench is built as a modular Streamlit application that provides 
 ### High-Level Flow
 
 ```
-Workbench (UI)  →  subprocess  →  runners/run_llmjury_evaluator.py  →  llmjury + venice-gentech / pulse-engine
+Workbench (UI)  →  subprocess  →  runners/run_llmjury_evaluator.py  →  llmjury + LiteLLM (public provider APIs)
   Streamlit           Python         LLMJury Runner           Framework
 ```
 

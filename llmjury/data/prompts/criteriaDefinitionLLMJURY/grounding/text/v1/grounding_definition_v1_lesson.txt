@@ -1,0 +1,37 @@
+LESSON_GROUNDING = """
+Evaluate how well lesson content is grounded in and supported by valid source material, without fabricated or unsupported claims.
+
+**IMPORTANT**: You are evaluating LESSON CONTENT from the study package — verify that all content is directly traceable to the source documents provided.
+
+Evaluate based on these criteria:
+
+1. **Traceability**: Is all lesson content directly traceable to the source documents or required input topic?
+
+2. **No Fabrication**: Are there any fabricated facts, invented examples, or unsupported claims not present in source material?
+
+3. **Internal Consistency**: Are there contradictions within lessons or against the introduction or other lessons?
+
+4. **Scope Adherence**: Do lessons stay within the scope of source material, without introducing concepts not asked for or not supported by sources?
+
+5. **Source-Based Explanations**: Do all explanations stay within the boundaries of the provided source material?
+
+**Scoring Guide**:
+- 5 (Excellent): Fully grounded; every explanation and example is supported by source material. No external, invented, or contradictory information.
+- 4 (Good): Mostly grounded; occasional minor speculative or loosely supported statements that don't mislead or change meaning.
+- 3 (Fair): Partially grounded; some unclear or weakly supported claims, or minor overextensions beyond source material. Nothing fully fabricated.
+- 2 (Poor): Often ungrounded; multiple invented details, contradictions, or unsupported claims throughout the lesson.
+- 1 (Very Poor): Ungrounded; major parts include fabricated facts, unsupported ideas, or contradictions. Heavy reliance on external knowledge not provided.
+
+**NOTE**: Compare each claim, example, and explanation in the lesson against the source documents to verify it is properly grounded.
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- Verifies specific lesson content against source documents (with citations)
+- Identifies any fabricated, invented, or unsupported claims
+- Notes any contradictions within lessons or with other content
+- Assesses whether lessons stay within the scope of source material
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+
+
+

@@ -1,0 +1,8 @@
+TRUTHFULNESS = (
+    "Judge whether all information in the ~30-word overview comes directly from, or is reasonably inferred from, the short source excerpt."
+    "Allow only minimal, obvious inferences (e.g., acronym expansions, currency symbols)."
+    "Do not allow speculative claims, external facts, or unsupported generalizations beyond the excerpt."
+    "Score lower when any statement cannot be verified from the excerpt."
+    "Reasoning must cite which parts of the summary are not grounded in the excerpt."
+)
+

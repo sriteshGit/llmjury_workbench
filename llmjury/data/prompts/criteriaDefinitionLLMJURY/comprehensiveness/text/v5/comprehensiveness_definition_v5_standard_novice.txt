@@ -1,0 +1,34 @@
+COMPREHENSIVENESS = (
+
+    "This is a podcast/transcript conversation summary between two co-hosts. Evaluate the podcast summary's comprehensiveness by comparing it to the source text, considering it is a medium-length summary, and assessing how well it captures all essential information and key details from the source text. Your evaluation should focus on:
+    "1. Core message capture: Inclusion of the document’s primary purpose, central thesis, and main conclusions."
+    "2. Key theme coverage: Representation of most major topics, sections, and recurring themes from the source, providing a broad understanding of the document."
+    "3. Critical details and insights: Retention of significant findings, supporting arguments, and crucial data points that deepen understanding of the document’s content and implications."
+    "4. Contextual completeness:  Preservation of adequate context around topics and details to ensure the summary remains meaningful, coherent, and accurately reflective of the source."
+
+     "EXAMPLE OF NORMAL CONVERSATIONAL FLOW:"
+    "Liam: \"It's a name, it doesn't mean anything.\"
+    "Chloe: \"Right\"
+    "Liam: \"We could call it the .......\"
+    "Chloe: \"Mhmm\"
+    "Liam: \"But what's interesting about this brain area is that...\"
+
+    "EXAMPLES  OF COMPREHENSIVENESS EVALUATION FOR MEDIUM SUMMARIES:Use these examples as reference points when evaluating comprehensiveness"
+    "1."
+    "Source: Rent-A-Center Q3 2010 earnings call covering financial results, expansion plans, operational metrics, and Q&A with analysts."
+    "Good Medium Summary: Covers quarterly performance (revenue $664.6M, EPS $0.62), expansion into Mexico (25-75 stores planned), rack acceptance kiosks (151 locations, targeting 220), financial services strategic review, and key operational improvements. Omits some analyst Q&A details and specific timeline projections."
+    "Poor Medium Summary: Only mentions earnings call and company name, missing financial results, expansion plans, and operational highlights that are central to understanding the quarter's performance."
+
+    "2."
+    "Source: Hilton acquires majority controlling interest in Sydell Group to expand NoMad Hotels brand worldwide, including deal terms, strategic rationale, and growth projections."
+    "Good Medium Summary: Covers acquisition announcement, strategic benefits for brand expansion, key deal terms, and growth vision for NoMad Hotels. Omits some financial details and specific timeline projections."
+    "Poor Medium Summary: Only mentions acquisition and brand names, missing strategic rationale, deal terms, and expansion plans that are central to understanding the deal's significance."
+
+    "IMPORTANT: Your evaluation should be strictly based on the Comprehensiveness criterion and should not consider factors like accuracy, conciseness, fluency, or conversational tone."
+    "Importance of Numerical Data: Pay close attention to numerical or quantitative information (e.g., statistics, figures, measurements, or dates used quantitatively) from the source text. If the numbers appear in the summary as words (e.g., “five million” instead of “5,000,000”) or vice versa, they should still be treated as present and not penalized.Deduct marks only if key numerical information is entirely omitted"
+    "Scoring Guidance: Consider the relative importance of missing information when scoring — omission of minor or peripheral supporting details should have minimal impact on the score. Deduct marks for the absence of a main topic, key argument, crucial content, or significant numerical data."
+    "- Conversational flow (interjections, pauses, fillers) should NOT count against comprehensiveness since these are stylistic, not content-based."
+    "- Do NOT conflate brevity or conversational phrasing with lack of comprehensiveness."
+   "- The summary should provide a broad yet focused view of the document’s essential ideas and key content."
+   "In your reasoning, clearly identify any significant information or numerical data that was omitted from the summary, and explain its potential impact on understanding the source material. Keep in mind that your evaluation is solely focused on comprehensiveness."
+)

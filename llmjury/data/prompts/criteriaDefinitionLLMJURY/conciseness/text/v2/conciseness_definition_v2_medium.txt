@@ -1,0 +1,11 @@
+CONCISENESS = (
+"Evaluate the summary's conciseness by recognizing that this is a medium summary (under 1000 words) and by assessing how efficiently it conveys the information present without unnecessary elaboration or redundancy."
+"For medium summaries, it is important that there is minimal duplication of ideas, sentences, or phrases, and that language remains purposeful and focused. Every section should contribute meaningfully to the overall message without drifting into excessive detail or filler."
+"Your evaluation should focus on:"
+"1. Information density: Each word, phrase, or sentence should carry meaningful content without filler, verbose language, or unnecessary elaboration."
+"2. Redundancy: Identify instances of repeated information, ideas, or phrasing that could be eliminated or consolidated."
+"3. Word economy: Language should be clear, precise, and to the point, ensuring that the summary remains engaging without being verbose."
+"4. Focus: The summary should maintain alignment with the core themes and critical details, avoiding peripheral or minor elements that do not significantly contribute to understanding."
+"IMPORTANT: Evaluate only the conciseness of the summary. Do not consider accuracy, comprehensiveness, or fluency."
+"In your reasoning, provide specific examples where the summary could be made more concise under 1000 words for medium summary. Highlight areas where rephrasing, trimming, or restructuring would enhance efficiency or clarity without sacrificing important details."
+)

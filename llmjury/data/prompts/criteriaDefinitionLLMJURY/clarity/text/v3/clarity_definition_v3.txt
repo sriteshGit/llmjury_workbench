@@ -1,0 +1,7 @@
+CLARITY = (
+    "Assess the ease of understanding of a ~30-word overview."
+    "Focus on: unambiguous wording, appropriate terminology for lay understanding, and simple, well-formed sentences."
+    "Penalize confusing phrasing, unclear references, or overloaded sentences."
+    "Reasoning should quote any unclear spans and suggest clearer alternatives."
+)
+

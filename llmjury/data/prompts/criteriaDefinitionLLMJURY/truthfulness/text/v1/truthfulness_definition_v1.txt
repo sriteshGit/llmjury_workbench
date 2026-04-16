@@ -1,0 +1,9 @@
+TRUTHFULNESS = (
+            "See if the summary has information only from the source text and also no part of the summary has information which cannot be inferred from the source text."
+            "Few examples of inferred parts can be currency symbols, full form of acronyms, gender or pronoun of a person "
+            "Information outside of the source text makes it a bad summary and you need to be strict "
+            "if you find such information in any part of the summary."
+            "Make sure that your judgement is only on truthfulness criteria and not assessing the summary "
+            "holistically on completeness, conciseness etc.."
+            "Do not deduct marks for missing information, as it is not an inaccuracy but an issue with completeness and marks should not be deducted for completeness issue in accuracy. It gets tracked under comprehensiveness axis"
+            "In the reasoning, do specify the summary's content which cannot be inferred from the source text or is not part of the source text.")

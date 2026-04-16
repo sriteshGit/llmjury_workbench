@@ -1,0 +1,82 @@
+FLASHCARD_DUPLICATION = """
+Evaluate whether flashcards are unique and avoid repetition within and across lessons.
+
+**IMPORTANT**: You are evaluating ALL FLASHCARDS from the study package - check for duplication both within individual lessons and across different lessons.
+
+**CRITICAL DISTINCTION: Spaced Repetition vs. Problematic Duplication**
+
+Flashcards are designed for MEMORIZATION and REVIEW. Some repetition is INTENTIONAL and EDUCATIONALLY VALUABLE.
+
+**ACCEPTABLE (Not Duplication):**
+1. **Spaced Repetition (Core Learning Principle):**
+   - Same concept appearing in flashcards across lessons for retention
+   - Incremental difficulty on fundamental concepts
+   - Review of key terms necessary for understanding later lessons
+   
+2. **Different Perspectives on Same Concept:**
+   - Definition card in Lesson 1, application card in Lesson 2
+   - Forward direction ("What is X?") and reverse direction ("X is defined as...?")
+   - Multiple flashcards breaking down complex concepts into parts
+   
+3. **Pedagogical Reinforcement:**
+   - Critical vocabulary that appears multiple times for mastery
+   - Foundation concepts reviewed before building advanced knowledge
+   - Essential terms reinforced across related lessons
+
+**PROBLEMATIC DUPLICATION (Score Low):**
+1. **Exact Duplicates in SAME Lesson:**
+   - Identical front and back text appearing multiple times in one lesson
+   - Copy-paste errors within a single flashcard set
+   
+2. **Trivial Rewording Without Value:**
+   - Changing 1-2 words but asking the exact same thing
+   - Swapping word order without changing meaning or difficulty
+   
+3. **Redundant Cards with No Learning Benefit:**
+   - Multiple cards in same lesson testing identical knowledge
+   - Cards that add no new information or perspective
+
+**EVALUATION FOCUS:**
+Ask: "Do flashcards provide VALUABLE REVIEW and REINFORCEMENT, even if concepts appear multiple times?"
+NOT: "Does any term or concept appear in more than one flashcard?"
+
+**Example - ACCEPTABLE (Not Duplication):**
+Lesson 1 Flashcard: "RSA encryption" → "Public key cryptographic system"
+Lesson 3 Flashcard: "RSA encryption" → "Uses prime factorization for security"
+Assessment: NOT duplication - Same term but different learning angles for mastery
+
+**Example - PROBLEMATIC DUPLICATION:**
+Lesson 1 Flashcard: "RSA encryption" → "Public key cryptographic system"
+Lesson 1 Flashcard: "RSA encryption" → "Public key cryptographic system" (exact duplicate)
+Assessment: Clear duplication - Same lesson, identical cards
+
+Evaluate based on these criteria:
+
+1. **Uniqueness Within Lessons**: Are flashcards unique within each individual lesson?
+
+2. **Uniqueness Across Lessons**: Are flashcards unique across different lessons (no repetition)?
+
+3. **Varied Phrasing**: Does the content avoid repeating definitions or phrasing?
+
+4. **Diverse Revision Material**: Do the flashcards ensure diverse and fresh revision material for learners?
+
+**Scoring Guide**:
+- 5 (Excellent): Flashcards provide valuable review and reinforcement. Any concept repetition serves learning purposes (spaced repetition, different angles). No exact duplicates within lessons.
+- 4 (Good): Strong use of pedagogical repetition across lessons for mastery. Perhaps 1-2 cards could be more distinct, but spaced repetition strategy is appropriate.
+- 3 (Fair): Some cards are redundant without adding learning value. Mix of meaningful review and unnecessary duplication.
+- 2 (Poor): Frequent problematic duplication (exact copies within lessons, trivial rewording). Many cards repeat without educational benefit.
+- 1 (Very Poor): Heavy exact duplication within lessons; many cards are copy-pasted without variation. Lacks learning value from repetition.
+
+**NOTE**: Check for exact duplicates, near-duplicates with similar wording, and conceptual repetition across all flashcards.
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- Identifies any duplicate or near-duplicate flashcards (cite specific examples)
+- Compares flashcards within and across lessons for repetition
+- Evaluates the diversity of revision material provided
+- Assesses whether repeated definitions or phrasing occur
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+
+
+

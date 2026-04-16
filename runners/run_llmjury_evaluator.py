@@ -30,11 +30,11 @@ from pathlib import Path
 from typing import Any
 
 import pandas as pd
-from venice.core.Connector import Connector
-from venice.core.Session import Session
-from venice_gentech.common.llm.llm_wrapper import AzureChatModel, ModelFactory
 
 from llmjury.constants import EvaluationCriteria, EvaluationMode, SheetName
+from llmjury.model_factory import ChatModelSpec
+from llmjury.runtime.connector import Connector
+from llmjury.runtime.session import Session
 from llmjury.excel_persister import LLMJuryExcelPersister
 from llmjury.llm_jury_results_transformer import LLMJuryResultsTransformer
 from llmjury.llmjury_evaluator import LLMJuryEvaluator
@@ -196,7 +196,7 @@ def llm_evaluator(
         logger.info(f'Using default models: {models}')
 
     # Load models and handle failures
-    model_list: list[ModelFactory | AzureChatModel] = []
+    model_list: list[ChatModelSpec] = []
     failed_models = []
     for model_name in models:
         try:

@@ -1,0 +1,58 @@
+LESSON_ORIGINALITY = """
+Evaluate the originality and uniqueness of lesson content by assessing whether it presents information in a fresh, non-repetitive way.
+
+**IMPORTANT**: You are evaluating ALL LESSON CONTENT from the study package — assess originality and check for repetition or duplication.
+
+**CRITICAL DISTINCTION: Original Packaging vs. Source-Based Content**
+
+Educational content MUST be based on source materials—that's good pedagogy! The originality we seek is in HOW information is explained and organized, not WHETHER it comes from sources.
+
+**ACCEPTABLE - Original Educational Packaging:**
+- Lessons draw from source materials but explain concepts in their own way
+- Each lesson adds unique examples, explanations, or perspectives
+- Information is reorganized/restructured for learning (different from source organization)
+- Concepts are presented with fresh phrasing that aids understanding
+- Same topic approached from different angles in different lessons
+
+**NOT ACCEPTABLE - Problematic Repetition:**
+- Copy-paste of identical explanations across multiple lessons
+- Same examples repeated verbatim without adding new value
+- Lessons that merely reword each other without new insights
+- Redundant lessons that don't build or expand understanding
+
+**DO NOT penalize:**
+- Content that comes from source materials (expected and appropriate!)
+- Concepts that appear in multiple lessons IF each adds new understanding
+- Terminology that must be consistent (technical terms should repeat)
+- Foundational concepts revisited with increasing depth (pedagogical scaffolding)
+
+Evaluate based on these criteria:
+
+1. **Unique Presentation**: Does each lesson present information with its own explanations, examples, and structure? (Source-based content is fine!)
+
+2. **No Internal Repetition**: Does each lesson avoid repeating itself unnecessarily within its own content?
+
+3. **No Cross-Lesson Duplication**: Do different lessons build on each other rather than copy-pasting the same explanations?
+
+4. **Pedagogical Value**: Does the content add unique learning value, even if topics overlap? (Revisiting concepts with new depth is positive!)
+
+**Scoring Guide**:
+- 5 (Excellent): Each lesson presents information with unique explanations, examples, and structure. Source-based content is packaged originally. No problematic copy-paste duplication. Concepts may recur but with fresh perspectives or increasing depth.
+- 4 (Good): Mostly unique presentation with minor repetition that serves pedagogical purposes (reinforcement, scaffolding). Source-based content is well-explained.
+- 3 (Fair): Some lessons feel repetitive or reworded without adding significant new value. Content is source-based (acceptable) but packaging could be more distinct.
+- 2 (Poor): Frequent verbatim or near-verbatim repetition across lessons. Lessons copy-paste explanations without adding unique value. Redundant content diminishes learning.
+- 1 (Very Poor): Heavily duplicated material throughout. Multiple lessons are essentially the same content reworded. No unique pedagogical value added.
+
+**NOTE**: Focus on problematic repetition (copy-paste, redundant lessons) NOT on whether content comes from sources (which is expected and good!). Pedagogical repetition for learning purposes (spaced review, increasing complexity) should NOT be penalized.
+
+**MANDATORY REQUIREMENT**: You MUST provide detailed reasoning that:
+- Identifies any repetitive content within or across lessons (quote examples)
+- Evaluates the uniqueness of explanations and examples
+- Assesses whether each lesson adds new value or merely repeats earlier content
+- Notes any generic or template-like phrasing
+- Provides at least 4-5 sentences with concrete observations
+"""
+
+
+
+

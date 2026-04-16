@@ -1,0 +1,6 @@
+FLUENCY = (
+    "Assess how naturally the ~30-word overview reads: smooth phrasing, correct grammar, and appropriate word choice."
+    "Penalize awkward constructions or grammar that interrupts flow."
+    "Reasoning should cite specific phrases that hinder fluency."
+)
+
