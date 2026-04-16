@@ -38,6 +38,12 @@ _ALIASES: dict[str, str] = {
     'gpt_5_mini': 'gpt-4o-mini',  # public mapping until OpenAI ships GPT-5 to LiteLLM
     'gpt_4': 'gpt-4-turbo',
     'gpt_35_turbo': 'gpt-3.5-turbo',
+    # xAI Grok — set XAI_API_KEY in .env (https://console.x.ai)
+    'grok_mini': 'xai/grok-3-mini',
+    'grok_free': 'xai/grok-3-mini',
+    'grok_fast': 'xai/grok-4-1-fast-non-reasoning',
+    # Groq — set GROQ_API_KEY in .env (https://console.groq.com)
+    'groq_fast': 'groq/llama-3.1-8b-instant',
 }
 
 
@@ -51,11 +57,13 @@ def get_model(model_name: str) -> ChatModelSpec:
     """
     Return a ChatModelSpec for LiteLLM.
 
-    Environment (typical):
-    - OPENAI_API_KEY for OpenAI models
-    - ANTHROPIC_API_KEY for Claude
-    - AZURE_API_KEY + AZURE_API_BASE + AZURE_API_VERSION for Azure OpenAI (prefix model with azure/)
-    See https://docs.litellm.ai/docs/providers
+    Environment (typical — use a repo-root ``.env``; see ``.env.example``):
+
+    - ``OPENAI_API_KEY`` — OpenAI
+    - ``XAI_API_KEY`` — xAI Grok (``xai/grok-...``)
+    - ``GROQ_API_KEY`` — Groq (``groq/...``)
+    - ``ANTHROPIC_API_KEY`` — Claude
+    - Azure / Gemini / others per https://docs.litellm.ai/docs/providers
     """
     key = _normalize_key(model_name)
     if key in _ALIASES:
@@ -72,7 +80,16 @@ def get_model(model_name: str) -> ChatModelSpec:
 
 
 def get_available_models() -> list[str]:
-    return sorted({*list(_ALIASES.keys()), 'gpt-4o-mini', 'gpt-4o', 'gpt-4-turbo'})
+    return sorted(
+        {
+            *_ALIASES.keys(),
+            'gpt-4o-mini',
+            'gpt-4o',
+            'gpt-4-turbo',
+            'xai/grok-3-mini',
+            'groq/llama-3.1-8b-instant',
+        }
+    )
 
 
 def is_azure_model(model_name: str) -> bool:

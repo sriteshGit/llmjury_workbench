@@ -1,6 +1,6 @@
 # LLMJury Workbench - Makefile
 
-.PHONY: help install run run-detached run-daemon stop kill-all status logs clean test all
+.PHONY: help install verify run run-detached run-daemon stop kill-all status logs clean test all
 
 # Default target
 .DEFAULT_GOAL := help
@@ -20,6 +20,12 @@ install: ## Install dependencies with uv
 	@command -v uv >/dev/null 2>&1 || { echo "Error: uv not found. Install: curl -LsSf https://astral.sh/uv/install.sh | sh"; exit 1; }
 	uv pip install -e .
 	@echo "✅ Dependencies installed"
+
+verify: ## Check imports and .env loading (no API calls)
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/verify_setup.py; else python3 scripts/verify_setup.py; fi
+
+verify-api: ## One LiteLLM completion (needs LLMJURY_VERIFY_MODEL + provider key in .env)
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/verify_setup.py --with-api; else python3 scripts/verify_setup.py --with-api; fi
 
 run: ## Start the workbench (foreground)
 	@echo "🚀 Starting LLMJury Workbench (foreground)..."

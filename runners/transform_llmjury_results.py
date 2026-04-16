@@ -45,6 +45,10 @@ import sys
 from pathlib import Path
 from typing import Any
 
+from llmjury.env_bootstrap import load_llmjury_env
+
+load_llmjury_env()
+
 import pandas as pd
 
 from llmjury.constants import EvaluationMode

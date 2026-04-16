@@ -12,7 +12,27 @@ This repository is a **standalone** copy of the LLMJury evaluation stack and Str
 
 - Python 3.10+
 - [uv](https://github.com/astral-sh/uv) (recommended) or pip
-- API keys for your chosen providers (see [LiteLLM providers](https://docs.litellm.ai/docs/providers)), e.g. `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, or Azure OpenAI variables as documented by LiteLLM.
+- API keys for at least one [LiteLLM-supported provider](https://docs.litellm.ai/docs/providers). Keys are read from the process environment; the repo loads a **repo-root `.env`** automatically (via `python-dotenv`).
+
+### Credentials (`.env`)
+
+1. Copy the template and edit (never commit `.env`; it is gitignored):
+
+```bash
+cp .env.example .env
+```
+
+2. Uncomment and set keys for the providers you use, for example:
+
+- **xAI Grok** (including free-tier credits from [console.x.ai](https://console.x.ai)): `XAI_API_KEY` — then choose models such as `grok_mini`, `grok_free`, or `xai/grok-3-mini` in the UI or CLI.
+- **Groq** ([console.groq.com](https://console.groq.com/keys)): `GROQ_API_KEY` — model alias `groq_fast` → `groq/llama-3.1-8b-instant`.
+- **OpenAI**: `OPENAI_API_KEY` — models like `gpt_4o_mini`.
+
+3. Optional env vars:
+
+- `LLMJURY_DEFAULT_MODELS` — comma-separated model names for the workbench multiselect default (e.g. `grok_mini,gpt_4o_mini`).
+- `LLMJURY_ENV_FILE` — absolute path to an env file if not using `./.env`.
+- `LLMJURY_VERIFY_MODEL` — used by `make verify-api` (e.g. `xai/grok-3-mini`).
 
 ### Installation & Running
 
@@ -25,6 +45,12 @@ make setup
 
 # Or just install dependencies
 make install
+
+# Recommended: isolated venv (avoids host numpy/pandas conflicts)
+python3 -m venv .venv && .venv/bin/pip install -e .
+
+# Confirm imports + .env loading (no network; uses .venv/bin/python if present)
+make verify
 
 # Run the workbench
 make run
@@ -82,6 +108,8 @@ chmod +x start_workbench.sh
 
 ```
 llmjury_workbench/
+├── .env.example                    # Template for API keys (copy to .env)
+├── scripts/verify_setup.py         # Independent sanity check (make verify)
 ├── app.py                          # Main Streamlit application
 ├── llmjury/                        # Evaluation library (ex-venice_eval.llm_based_evaluation.llmjury)
 │   ├── data/prompts/llmJURY/       # Prompt templates + configs for metrics / Q&A / comparison / meta

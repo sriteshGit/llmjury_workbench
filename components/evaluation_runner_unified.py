@@ -17,10 +17,15 @@
 """Unified evaluation runner for LLMJury Workbench - handles both fresh and re-analysis."""
 
 import json
+import os
 import subprocess
 import sys
 import time
 from pathlib import Path
+
+from llmjury.env_bootstrap import load_llmjury_env
+
+load_llmjury_env()
 
 import streamlit as st
 from utils.data_converter import convert_dashboard_export_to_eval_format
@@ -491,21 +496,30 @@ def _get_evaluation_config(needs_conversion):
         )
 
     with col2:
+        model_options = [
+            'gpt_4o_mini',
+            'gpt_5_mini',
+            'grok_mini',
+            'grok_free',
+            'xai/grok-3-mini',
+            'groq_fast',
+            'gemini-2.5-flash',
+            'gemini-2.5-pro',
+            'gpt_o3_mini',
+            'gpt_5',
+            'gpt_5_nano',
+            'gpt_5_chat',
+            'gpt_4o',
+        ]
+        _raw_defaults = os.environ.get('LLMJURY_DEFAULT_MODELS', 'gpt_4o_mini,gpt_5_mini')
+        _parsed_defaults = [x.strip() for x in _raw_defaults.split(',') if x.strip()]
+        model_defaults = [x for x in _parsed_defaults if x in model_options] or ['gpt_4o_mini', 'gpt_5_mini']
         models = st.multiselect(
             '🤖 Models',
-            [
-                'gpt_4o_mini',
-                'gpt_5_mini',
-                'gemini-2.5-flash',
-                'gemini-2.5-pro',
-                'gpt_o3_mini',
-                'gpt_5',
-                'gpt_5_nano',
-                'gpt_5_chat',
-                'gpt_4o',
-            ],
-            default=['gpt_4o_mini', 'gpt_5_mini'],
-            help='Select one or more models',
+            model_options,
+            default=model_defaults,
+            help='Select one or more models (set LLMJURY_DEFAULT_MODELS in .env for defaults). '
+            'Grok/xAI: set XAI_API_KEY in .env. Groq: set GROQ_API_KEY.',
         )
 
     with col3:
@@ -814,14 +828,19 @@ def _execute_evaluation(input_path, config, output_dir, use_folder_path=False):
             eval_script = f"""
 import sys
 import os
-sys.path.insert(0, '{repo_root}')
+from pathlib import Path
+
+_repo = Path(r'{repo_root}')
+sys.path.insert(0, str(_repo))
+
+from llmjury.env_bootstrap import load_llmjury_env
+load_llmjury_env(repo_root=_repo)
 
 # Change to output directory so results are saved there
-os.chdir('{output_dir}')
+os.chdir(r'{output_dir}')
 
 from runners.run_llmjury_evaluator import llm_evaluator
 from llmjury.constants import EvaluationMode
-from pathlib import Path
 
 llm_evaluator(
     eval_json_path=Path('{input_path}'),

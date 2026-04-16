@@ -16,6 +16,10 @@
 
 """LLMJury Workbench - Interactive evaluation and analysis tool."""
 
+from llmjury.env_bootstrap import load_llmjury_env
+
+load_llmjury_env()
+
 import streamlit as st
 from components.comparison import render_comparison_tab
 from components.evaluation_runner_unified import render_evaluation_runner_tab

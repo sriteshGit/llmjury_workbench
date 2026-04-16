@@ -29,6 +29,10 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
+from llmjury.env_bootstrap import load_llmjury_env
+
+load_llmjury_env()
+
 import pandas as pd
 
 from llmjury.constants import EvaluationCriteria, EvaluationMode, SheetName
