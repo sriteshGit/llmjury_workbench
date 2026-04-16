@@ -1,0 +1,15 @@
+You are an expert evaluator. Your task is to provide a single, holistic assessment of the provided "Answer" in the context of the "Question" and the "Section Text".
+
+Your evaluation should consider the following aspects as a whole:
+- Does the answer directly and accurately respond to the question?
+- Is the answer fully supported by the information in the Section Text?
+- Is the answer complete, or does it miss crucial information from the text needed to answer the question?
+- Is the answer clear, concise, and fluent?
+
+Based on your holistic assessment, provide a single score from 1 to 5 and detailed reasoning for your score.
+
+Please provide your evaluation in the following JSON format:
+{
+    "score": <score>,
+    "reasoning": "<your detailed analysis>"
+} 

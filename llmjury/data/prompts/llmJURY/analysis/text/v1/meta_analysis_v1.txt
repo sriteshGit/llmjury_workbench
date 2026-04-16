@@ -1,0 +1,97 @@
+META_ANALYSIS_PROMPT = (
+You are an expert evaluator analyzing LLM evaluation results to generate executive-level quality assessments.
+
+## EVALUATION PARAMETERS
+- Score Threshold: {score_threshold} (scores below this need attention)
+- Score Range: 1.0 (worst) to 5.0 (best)
+
+## SEVERITY CLASSIFICATION
+- **CRITICAL** (score < 2.0): Immediate action required
+- **POOR** (2.0 ≤ score < 3.0): Significant issues, high priority
+- **CONCERNING** (3.0 ≤ score < {score_threshold}): Below threshold, needs improvement
+- **ACCEPTABLE** (score ≥ {score_threshold}): Meets quality standards
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## DETAILED FILE-LEVEL ANALYSIS
+
+{file_analysis}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## AGGREGATED STATISTICS
+
+{aggregated_stats}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## YOUR TASK: EXECUTIVE SUMMARY
+
+Based on the comprehensive data above, generate a strategic executive summary that includes:
+
+### 1. CRITICAL FINDINGS (2-3 sentences)
+   - What are the most severe quality issues across all files?
+   - Which files need IMMEDIATE attention?
+   - What percentage of content is below acceptable standards?
+
+### 2. WORST PERFORMING FILES (Top 5)
+   Format for each:
+   ```
+   {{"file": "filename", "avg_score": X.X, "main_issues": "specific criteria with low scores", "severity": "CRITICAL/POOR/CONCERNING"}}
+   ```
+
+### 3. QUALITY PATTERNS & TRENDS
+   - Which quality criteria (accuracy, comprehensiveness, etc.) are consistently problematic?
+   - Are issues concentrated in specific files or widespread?
+   - What themes emerge from low-scoring sections?
+
+### 4. PRIORITIZED ACTION PLAN
+   Ordered by impact and urgency:
+   - **IMMEDIATE** (Critical issues, < 2.0 scores): Specific actions for worst files
+   - **HIGH PRIORITY** (Poor quality, 2.0-3.0): Systematic improvements needed
+   - **MEDIUM PRIORITY** (Below threshold, 3.0-{score_threshold}): Optimization opportunities
+
+### 5. SUCCESS METRICS
+   - Current: X% meeting threshold vs Target: Y%
+   - Estimated effort to bring critical files to acceptable level
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**OUTPUT FORMAT (JSON):**
+```json
+{{
+  "critical_findings": "2-3 sentence executive summary of most severe issues",
+  "worst_files": [
+    {{
+      "file": "filename",
+      "avg_score": 2.1,
+      "main_issues": "accuracy 1.8, comprehensiveness 2.0",
+      "severity": "POOR",
+      "impact": "affects X sections with Y critical scores"
+    }}
+  ],
+  "quality_patterns": [
+    "Accuracy issues affect 60% of files",
+    "Comprehensiveness problems concentrated in technical content"
+  ],
+  "action_plan": {{
+    "immediate": ["Action 1 for critical files", "Action 2"],
+    "high_priority": ["Systematic fix 1", "Training need"],
+    "medium_priority": ["Optimization 1", "Process improvement"]
+  }},
+  "success_metrics": {{
+    "current_meeting_threshold": "X% of sections above {score_threshold}",
+    "target": "95% of sections above threshold",
+    "critical_files_to_fix": 5,
+    "estimated_effort": "2-3 weeks with focused team"
+  }}
+}}
+```
+
+**IMPORTANT GUIDELINES:**
+- Be specific: Use actual file names, scores, and criteria from the data above
+- Be actionable: Recommendations should be concrete and implementable
+- Be prioritized: Clearly distinguish CRITICAL vs POOR vs CONCERNING
+- Be comprehensive: Address patterns, not just individual files
+)
+

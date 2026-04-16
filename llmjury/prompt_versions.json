@@ -1,0 +1,217 @@
+{
+  "summary": {
+    "metrics": {
+      "accuracy": "v2",
+      "truthfulness": "v2",
+      "comprehensiveness": {
+        "_base_version_": "v2",
+        "_customization_keys_": ["summary_customization_length"]
+      },
+      "conciseness": {
+        "_base_version_": "v2",
+        "_customization_keys_": ["summary_customization_length"]
+      },
+      "fluency": "v2",
+      "duplicacy": "v2",
+      "navigation": "v2",
+      "clarity": "v2",
+      "coherence": "v2",
+      "balance": "v2",
+      "custom": "v1",
+      "llm_jury": "v2"
+    },
+    "comparison": {
+      "comparison_with_source": "v2",
+      "comparison_without_source": "v2",
+      "comparison_with_ground_truth": "v2"
+    },
+    "question_answer": {
+      "question_answer": "v2",
+      "qna_without_source": "v2"
+    }
+  },
+  "overview": {
+    "metrics": {
+      "accuracy": "v3",
+      "truthfulness": "v3",
+      "comprehensiveness": "v3",
+      "conciseness": "v3",
+      "fluency": "v3",
+      "duplicacy": "v3",
+      "navigation": "v3",
+      "clarity": "v3",
+      "coherence": "v3",
+      "balance": "v3",
+      "custom": "v1",
+      "llm_jury": "v3"
+    },
+    "comparison": {
+      "comparison_with_source": "v2",
+      "comparison_without_source": "v2",
+      "comparison_with_ground_truth": "v2"
+    },
+    "question_answer": {
+      "question_answer": "v2",
+      "qna_without_source": "v2"
+    }
+  },
+  "podcast": {
+    "metrics":{
+      "accuracy":{
+      "_base_version_": "v5",
+      "_customization_keys_": [
+        "summary_customization_format"
+      ]
+    },
+      "comprehensiveness": {
+      "_base_version_": "v5",
+      "_customization_keys_": [
+        "summary_customization_length",
+        "summary_customization_format"
+      ]
+    },
+      "conciseness": {
+      "_base_version_": "v5",
+      "_customization_keys_": [
+        "summary_customization_length",
+        "summary_customization_format"
+      ]
+    },
+      "clarity": {
+      "_base_version_": "v5",
+      "_customization_keys_": [
+        "summary_customization_format"
+      ]
+    },
+      "coherence": {
+      "_base_version_": "v5",
+      "_customization_keys_": [
+        "summary_customization_format"
+      ]
+    },
+      "tonality":  {
+      "_base_version_": "v5",
+      "_customization_keys_": [
+        "summary_customization_format"
+      ]
+    },
+      "engagement":  {
+      "_base_version_": "v5",
+      "_customization_keys_": [
+        "summary_customization_format"
+      ]
+    },
+      "truthfulness": {
+      "_base_version_": "v5",
+      "_customization_keys_": [
+        "summary_customization_format"
+      ]
+    },
+      "usefulness": {
+      "_base_version_": "v5",
+      "_customization_keys_": [
+        "summary_customization_format"
+      ]
+    },
+      "analogy": {
+      "_base_version_": "v5",
+      "_customization_keys_": [
+        "summary_customization_length",
+         "summary_customization_format"
+      ]
+    },
+      "custom": "v1",
+      "balance": "v5",
+      "diversity": "v5",
+      "llm_jury": "v2"
+  },
+    "comparison": {
+      "comparison_with_source": "v1",
+      "comparison_without_source": "v1",
+      "comparison_with_ground_truth": "v1"
+    },
+    "question_answer": {
+      "question_answer": "v1",
+      "qna_without_source": "v1"
+    }
+  },
+  "daa_agents_response": {
+    "metrics": {
+      "accuracy": "v4",
+      "comprehensiveness": "v4",
+      "duplicacy": "v4",
+      "fluency": "v4",
+      "method_appropriateness": "v1",
+      "data_sufficiency_resolution": "v1",
+      "query_ambiguity_resolution": "v1",
+      "custom": "v1",
+      "llm_jury": "v4"
+    }
+  },
+  "study_package": {
+    "metrics": {
+      "accuracy": {
+        "_base_version_": "v7",
+        "_customization_keys_": ["study_component_type"]
+      },
+      "grounding": {
+        "_base_version_": "v1",
+        "_customization_keys_": ["study_component_type"]
+      },
+      "relevance": {
+        "_base_version_": "v1",
+        "_customization_keys_": ["study_component_type"]
+      },
+      "duplicacy": {
+        "_base_version_": "v8",
+        "_customization_keys_": ["study_component_type"]
+      },
+      "comprehensiveness": {
+        "_base_version_": "v8",
+        "_customization_keys_": ["study_component_type"]
+      },
+      "fluency": {
+        "_base_version_": "v5",
+        "_customization_keys_": ["study_component_type"]
+      },
+      "clarity": {
+        "_base_version_": "v7",
+        "_customization_keys_": ["study_component_type"]
+      },
+      "tonality": {
+        "_base_version_": "v6",
+        "_customization_keys_": ["study_component_type"]
+      },
+      "engagement": {
+        "_base_version_": "v6",
+        "_customization_keys_": ["study_component_type"]
+      },
+      "formatting_completeness": {
+        "_base_version_": "v1",
+        "_customization_keys_": ["study_component_type"]
+      },
+      "count_appropriateness": {
+        "_base_version_": "v1",
+        "_customization_keys_": ["study_component_type"]
+      },
+      "pedagogical_soundness": "v1",
+      "originality": "v1",
+      "diversity": "v1",
+      "llm_jury": "v2"
+    }
+  },
+  "mindmap": {
+    "metrics": {
+      "hierarchical_structure": "v1",
+      "duplicacy": "v6",
+      "comprehensiveness": "v6",
+      "clarity": "v6",
+      "accuracy": "v6",
+      "coherence": "v6",
+      "balance": "v6",
+      "depth_of_reasoning": "v1",
+      "usefulness": "v6",
+      "llm_jury": "v5"
+    }
+  }
+} 

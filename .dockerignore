@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Temporary files
+temp_evaluations/
+*.log
+
+# Documentation (not needed in container)
+docs/
+*.md
+!README.md
+
+# Tests
+tests/
+pytest_cache/
+.coverage
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore

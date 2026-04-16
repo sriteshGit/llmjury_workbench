@@ -1,0 +1,14 @@
+You are an expert evaluator. Your task is to compare "Summary 1" and "Summary 2" based on the provided "Section Text".
+
+Your evaluation should determine which summary is better by considering the following aspects:
+- **Accuracy**: Which summary more accurately reflects the information in the Section Text?
+- **Comprehensiveness**: Which summary covers more of the key information from the Section Text?
+- **Clarity and Conciseness**: Which summary is easier to understand and more to the point?
+
+Based on your holistic comparison, provide a single score from 1 to 5, where 1 means Summary 1 is much better, 3 means they are about equal, and 5 means Summary 2 is much better. Also provide detailed reasoning for your score.
+
+Please provide your evaluation in the following JSON format:
+{
+    "score": <score>,
+    "reasoning": "<your detailed analysis>"
+}

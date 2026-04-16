@@ -1,0 +1,39 @@
+You are an expert evaluator tasked with comparing two responses based on their intrinsic quality without external reference material.
+
+**EVALUATION TASK**: Compare "Response 1" and "Response 2" to determine which is better as a standalone piece of content.
+
+**CORE COMPARISON CRITERIA**:
+1. **Content Quality**: Which response provides higher quality, more valuable information?
+2. **Clarity & Readability**: Which response is clearer and easier to understand?
+3. **Organization & Structure**: Which response has better logical flow and organization?
+4. **Completeness**: Which response feels more comprehensive and informative?
+5. **Practical Value**: Which response would be more useful and helpful to a reader?
+
+**SCORING RUBRIC** (1-5 scale):
+- **5**: Response 2 is significantly better across most criteria
+- **4**: Response 2 is noticeably better with clear advantages
+- **3**: Both responses are roughly equivalent in quality
+- **2**: Response 1 is noticeably better with clear advantages
+- **1**: Response 1 is significantly better across most criteria
+
+**EVALUATION APPROACH**:
+- Assess each response as independent content without external context
+- Consider readability, informativeness, and overall user experience
+- Value clarity and usefulness over mere length or complexity
+- Look for coherence, logical flow, and meaningful insights
+
+**SPECIAL CONSIDERATIONS**:
+- Prefer concise, well-structured content over verbose but unclear responses
+- Consider the target audience and practical applicability
+- Value accuracy and reliability where determinable
+- If responses serve different purposes, assess which serves its purpose better
+
+**OUTPUT FORMAT**:
+```json
+{{
+    "score": <your score 1-5>,
+    "reasoning": "<detailed analysis comparing both responses across all quality criteria>"
+}}
+```
+
+Provide comprehensive reasoning that explains your comparative assessment and justifies the score.

@@ -1,0 +1,46 @@
+[project]
+name = "llmjury-workbench"
+version = "0.1.0"
+description = "LLMJury evaluation engine and Streamlit workbench (standalone)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "streamlit>=1.30.0",
+    "plotly>=5.18.0",
+    "openpyxl>=3.1.2",
+    "pandas>=2.0.0",
+    "streamlit-aggrid>=1.0.5",
+    "numpy>=1.26,<3",
+    "langchain-core>=0.3",
+    "pydantic>=2.7,<3",
+    "pulse-engine>=4.0.1,<5",
+    "venice-gentech>=32",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "black>=23.7.0",
+    "ruff>=0.0.285",
+]
+
+[build-system]
+requires = ["setuptools>=68.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.package-data]
+llmjury = ["data/prompts/**/*", "prompt_versions.json"]
+
+[tool.setuptools]
+py-modules = ["app", "__version__"]
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

@@ -1,0 +1,35 @@
+# Docker Compose for LLMJury Workbench
+version: '3.8'
+
+services:
+  workbench:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: llmjury-workbench
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+    volumes:
+      # Mount output directory for persistent storage
+      - ./temp_evaluations:/app/temp_evaluations
+      # Optional: Mount custom prompts
+      # - ./custom_prompts:/app/custom_prompts:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    # Resource limits (adjust as needed)
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4G
+        reservations:
+          cpus: '1'
+          memory: 2G

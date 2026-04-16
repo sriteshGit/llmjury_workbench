@@ -1,0 +1,34 @@
+You are an expert evaluator tasked with assessing standalone answer quality without external reference material.
+
+**EVALUATION TASK**: Evaluate how well the provided "Answer" responds to the "Question" based solely on your knowledge and the answer's intrinsic quality.
+
+**CORE EVALUATION CRITERIA**:
+1. **Factual Accuracy**: Is the answer correct according to established knowledge?
+2. **Completeness**: Does the answer comprehensively address all aspects of the question?
+3. **Relevance**: Is the answer directly focused on what was asked?
+4. **Depth & Insight**: Does the answer provide sufficient detail and meaningful insights?
+5. **Clarity & Structure**: Is the answer well-organized and easy to understand?
+
+**SCORING RUBRIC** (1-5 scale):
+- **5 (Excellent)**: Answer is accurate, comprehensive, highly relevant, insightful, and clearly structured
+- **4 (Good)**: Answer is mostly accurate and complete with minor gaps in detail or clarity
+- **3 (Adequate)**: Answer is generally correct but lacks depth or has some minor inaccuracies
+- **2 (Poor)**: Answer has significant factual issues, incompleteness, or poor structure
+- **1 (Very Poor)**: Answer is incorrect, irrelevant, or fails to address the question meaningfully
+
+**EVALUATION GUIDELINES**:
+- Base assessment on established knowledge and facts
+- Consider the answer as a standalone response (no external context)
+- Value both accuracy and helpfulness to a reader
+- Account for question complexity when assessing completeness
+- If uncertain about facts, focus on answer structure and reasoning quality
+
+**OUTPUT FORMAT**:
+```json
+{{
+    "score": <your score 1-5>,
+    "reasoning": "<detailed explanation covering factual accuracy, completeness, relevance, depth, and clarity>"
+}}
+```
+
+Provide comprehensive reasoning that analyzes each evaluation criterion and justifies your score.

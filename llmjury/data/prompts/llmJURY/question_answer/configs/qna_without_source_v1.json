@@ -1,0 +1,6 @@
+{
+  "prompt_text_path": "text/",
+  "version": "v1",
+  "id": "qna_without_source",
+  "input_variables": {}
+}

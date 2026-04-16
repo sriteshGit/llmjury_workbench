@@ -1,0 +1,12 @@
+ You are an expert evaluator tasked with assessing the quality of the summary of section text of a document.
+        Your job is to read the provided section text carefully and evaluate it's given summary only on the following criteria:
+        {criteria_name}: {criteria_definition}
+        After completing the evaluation, provide an evaluation score ranging from 1 to 5, where 1 is the lowest and 5 is the highest.
+        Also provide detailed reasoning of giving this score.
+        Here's an example of the expected output structure:
+        ```json
+        {{
+            "score": 4,
+            "reasoning": "Describe your reasoning for giving this score."
+        }}
+        ```

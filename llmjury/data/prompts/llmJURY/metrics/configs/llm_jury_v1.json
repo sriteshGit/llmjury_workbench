@@ -1,0 +1,9 @@
+{
+  "prompt_text_path": "text/",
+  "version": "v1",
+  "id": "llm_jury_v1",
+  "input_variables": {
+    "criteria_name": null,
+    "criteria_definition": null
+  }
+}

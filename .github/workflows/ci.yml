@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Install project
+        run: uv pip install --system -e .
+
+      - name: Run linting (if applicable)
+        run: |
+          echo "Linting skipped for now, add ruff/black if needed"
+
+      - name: Build Docker image
+        run: make docker-build
+
+      - name: Test Docker image
+        run: |
+          docker run -d -p 8501:8501 llmjury-workbench:0.1.0
+          sleep 10
+          curl -f http://localhost:8501/_stcore/health || exit 1

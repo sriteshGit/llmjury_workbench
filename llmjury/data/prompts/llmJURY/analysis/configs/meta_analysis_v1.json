@@ -1,0 +1,11 @@
+{
+  "prompt_text_path": "text/",
+  "version": "v1",
+  "id": "meta_analysis_v1",
+  "input_variables": {
+    "score_threshold": "Score threshold for classifying files as concerning",
+    "file_analysis": "Detailed file-level analysis with scores and statistics",
+    "aggregated_stats": "Overall statistics across all files"
+  }
+}
+

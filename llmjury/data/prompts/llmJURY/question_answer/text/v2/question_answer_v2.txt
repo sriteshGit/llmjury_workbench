@@ -1,0 +1,32 @@
+You are an expert evaluator tasked with assessing answer quality in a question-answering context.
+
+**EVALUATION TASK**: Evaluate how well the provided "Answer" responds to the "Question" using the "Source Text" as the authoritative reference.
+
+**CORE EVALUATION CRITERIA**:
+1. **Accuracy**: Is the answer factually correct according to the source text?
+2. **Completeness**: Does the answer fully address all aspects of the question using available information?
+3. **Relevance**: Is the answer directly focused on what was asked?
+4. **Source Support**: Is the answer well-grounded in the provided source text?
+5. **Clarity**: Is the answer clear, well-structured, and easy to understand?
+
+**SCORING RUBRIC** (1-5 scale):
+- **5 (Excellent)**: Answer is accurate, complete, highly relevant, well-supported by source, and clearly written
+- **4 (Good)**: Answer is mostly accurate and complete with minor gaps or unclear aspects
+- **3 (Adequate)**: Answer is partially correct but missing important details or has some inaccuracies
+- **2 (Poor)**: Answer has significant issues with accuracy, completeness, or relevance
+- **1 (Very Poor)**: Answer is incorrect, irrelevant, or fails to address the question
+
+**SPECIAL CASES**:
+- If the source text lacks information to answer the question completely, evaluate based on what's available
+- If the question is ambiguous, assess how well the answer addresses reasonable interpretations
+- Consider both explicit information and reasonable inferences from the source
+
+**OUTPUT FORMAT**:
+```json
+{{
+    "score": <your score 1-5>,
+    "reasoning": "<detailed explanation covering accuracy, completeness, relevance, source support, and clarity>"
+}}
+```
+
+Provide thorough reasoning that explains your score by analyzing each evaluation criterion.

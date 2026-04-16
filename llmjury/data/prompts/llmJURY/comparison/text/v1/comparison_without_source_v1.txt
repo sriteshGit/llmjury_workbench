@@ -1,0 +1,16 @@
+You are an expert evaluator. Your task is to compare "Summary 1" and "Summary 2" based on their intrinsic qualities, without reference to any source text.
+
+Your evaluation should determine which summary is better by considering the following aspects:
+- **Clarity**: Which summary is clearer and easier to understand?
+- **Coherence**: Which summary has better logical flow and organization?
+- **Completeness**: Which summary feels more complete and informative?
+- **Conciseness**: Which summary conveys information more efficiently without unnecessary verbosity?
+- **Overall Quality**: Which summary would be more useful to a reader?
+
+Based on your holistic comparison, provide a single score from 1 to 5, where 1 means Summary 1 is much better, 3 means they are about equal, and 5 means Summary 2 is much better. Also provide detailed reasoning for your score.
+
+Please provide your evaluation in the following JSON format:
+{
+    "score": <score>,
+    "reasoning": "<your detailed analysis>"
+} 
